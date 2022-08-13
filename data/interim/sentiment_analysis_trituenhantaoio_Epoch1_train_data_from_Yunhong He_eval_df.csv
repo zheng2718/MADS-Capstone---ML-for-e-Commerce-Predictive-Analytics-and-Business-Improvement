@@ -1,0 +1,2 @@
+emotion,epoch,train_loss,val_loss,F1_score_weighted,F1_score_macro,F1_score_micro,batch_size,Ir,eps,pre_trained_model,hidden_dropout_prob,attention_probs_dropout_prob,note,train_data_creator
+"positive,negative,neutral",1,0.21225060363251128,0.10637378782082937,0.9345567867036011,0.6398767188240873,0.9473684210526315,2,1e-05,1e-08,trituenhantaoio/bert-base-vietnamese-uncased,0.1,0.1,Added and splited Self-judged Review emotions into train and valiation by 8:2,Yunhong He

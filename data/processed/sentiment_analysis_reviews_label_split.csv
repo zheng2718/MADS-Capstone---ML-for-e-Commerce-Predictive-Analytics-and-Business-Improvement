@@ -1,0 +1,409 @@
+index,Vietnamese,Rating,emotion,label,data_category
+1,Bán toàn đồ móp không,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,val
+3,Chảo chiên ko đẹp,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+7,"  hàng giao nhanh. đóng gói cẩn thận. rất hài lòng. nhưng đăng kya bảo hành chưa thấy hồi âm. vẫn chờ
+",5,positive,2,train
+8,- Bàn ủi đẹp -1 lần đổ nước ủi đc 1 cái áo. - ủi đủ thẳng chứ ko như bàn ủi thường đc. - thích hợp cho ai làm biếng hoặc đi du lịch.,5,positive,2,val
+9," Đã nhận được hàng shop đóng gói cẩn vô cùng nhiều lớp chống sốc nên nguyên vẹn Ko bị móp méo, nồi đẹp chuẩn khỏi phải bàn mua dip 12/12 được tặng 1 nồi, cảm ơn shop ",5,positive,2,val
+10,"- đóng gói : shop đóng hàng cẩn thận, chắc chắn. - giá : săn sale giá quá hời cho những chiếc chảo xịn xò, xinh xắn. - chất lượng sản phẩm: nhắc đến Tefal thì No1 +chảo chống dính xuất sắc: mình đã thử bằng việc chiên trứng với 1 lượng dầu rất ít xịt trên bề mặt, trứng k hề bị dính ở chảo như những loại chảo khác. + báo nhiệt thông minh giúp mình điều chỉnh được nhiệt độ giúp món ăn ngon hơn và an toàn cho sức khoẻ. + chảo đc phủ vânđá nên rất dễ dàng vệ sinh. Đây là bộ sưu tập Tefal của mình",5,positive,2,train
+11, đóng gói cẩn thận giao nhanh ok quá,5,positive,2,train
+12,"- đóng gói rất kĩ 
+- cối thuỷ tinh nên rất nặng tay, bê 2 tay nên vệ sinh hơ khó
+- xay và nấu khá ngon, mịn (chỉ mới thử sữa bắp, bí đỏ)
+- đầu cắm 3 chấu
+- khi vận hành máy khá ồn, tương đương máy hút bụi nên hơi ngại khi nhà ở chung cư",4,positive,2,train
+13,"- Giao hàng nhanh chóng, đặt hàng khung giờ 0-2h ngày 11/11 đến trưa ngày 12/11 đã nhận được hàng. - Hình thức nồi đẹp, đóng gói cẩn thận. - Tuy nhiên đặt hàng khung giờ 0-2h có quà tặng là chảo rán nhưng không thấy đính kèm với nồi. Mong Tefal phản hồi sớm. Vẫn vote 5 sao cho hãng.",5,positive,2,train
+14,"- giao hàng nhanh, đóng gói cẩn thận - vẫn chưa xài nên sẽ phản hồi kết quả sử dụng sau",5,positive,2,train
+15," giao hàng nhanh, đóng gói kỹ càng, chảo đẹp, tuy hơi nhẹ nhưng mong rằng sẽ sử dụng tốt, đánh giá 5 sao ",5,positive,2,train
+16,"- Giao hàng:  nhanh. ( khuya đặt 2h là 16 giờ giao)
+- Gói hàng kỹ.
+- Chưa xài nên chưa biết chất lượng ra sao, nhưng về mẫu mã mình thấy ok. 
+- Mình thấy có bạn mua 2 chảo như mình được tặng chảo lớn,  nhưng mình lại không thấy hàng tặng.
+",4,positive,2,train
+17,"- Lần đầu săn đc chảo Tefal. Đúng là hàng Tefal xịn xò có khác, nhận hàng cảm thấy rất ưng: nho nhỏ xinh xinh dùng để rán trứng thì tuyệt vời hết xảy. Rất phù hợp để nấu mấy món ít ít nho nhỏ. Đóng gói cũng tương đối cẩn thận, chảo rất nhẹ luôn, nhận hàng mà cảm giác như thùng rỗng vậy :)) - Hơi tiếc là loại này ko sài đc cho bếp từ, mà giờ bếp từ là điều quá hiển nhiên và bt rồi :((",5,positive,2,train
+18," Mặc dù ở tỉnh xa xôi nhưng shop giao hàng nhanh chóng , hàng đẹp , shop đóng gói kĩ càng ,chắc chắn .",5,positive,2,val
+19,"- Mỗi ngày ăn hũ sữa chua Da xinh, dáng đẹp, khoẻ ngay liền nè - Để tăng sức đề kháng thì mỗi sáng nên ăn sữa chua nha quý zị - Healthy ko khó đã có sữa chua lo nha - Thứ 2 sảng khoái ăn schua thoải mái n - Sữa chua phomai- tình đậm mãi ko phai - Sữa chua lá dứa- - Sữa chua than tre Xếp hangf chờ đợi đã lâu",5,positive,2,train
+20,"
+🥰Sản phẩm rất xinh đẹp tuyệt vời, tôi không thể trông đợi gì hơn. Cảm ơn nhà cung cấp, nhà sản xuất, cảm ơn người bán hàng, cảm ơn sàn thương mại điện tử, cảm ơn người vận chuyển để tôi có cơ hội dùng sản phẩm tốt như thế này.
+",5,positive,2,train
+21,(TB) Dich vu MyTunes TANG 10.000d vao TKC cua Quy khach khi soan DK gui 1599 (0d) sau 8 ngay duy tri dich vu. Sau km 3000d/tuan. Chi tiet (0d) hoac truy cap mytunes.vn. Cam on Quy khach.,5,positive,2,train
+22,"* Nồi chiên không dầu Tefal EY701D15(XXL-5.6L-1700W) bị lỗi (lỗi thoát hơi nóng tại vị trí giữa thân nồi và khay nướng). Mới đầu liên hệ thì Tefal store từ chối yêu cầu đổi sản phẩm lỗi, nhưng sau đó thì Tefal store đã cầu thị đổi mới sản phẩm cho khách hàng và tặng kèm vourcher 20%, tuy sản phẩm đổi chưa được ưng ý 100%, nhưng vẫn ghi nhận dịch vụ sau bán hàng của Tefal store đã quan tâm đến KH. * Riêng Lazada thì đề nghị xem lại bộ phận kiểm tra hàng lỗi (Dispute VN Team) làm kiểu gì ? mà khi khách hàng (KH) gửi sp lỗi kèm hình ảnh lỗi cho Lazada để kiểm tra, nhưng sau khi kiểm tra xong thì Lazada phán sp không đủ điều kiện đổi trả và gửi trả lại sp cho KH. KH tiếp tục khiếu nại thì lại bắt KH quay video sp để làm bằng chứng gửi lại cho Lazada xem xét. Cho đến giờ KH đã được Tefal store đổi sp mới rồi, nhưng Lazada vẫn chưa giải quyết xong cái sp lỗi theo cái quy trình vòng lập không hồi kết !? (KH đã nhận xét lại ngày 03/6/2021 sau khi đã được Tefal Store đổi sp mới)",5,positive,2,train
+23,". đóng gói sản phẩm chắc chắn, chế độ xay sữa nhanh, mịn thơm. máy quay tốc độ nhanh thỉnh thoảng chạy rú lên rất ồn. sản phẩm khá OK",5,positive,2,train
+24,". Ép ra bã nhiều nước. Lượng nc thu dc rất ita mà cực kì nhanh phân 2 lớp, mình vừa mới ép xong rót ra đã thấy phân 2 phần nước. Chât Liệu thì dùng nhựa cứng, trong ưu điẻm máy mới sẽ nhìn sáng sủa. Nhưng cũ nó sẽ bị đục và cực kì dễ vỡ nứt bạn lỡ tay làm rơi 1 bộ phận nào. Mình vừa mua xong đã là rơi nứt cái nắp ca hứng nc ép. Lưỡi dao ép ko nát hết, còn nhìu miếng bự rớt ra",4,positive,2,train
+25,"[Nồi chiên không dầu 4L2 nút cảm ứng] Tặng kèm bình đun siêu tốc giá 2tr5. + Sản phẩm khi dùng chiên phải trở mặt nếu không sẽ không chính đều. Thời gian chiên khá lâu khoảng 20 đến 30p để chính đều hai mặt. Máy có chế độ hẹn giờ báo động. Máy chiên khá ồn! Được điểm cộng là dễ dàng vệ sinh và đăng ký bảo hành online nhanh và tiện. + Bình siêu tốc: đế đun nhựa mỏng, dây điện ngắn khá bất tiện, bình đun thiết kế không đẹp bằng các hãng khác. Đun sôi nhanh.",5,positive,2,train
+26,"[TB] NHAN NGAY 1GB data toc do cao. Soan DK D5 gui 1311 chi voi 5.000d/ngay (Thue bao phai so huu goi data). (0d). Tu choi, soan TC gui 1311.",5,positive,2,train
+27,"1 từ TUYỆT. Giá săn sale 1tr898 ( tặng kèm chảo 20cm ) luôn ship. Rẻ so với chất lượng. máy sd núm cơ nên dễ sử dụng và chắc sẽ bền hơn màng hình điện tử. nướng thịt mền thơm, tư vấn nhanh và chuẩn xác. mình rất hài lòng. mn nên mua nha.",5,positive,2,train
+28,"1. Giao hàng nhanh mặc dù mình ở xã.
+2. Đóng gói tạm ổn, hộp đến tay khá móp méo.
+3. Đủ hàng và đúng sản phẩm theo đơn đặt hàng.
+4. Sản phẩm đúng mô tả, xứng đáng trong tầm giá.
+5. Sản phẩm tốt, nên mua.",5,positive,2,train
+29,1. Giao hàng nhanh. 2. Đóng gói tạm ổn. 3. Đơn hàng đúng thông tin. 4. Sản phẩm bị móp méo yêu cầu đồi hàng mới --- Lazada đã liên hệ thu hồi hàng. Gian hàng đã gửi sorry voucher và gọi cho mình để hỗ trợ,5,positive,2,train
+30,"1. Hàng hóa đúng mô tả và thông tin kèm.
+
+2. Đóng gói chắc và kỹ càng.
+
+3. Không có địa chỉ và thông tin cửa hàng bảo hành cách nào. 
+Quý khách mua cần lưu ý việc này để khi cần bảo hành chịu thiệt hại.
+
+* Phản ánh được cửa hàng quân tâm khách hàng.
+* Cám ơn AC.",5,positive,2,val
+31,1000*cảm ơn shop,5,positive,2,train
+32,"100đ cho giao hàng lzd, giao quá nhanh, đóng hàng siêu kĩ, máy dùng tốt, xay nhuyễn ở mức vừa.",5,positive,2,train
+33,"11/11 Áp mã tích luỹ của Lazada, giao hàng nhanh trong ngày. Hi vọng nồi xài tốt. Đặt hàng khung 0-2h hi vọng được quà tặng ^_^",5,positive,2,train
+34,"11đ cho khâu đóng gói vô cùng chất lượng của Lazada. Phải thế thì những vật dễ vỡ, móp méo mới an tâm. Về sản phẩm thì đẹp, chắc tay, khả năng chống dính và vệ sinh cần tg để test.",5,positive,2,train
+35,"12.12 săn sale giá mềm mà lại đc tặng thêm 1 cái nồi nữa, quá tuyệt. giao hàng nhanh, đóng gói cẩn thận. nồi cũng quá đẹp. ưng ý hết sức. tặng mẹ bộ nồi thật quá hài lòng",5,positive,2,train
+36,"2 cái đều có vết lõm ở cạnh chảo và cạnh đáy dưới vành nhiễm từ giống như vết dao chém, có nhiều vết xước ở lòng chảo,nhưng tôi vẫn chấp nhận mua.Laz kiểm tra xem đơn hàng.hai bẩy hai một tám chín ba bốn bốn năm hai chín một chín ba , tôi đã hoàn trả từ ngày . hai sáu tháng một năm hai mươi đến nay ngày hai mươi tháng hai năm hai một tôi vẫn chưa nhận được hoàn tiền từ Laz vì trong lòng chảo chống dính bị nhiều vêt xước nặng..Cám ơn",5,positive,2,train
+37,"2 chảo 8xx thì mình thấy khá rẻ, chỉ nhỉnh hơn những sản phẩm son nồi thông thường. Mẫu mã đẹp, sang trọng, khác hoàn toàn bộ son nồi cũ của gia đình mình. Báo đỏ giữa chảo thuận tiện cho người nấu ăn, khi nào là chảo đã đủ độ nóng cần thiết, điểm + cho sự sáng tạo của Tefal Vân đá dễ vệ sinh hơn kim loại thông thường theo mình thấy Sản phẩm được đóng gói kĩ lưỡng, không bị móp méo trong quá trình vận chuyển Lazada giao hàng nhanh, thân thiện 5* cho cả 2",5,positive,2,train
+38,"2 chảo dày, chắc chắn, đẹp. Nồi to, hơi mỏng. Tổng thể 3 món 600k thì 5 sao, rất ưng. Giao hàng rất lâu",5,positive,2,train
+39,"2 chảo nhìn OK, lazada đóng hàng siêu kỹ có cả chống sốc trong và ngoài thùng, chèn lót thêm để thùng chặt!",5,positive,2,train
+40,"24cm-28cm thì đẹp, 20cm nhỏ quá ,tăng giá cho chảo to lên :) cảm ơn shop nhiều nhé, chúc shop sức khỏe và mua may bán đắt",5,positive,2,train
+41,2chao rất ok không móp méo đóng gói rất cẩn thận còn chất lượng thì chưa biết để xài mới biết có bền không,4,positive,2,train
+42,3 chảo đẹp đống gói kỉ vân đá xuất sắc.... săn được trong đợt sale 🤣 mà giao hơi lâu nhé shop...nhắc mãi mới chịu đóng gói...vì vậy 4* cho chất lượng phục vụ ....nhưng vẫn cho 5* vì nhà tefal đầu tư nhiều trong chém giá😍 #ảnh mang tính chất kiếm xu thôi nhé mọi người!,5,positive,2,train
+43,"5 sao cho shop giao hàng và đóng gói. Nồi đẹp, rất xịn sò. chạy êm, thịt nướng ngon, nói chung ok. độ bền thì phải dùng lâu mới biết",5,positive,2,train
+44,"ấm chắc chắn, đẹp, đun nhanh. rất hài lòng",5,positive,2,val
+45,"ấm chắc chắn, hoàn thiện đẹp. mặc dù là hàng tặng nhưng rất hài lòng.",5,positive,2,val
+46,Ấm đẹp,5,positive,2,train
+47,Ấm đẹp bền chất liệu tốt,5,positive,2,train
+48,Ấm đẹp nhưng dây siêu ngắn. Phải nối thêm,4,positive,2,train
+49,"ấm đẹp, giao hàng nha hơn dự kiến, anh shipper thực hiện 5k tốt",5,positive,2,train
+50,"Ấm đẹp, giao hàng nhanh",5,positive,2,train
+51,Ấm đẹp. Nhìn chắc chắn. Nhưng hơi nhỏ dùng cá nhân là hợp lí. Nên mua về để sử dụng. Giao hàng hơi lâu,5,positive,2,train
+52,"Ấm điện siêu tốc, nhỏ nhắn xinh xắn, thiết kế chăcs chắn. Đun nước nhanh, thích hớpj để đun nước pha trà, cà phê.",5,positive,2,train
+53,"ấm đun đẹp, đun nước nhanh, không ồn! có chỉnh nhiệt độ đun rất tiện dụng! gói hàng chắc chắn, giao hàng nhanh! hài lòng",5,positive,2,train
+54,"Ấm đun nhanh, chắc chắn, hình thức đẹp, nên mua",5,positive,2,train
+55,"âm đun nhanh, xinh lắm",5,positive,2,train
+56,"Ấm đun tặng kèm nồi chiên không dầu. Nhỏ gọn, nhìn chắc chắn, thích mắt lắm. Giao hàng nhanh lắm nha",5,positive,2,train
+57,"Ấm đun thích lắm nhé mọi người, mình dùng hình ảnh lấy trên trang.",5,positive,2,train
+58,"Ấm đun tốt, tuy nhiên điểm trừ là dung tích hơi nhỏ. Hàng free nên đành chấp nhận",5,positive,2,val
+59,ấm được khuyến mãi theo nồi chiên mình chưa dùng nhung nhìn bên ngoài rất đẹp,5,positive,2,val
+60,"Ấm mini nhỏ xinh,shop đóng gói cẩn thận",5,positive,2,val
+61,"Ấm nhìn đẹp, nấu nhanh sôi. Có điều nắp mở hơi cứng k bật mạnh như cỡ ấm 1,2l của tefal. Giờ hàng nhanh",5,positive,2,train
+62,"Ấm nhỏ gọn, đúng hàng Tefal, shop giao hàng nhanh.",5,positive,2,train
+63,"ấm nước được tặng hàng đẹp, xài ok",5,positive,2,train
+64,"Ấm rất đẹp và sang, dung tích lớn , đun sôi nhanh. Có 2 chế độ đun và giữ ấm theo nhiệt độ sẵn. Bên trong inox bên ngoài là nhựa. Nhưng nếu bị trầy thì rất dễ nhìn thấy. Mua sale 10.10 giao nhanh trong vòng 2 ngày. Kích hoạt bảo hành onl",5,positive,2,train
+65,"Ấm rất nhỏ xinh, đúng với ý thích. Tuy nhiên lúc đun thử thì chỗ cầm hơi nóng lên. Như vậy sẽ hơi bất tiện nếu cần đun 2-3 ấm liên tục. Trừ 1 sao vì nhược điểm này.",5,positive,2,train
+66,"Ấm siêu dễ thương ❤️ Cám ơn Laz đã rất nhiệt tình,cố gắng giao cho được hàng tới tay khách hàng trong lúc dịch bệnh căng thẳng.",5,positive,2,train
+67,"ấm sz mini rất xinh, đúng siêu tốc dùng pha cf ,,độ bền chưa biết ntn ,,giá cũng chưa tốt lắm",4,positive,2,train
+68,"Ấm xịn, đẹp",5,positive,2,train
+69,"ấm xinh xinh,hài lòng",5,positive,2,train
+70,"Ấm xinh, dễ thương, giao hàng cực nhanh, đóng gói quá kỹ, làm mở hàng mắc mợt luôn hà. Ko bao giờ thất vọng Tefal",5,positive,2,train
+71,"Ấm xinh, gọn. Đẹp",5,positive,2,train
+72,"Ấn khuyến mại, dáng đẹp, nóng nhanh.",5,positive,2,train
+73,"Ẩn phẩm đóng gói kỹ càng, hàng tặng cũng rất okela Mới test bên ngoài, chưa xài nên chưa đánh giá đc chất lượng ra sao",5,positive,2,train
+74,Ban đầu cứ lo bộ chảo này bị móp méo. Nhưng may mắn là không cái nào bị. Nhìn mẫu mã đẹp. Sử dụng xem mới biết bền không,5,positive,2,val
+75,Ban dau Hang giao nhanh nhung Noi bi meo’ nen khong the day nap vung. Tuy nhien hang da nhiet tinh lien he lai de doi tra noi moi,5,positive,2,val
+76,Bàn là chắc chắn phun hơi nước có gì trắng trắng ra nhưng chắc do bàn là sử dụng lần đầu. Là nhanh thẳng,5,positive,2,val
+77,Bàn là màu sắc và mẫu mã đẹp. Cầm chắc tay là rất thích ạ 😍,5,positive,2,train
+78,"bàn ủi cầm chắc tay, ủi nhanh thẳng đồ, ủi được 4 cái áo, rất hài lòng, sản phẩm tuyệt vời, mua được giá giảm",5,positive,2,train
+79,Bàn ủi đẹp tốt,5,positive,2,train
+80,"Bàn ủi đẹp, đóng gói chắc chắn. Hàng KM xịn xò 😘",5,positive,2,train
+81,"Bàn ủi đẹp, giao hàng đóng gói cẩn thận! Không bị bể hay lỗi gì cả, thank shoppp",5,positive,2,train
+82,"Bàn ủi đẹp, nặng, ủi nhanh thẳng quần áo. Túm lại là xài rất thich! Giao hàng lần này nhanh lắm.",5,positive,2,train
+83,"Bàn ủi đẹp,thử nóng, chưa sử dụng, xài tốt sẽ nhận xét tiếp, giao hàng nhanh, đóng hàng cẩn thận, tặng shop 5sao",5,positive,2,train
+84,Bàn ủi đẹp. Có điều chỉ ủi được áo mỏng. Vải linen hay vải dày xíu là ko thẳng được,5,positive,2,train
+85,"Ban ui dung tot. Ma ship hoi lâu, ui do nhanh khong so bi chay quan ao . Minh thay tien loi khi hi do",5,positive,2,train
+86,Bàn ủi này mình mua lần thứ 2. Hy vọng nó cũng tốt như cái trước đó. Giao hàng nhanh. 5 sao,5,positive,2,train
+87,bàn ủi rẻ mà ở ngoài đẹp kinh....mình nhận đc do dùng xu mà ko ngờ chất lượng ko thể mong đợi hơn 😍 ở ngoài đẹp hơn nhiều lần trong hình nhé mn😍,5,positive,2,val
+88,"Bàn ủi xịn sò, rất okie 👌",5,positive,2,train
+89,"Bánh dễ tan nên không gây hóc, em bé rất thích, cảm ơn Tefal vì món quà",5,positive,2,train
+90,"bánh được tặng kèm đóng gói rất kĩ nhưng vẫn bị bể vì là bánh gạo bé mình rất thích , chảo rất đẹp cầm nặng tay , canh sale giá lại rất hợp lý",5,positive,2,train
+91,"Bánh gạo ăn ngon bé nhà mình thích ăn, vị giao hàng nhanh.ko qua ngọt.",5,positive,2,train
+92,"bánh ngon, không ngọt quá, dễ ăn, hàng tặng mà đóng gói rất cẩn thận , giao hàng nhanh , rất hài lòng",5,positive,2,train
+93,"Bánh ngon, nhiều bánh........ giao hàng nhanh quà tặng kèm đến còn sớm hơn hàng.",5,positive,2,val
+94,"bánh ngon, phù hợp cho các bé ăn dặm. giao hàng nhanh. nhiệt tình",5,positive,2,train
+95,"Bát đẹp. Tuy nhiên bát con đựng sốt chắc ko dám đựng sốt vì nắp quá chắc. Khi mở là phải dùng lực rất mạnh , đựng đồ lỏng thì chắc văng ra hết khi mở :)))",4,positive,2,train
+96,Bé ăn rất thích.rất cảm ơn,5,positive,2,train
+97,"Bên bán hàng cho mình câu giải thích, mình muốn đổi lại cái khác. Nếu muốn có camera toàn cảnh mình khui hàng có luôn nha shop. Hi vọng shop khắc phục lỗi này nhanh nhất có thể giúp mình, mình cảm ơn",5,positive,2,train
+98,"bên cskh nhiệt tình, đc bảo hành tận 2 năm,tốt,nên mua",5,positive,2,train
+99,"Bên ngoài bọc kĩ càng cẩn thận, mở hộp nồi cơm đẹp,nhìn rất là thích. Đợi nấu thử cơm ngon nữa là ok",5,positive,2,val
+100,bên trong gói cẩn thận nhưng thùng hàng dán không kỹ. chảo ok.,5,positive,2,train
+101,"Bếp chắc chắn, cầm nặng tay. chế độ bảo hành lâu. Xài khá ổn. Lâu sôi hơn hàng trung nhưng như thế mới tốt.",5,positive,2,train
+102,"bếp xài tốt, mua đợt sale đc tặng chảo ngon lành",5,positive,2,train
+103,"bình có vẻ tốt ,.............,.............,.............,.............,.............",5,positive,2,val
+104,bình đẹp,5,positive,2,val
+105,"bình đẹp, đóng gói chắc chắn, giao hàng nhanh, Bình giữ nhiệt Tefan WEGO 430ml - màu đen.....",5,positive,2,train
+106,"Bình đẹp, đun nhanh, điều chỉnh được nhiệt độ cần đun nên khá tiện lợi. Nước sôi 100oC vỏ ngoài chỉ hơi nóng nhẹ, an toàn cho những gia đình có trẻ nhỏ. Dịch mà laz giao hàng từ HN vào TPHCM cực nhanh",5,positive,2,train
+107,"Bình đẹp, hiện đại. Chưa xài nên chưa nhận xét được hi",5,positive,2,val
+108,bình đun đẹp,5,positive,2,train
+109,"Bình đun nhìn rất đẹp, sắc sảo. Chưa sử dụng nên chưa biết sao.",5,positive,2,train
+110,"Bình đun nhỏ xinh, thích hợp cho gia đình. Shop hỗ trợ khách hàng rất nhiệt tình.",5,positive,2,train
+111,Bình dùng ok Nhanh Chất lượng,5,positive,2,train
+112,"Bình gọn, xinh, nấu nhanh và êm. Ok ý.",5,positive,2,train
+113,"Bình này mình được tặng kèm khi mua nồi chiên Tefal. Thùng đựng bình đun hơi móp méo nhưng may là ko ảnh hưởng gì bên trong. Bình nhỏ xinh, chạy êm, ko bị ồn",5,positive,2,train
+114,"Bình nhỏ xinh. Chắc chắn, hàng tặng nên ko đòi hỏi nhiều.",5,positive,2,train
+115,Bình nước đẹp.,5,positive,2,train
+116,"Bình nước được tặng kèm rất đẹp, chắc chắn, quá ư là ưng luôn",5,positive,2,train
+117,"Bình rất xinh, cầm nặng tay",5,positive,2,train
+118,binh siêu tốc đẹp chắc chắn .nên mua,5,positive,2,train
+119,"Bình siêu tốc dùng rất ổn, màu đẹp, nút mở cũng tiện dụng, nước sôi ngoài bình không quá nóng. Xịn (hình nhận xu)",5,positive,2,val
+120,"Bộ 2 chảo chống dính đáy từ vân đá cao cấp hàng chính hãng Tefal. Chảo chất lượng tốt, kiểu dáng đẹp. Vote shop 5 sao.",5,positive,2,train
+121,"Bộ 2 chảo chống dính vân đá tefal natura hàng đẹp, mỏng vừa và nhẹ, lớp chống dính tốt. Nhưng các cạnh viền chảo hơi sắc",5,positive,2,train
+122,"Bộ 2 chảo đẹp, cầm chắc tay, hài lòng.",5,positive,2,val
+123,"bộ 2 chảo tuyệt vời, màu sắc rất bắt mắt, rất xịn xò, giao hàng nhanh, shipper thân thiện, nhiệt tình",5,positive,2,train
+124,"Bộ 3 chảo chống dính vân đá Tefal natura khá ok. Giao hàng nhanh chóng. Đóng gói chắc chắn và đẹp, Không bị móp méo. ",5,positive,2,train
+125,"Bộ 3 chảo cũng tốt, size chảo sâu lòng là to nhất, 1 chảo vừa, chảo còn lại là size nhỏ. Bộ này phù hợp sử dụng cho gia đình tầm 3, 4 người. Mua 9/9 sale còn 378k cho bộ 3 chảo.",5,positive,2,train
+126,bộ 3 chảo đẹp giá rẻ tương đối so với mua lẻ từng món. thương hiệu châu âu nên cũng yên tâm nhưng sp sx TQ . sử dụng chưa lâu nên chưa biết độ bền của chống dính,5,positive,2,train
+127,"Bộ 3 chảo đẹp, xịn sò nhưng không dày bằng bộ nồi chảo màu đỏ mà tôi đã mua của shop trước đây nhưng mua sale được giá rất rẻ, giao hàng nhanh, đóng gói cẩn thận. Rất hài lòng.",5,positive,2,train
+128,"Bộ 3 chảo này dùng ok nè. Nhà nào chưa có nên mua. Lúc đầu mua về, chồng mình kêu là dùng bếp từ, hên là ko phải, dùng bếp ga vẫn được. Chồng mình hay lấy chảo sâu lòng để nấu bún, phở ăn sáng 😂",5,positive,2,train
+129,"bộ 3 nồi này rất thích, dày dặn, đóng gói cẩn thận. đã mua đến bộ thứ 3 hộ bạn bè. shiper dễ thương nhiệt tình ",5,positive,2,val
+130,Bộ ba thần thánh thanks shop.,5,positive,2,val
+131,Bộ chảo đẹp cầm chắc tay lắm ạ,5,positive,2,train
+132,"bộ chảo đẹp ghê, dày dặn. hàng của tefal thì chất lượng rồi, mua đc giá hời nữa",5,positive,2,val
+133,"bộ chảo đẹp, chắc chắn, chiên xào tốt, chống dính tốt, chất lượng tuyệt vời. giao hàng nhanh chóng. ",5,positive,2,train
+134,"Bộ chảo đẹp, nhìn sịn sò lắm nha, giá rẻ, mình đặt ngay ko suy nghĩ mà về mình ko xài được vì ko sử dụng được cho bếp từ, mình tặng người khác luôn rồi",5,positive,2,train
+135,"bộ chảo đẹp,đóng gói cẩn thận,nhưng cái cán chảo xài một thời gian cứ bị lỏng ra phải vătn ốc lại mấy lần",5,positive,2,val
+136,"Bộ chảo giao đến chắc chắn 
+Gói hàng cẩn thận 
+
+Chất lượng chảo tạm ổn như kì vọng
+
+Kkkkkkkkkk",5,positive,2,val
+137,bộ chảo quá đẹp,5,positive,2,val
+138,"bộ chảo rất đẹp cầm nặng tay, chưa dùng nên k biết chất lượng thế nào .Canh sale dc thêm 1 chảo to k nghĩ nó lại dày",5,positive,2,train
+139,"bộ chảo rất đẹp và dày dặn, shiper rất vui vẻ, nhiệt tình",5,positive,2,train
+140,"Bộ chảo thứ 2 mua của shop, 3 chảo mà mua chỉ 370k, quá rẻ và rất đáng tiền. Chảo chỉ dùng được với bếp gas, chiên rán rất tốt, sạch sẽ. Lần trước chuẩn bị hàng lâu, nhưng lần này dù dịch nhưng giao nhanh",5,positive,2,train
+141,"Bộ chảo xinh lắm, vừa gọn cho gia đình nhỏ. Mình rất hài lòng về bộ này. Hi vọng xài bền hihihi...",5,positive,2,train
+142,Bộ dao tặng kèm rất đẹp. Độ hoàn thiện cao và rất đáng giá. Ship hàng nhanh ……………………………………..,5,positive,2,train
+143,bộ nồi  đẹp  dày và  nặng rất  ưng  nha,5,positive,2,train
+144,"Bộ nồi + chảo đẹp đúng như mẫu.Hơi buồn vì nắp nồi hơi méo chút.Chất lượng dày,chắc chắn.",5,positive,2,train
+145,"Bộ nồi chắc chắn, màu đẹp. Xứng đáng đầu tư",5,positive,2,val
+146,"Bộ nồi chảo cầm rất đầm tay, chắc chắn, canh sale mua giá 481k fs từ HCM ra HN, nồi to hơn tưởng tượng, đã mua lần thứ 2.",5,positive,2,train
+147,"bộ nồi chảo dày dặn, chất lượng tốt. rất hài lòng",5,positive,2,train
+148,"Bộ nồi chảo dày dặn, đẹp",5,positive,2,train
+149,"bộ nồi chảo đẹp ko bị móp, mua hôm 24.11 giá 1.345k, tặng 1 máy xay",5,positive,2,train
+150,bộ nồi chảo đẹp lắm!,5,positive,2,val
+151,"Bộ nồi chảo đẹp như hình, đóng gói cực kỳ cẩn thận. Chỉ có điều mua về bị ck và mẹ ck chê vì combo và quà tặng chưa hợp lý: chảo thì 3 cái mà nồi lại có 1 cái. Nếu đổi qua tặng nồi thay vì chảo thì sẽ hợp lý hơn.",4,positive,2,val
+152,"bộ nồi chảo đẹp xuất sắc, dày chắc chắn, vận chuyển nhanh, đóng gói kỹ càng, chưa sử dụng nhưng nhìn ngoại wan rất ưng!",5,positive,2,train
+153,"Bộ nồi chảo đẹp, chắc chắn, cầm chắc tay Mua được với giá 604k rất hài lòng Gói hàng kỹ, không bị móp méo.",5,positive,2,val
+154,"Bộ nồi chảo đẹp, nhưng chào lớn và quánh không ăn từ bếp Châu Âu, món kia ăn từ tốt, bàn ủi đẹp",5,positive,2,val
+155,Bộ nồi chảo đẹp.mình rất ưng ý,5,positive,2,train
+156,Bộ nồi chảo này rất đáng mua. Chắc chắn lắm ý mà giá lại tốt nữa. Nói chung là rất rất hài lòng. Cảm ơn shop nhé ❤️❤️❤️,5,positive,2,train
+157,"Bộ nồi chảo nhìn đẹp,  còn lâu bền không thì chưa biết, chảo như lỗi kỹ thuật hay sao ấy, dầu tranf xung quanh chứ không ở giữa vì lớp chống dính mới còn tốt nên tạm được,  dụng bếp từ nhưng thấy bắt từ không nhạy lắm",4,positive,2,train
+158,Bộ nồi chảo rất đẹp và chắc chắn.Hàng được gói cẩn thận và giao rất nhanh. Săn sales nên được giá tốt và được tặng máy xay đa năng nữa.,5,positive,2,train
+159,"bộ nồi chảo rất đẹp, chắc chắn , rất hài lòng !",5,positive,2,train
+160,"Bộ nồi chảo rất đẹp, giúp góc bếp nhà mình sáng choang & sang chảnh hẳn lên. Rất ưng bụng vì sản phẩm dày dặn, cứng cáp & không quá nặng giúp việc nấu nướng rất thoải mái. Đã mua thêm 2 bộ cho mẹ & mẹ chồng mình ở quê. Highly recommend bộ này nha mọi người. Các bạn canh mega sales mua thì giá sẽ tốt hơn & được tặng quà xịn xò hơn 🙂",5,positive,2,train
+161,"Bộ nồi chảo rất đẹp, hàng dày và chắc chắn, hàng sale nên mua được giá rẻ, đóng gói cẩn thận, rất hài lòng nhưng giao hàng bị trễ",5,positive,2,train
+162,"bộ nồi chảo rất đẹp, không móp méo, tuy nhiên tay cầm chảo bị lỏng ốc, vặn lại chắc k sao. Shop giao hàng rất nhanh. Mình rất hài lòng.",5,positive,2,train
+163,"Bộ nồi chảo siêu đẹp, chắc chắn. Ko nghĩ là nồi nó bự dữ vậy. Chảo thì rất đẹp luôn. Đóng gói cũng bao kĩ, ko bị móp méo",5,positive,2,train
+164,"bộ nồi chảo to nặng, xịn xò. Rất thích tuy nhiên nắp nồi có bị móp 1 chút, kg móp thì hoàn hảo lắm lắm. Chảo tặng bé xinh xinh.",5,positive,2,train
+165,"bộ nồi chất lượng, đẹp, vung khít, chuẩn hàng tefal, sẽ mua lại khi có dịp",5,positive,2,train
+166,Bộ nồi đẹp ,5,positive,2,val
+167,"Bộ nồi đẹp quá, đun nấu rất ưng. Trc đó m đã đùng 1 bộ hàng xách tay 3 năm. Bjo mới mua bộ khác để thay. Bộ này chắc chắn hơn bộ xách tay m mua",5,positive,2,train
+168,Bộ nồi đẹp và rất chắn chắn. Tefal giao hàng siêu siêu nhanh và luôn đóng gói rất kỹ càng. Nồi và chảo của nhà mình giờ toàn từ Tefal cả.,5,positive,2,train
+169,"Bộ nồi đẹp, Đóng gói cẩn thận",5,positive,2,train
+170,"Bộ nồi đẹp, xịn xò, hàng giao nguyên vẹn, k méo mó, xước, bong tróc gì cả. Ship hàng rất nhanh, quà tặng cacao rất ngon",5,positive,2,train
+171,"Bộ nồi đẹp. Bọc khá kỹ, quấn nylon bóng khí nhiều lớp. Tuy vậy nếu giao hàng tỉnh xa thì nên chèn thêm xốp. Hàng đúng với thông tin quảng cáo. Rất ưng ý.",5,positive,2,train
+172,Bộ nồi đẹp. Chắc chắn. Cầm vừa tay. Phù hơph với giá tiền. Đượ tặng thêm 1 chiếc chảo nữa. Sản phẩm có giấy bảo hành của hangz,5,positive,2,val
+173,"bộ nồi đủ 3 chiếc, đúng kích thước, bóng đẹp, hy vọng sẽ bóng lâu.
+bộ nồi đủ 3 chiếc, đúng kích thước, bóng đẹp, hy vọng sẽ bóng lâu.",5,positive,2,train
+174,"Bộ nồi dùng thích , dày dặn , to hơn mình nghĩ",5,positive,2,train
+175,"Bộ nồi khá đẹp, đã mua lần 2, tuy nhiên lần này nhận bị xước.",4,positive,2,train
+176,"Bộ nồi mỏng không như kì vọng nếu giá không giảm là đắt,may là mua lúc giảm giá nên coi như ổn,mọi người nên mua.",4,positive,2,train
+177,"Bộ nồi này đẹp, chắc chắn, dày dặn, rất đáng tiền để mua, mua được giá sale nên hài lòng. Vừa đặt thêm combo 3 nồi chảo, sẽ tiếp tục ủng hộ Tefal",5,positive,2,train
+178,Bộ nồi nhìn rất đẹp nhưng 2 tay cầm nhìn hơi thô và chiếm nhiều diện tích khi cất,5,positive,2,train
+179,"bộ nồi ok, đẹp,chắc chắn,ko biết tay cầm lúc nấu có bị nóng ko, còn lại rất ổn. Chảo dc tặng cũng dày dặn, xịn sò, nên mua!!!",5,positive,2,train
+180,"Bộ nồi rất đẹp ạ. Shop giao hàng nhanh, đóng gói cẩn thận. Mình mua vs giá 536k rất ưng. Đã từng mua nồi chiên không dầu và chảo hãng này. Nên mua nha mng",5,positive,2,val
+181,bộ nồi rất đẹp xài rất thích. nấu nhanh và ngon.chỉ mỗi 1d trừ là giữa chảo bị cong.dầu cứ chảy ra xung quanh chứ kg nằm ở giữa ,5,positive,2,train
+182,"Bộ nồi rất đẹp, dày dặn, chắc chắn. Mua được giá sale nên rất hài lòng, sẽ tiếp tục mua những sản phẩm khác của Tefal",5,positive,2,train
+183,"Bộ nồi rất đẹp, inox sáng bóng, dầy, đóng gói kỹ, giá phù hợp, nói chung rất hài lòng, đáng mua",5,positive,2,train
+184,"Bộ nồi rất đẹp, mình rất ưng đáng mua",5,positive,2,val
+185,"Bộ nồi siêu xinh, dày dặn, màu sang, mình đọc fb cũng lo sẽ bị móp méo nhưng khi về tay ngoài sức tưởng tượng luôn. Phải nói là xịn cực kỳ, rất đáng mua. Thêm anh giao hàng cực kỳ tốt, cẩn thận, đangs yêu.",5,positive,2,train
+186,"Bộ nồi siu đẹp siu chất săn sale có hơn 800,k lại còn đc tặng dao soi bén. Nói chung là ưng cực kỳ",5,positive,2,val
+187,Bộ phận chăm sóc KH và Bảo hành của Tefal rất tuyệt vời! Cảm ơn các e rất nhiều!!!,5,positive,2,train
+188,"Bộ sản phẩm đẹp ,dày dặn nên mình mua tiếp lần 2 để tặng gia đình, được tặng thêm chảo 20cm. Giao hàng nhanh, hài lòng về shop",5,positive,2,val
+189,"bô sản phẩm rất đẹp , chắc chắn, khá hài lòng.  đúng hàng chính hãng,  chiên , xào rất thích. cho shop 5 sao",5,positive,2,train
+190,"Bộ sản phẩm rất ok, đóng gói kỹ, vì đã sử dụng rồi nên tranh thủ khuyến mãi mua thêm. Chưa kịp chụp sp thật để đăng. giao hàng nhjah hơn thời gian dự kiến, shipper khu vực của mình cho 5 sao",5,positive,2,train
+191,"bộ xong nồi dầy dặn, nhìn đẹp đóng gói cẩn thận. giao hàng nhanh nhưng thấy bắt từ hởi chậm truyền nhiệt không nhanh hàng tặng chính hãng",4,positive,2,train
+192,Bình 19 thg 2 2022,5,neutral,1,train
+193,Bùi Đ. 15 thg 2 2022,5,neutral,1,train
+194,Bui P. 09 thg 2 2022,5,neutral,1,train
+195,Bui T. 20 thg 2 2022,5,neutral,1,train
+196,Canh B. 16 thg 2 2022,5,neutral,1,train
+197,Chuu T. 06 thg 2 2022,5,neutral,1,train
+198,Cô H. 23 thg 2 2022,5,neutral,1,val
+199,Đàm T. 13 thg 2 2022,4,neutral,1,val
+200,Đặng V. 19 thg 2 2022,5,neutral,1,train
+4,chảo giao bị móp,1,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,val
+1,Bán toàn đồ móp không,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,val
+4,chảo giao bị móp,1,negative,0,val
+2,chả dùng được việc gì,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+5,giao hàng quá chậm,3,negative,0,val
+4,chảo giao bị móp,1,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,val
+2,chả dùng được việc gì,2,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,val
+2,chả dùng được việc gì,2,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,val
+2,chả dùng được việc gì,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,val
+3,Chảo chiên ko đẹp,2,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+2,chả dùng được việc gì,2,negative,0,val
+2,chả dùng được việc gì,2,negative,0,val
+6,the fan can't turn on,5,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+5,giao hàng quá chậm,3,negative,0,val
+1,Bán toàn đồ móp không,1,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+5,giao hàng quá chậm,3,negative,0,val
+2,chả dùng được việc gì,2,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,val
+2,chả dùng được việc gì,2,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,val
+4,chảo giao bị móp,1,negative,0,val
+6,the fan can't turn on,5,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+6,the fan can't turn on,5,negative,0,val
+4,chảo giao bị móp,1,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,val
+1,Bán toàn đồ móp không,1,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+6,the fan can't turn on,5,negative,0,val
+4,chảo giao bị móp,1,negative,0,val
+6,the fan can't turn on,5,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,val
+5,giao hàng quá chậm,3,negative,0,val
+5,giao hàng quá chậm,3,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+6,the fan can't turn on,5,negative,0,val
+2,chả dùng được việc gì,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+6,the fan can't turn on,5,negative,0,val
+2,chả dùng được việc gì,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+4,chảo giao bị móp,1,negative,0,val
+1,Bán toàn đồ móp không,1,negative,0,val
+2,chả dùng được việc gì,2,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+6,the fan can't turn on,5,negative,0,val
+5,giao hàng quá chậm,3,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+6,the fan can't turn on,5,negative,0,val
+3,Chảo chiên ko đẹp,2,negative,0,train
+2,chả dùng được việc gì,2,negative,0,val
+4,chảo giao bị móp,1,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+2,chả dùng được việc gì,2,negative,0,val
+2,chả dùng được việc gì,2,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+4,chảo giao bị móp,1,negative,0,val
+3,Chảo chiên ko đẹp,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,val
+2,chả dùng được việc gì,2,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+6,the fan can't turn on,5,negative,0,train
+6,the fan can't turn on,5,negative,0,val
+1,Bán toàn đồ móp không,1,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+5,giao hàng quá chậm,3,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,val
+6,the fan can't turn on,5,negative,0,train
+4,chảo giao bị móp,1,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,train
+5,giao hàng quá chậm,3,negative,0,val
+5,giao hàng quá chậm,3,negative,0,train
+2,chả dùng được việc gì,2,negative,0,train
+1,Bán toàn đồ móp không,1,negative,0,val
+3,Chảo chiên ko đẹp,2,negative,0,train
+3,Chảo chiên ko đẹp,2,negative,0,val

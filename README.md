@@ -1,4 +1,4 @@
-realtime-dreamer
+realtime_dreamer
 ==============================
 
 Conducted sentiment analysis on customer reviews by building, evaluating BERT models, produced predicted emotions on the customer reviews

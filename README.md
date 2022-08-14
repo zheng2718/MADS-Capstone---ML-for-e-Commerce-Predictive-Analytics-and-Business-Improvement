@@ -43,16 +43,17 @@ Project Organization
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
+    │                         the creator's name, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`.
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
-    |       └── Sentiment Analysis Model Evaluation by Individual Class Prediction Accuracy - Visualization.png
-    |       └── Sentiment Analysis Model Evaluation by Metrics - Visualization.png
-    |       └── Sentiment Analysis Model Evaluation by Pre-trained BERT Model - Visualization.png
+    |       └── Sentiment Analysis - Model Evaluation by Individual Class Prediction Accuracy - Visualization.png
+    |       └── Sentiment Analysis - Model Evaluation by Metrics - Visualization.png
+    |       └── Sentiment Analysis - Model Evaluation by Pre-trained BERT Model - Visualization.png
+    |       └── Sentiment Analysis - Supervised ML Model Evaluation - Visualization
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`

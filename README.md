@@ -50,6 +50,9 @@ Project Organization
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
+    |       └── Sentiment Analysis Model Evaluation by Individual Class Prediction Accuracy - Visualization.png
+    |       └── Sentiment Analysis Model Evaluation by Metrics - Visualization.png
+    |       └── Sentiment Analysis Model Evaluation by Pre-trained BERT Model - Visualization.png
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`

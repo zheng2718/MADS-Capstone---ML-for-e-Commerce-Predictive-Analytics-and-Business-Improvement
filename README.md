@@ -17,7 +17,7 @@ Kensuke Suzuki used user id, product and customer rating to train Memory-Based C
 
 4.	Machine Learning for Sales Prediction
 
-Zheng Wei Lim used E-Commerce data train Supervised ML algorithms, conducted feature engineering. Performed model evaluation of multiple ML algorithms, and produce visualizations. 
+Zheng Wei Lim used E-Commerce data to train Supervised ML algorithms, conducted feature engineering. Performed model evaluation of multiple Supervised ML algorithms, and produced visualizations. 
 
 
 Project Organization

@@ -4,15 +4,19 @@ realtime_dreamer
 This Realtime Dreamer project is performing NLP for Vietnamese language and machine learning tasks to settle a real-world business challenge of a company in Vietnam . We split our project into below four tasks:
 
 1.	Customer review type classification
+
 Suwasit Wittayaijug used customer reviews to train Phobert pre-trained BERT model and then classify review types such as delivery, product, quality, and service. Performed model evaluation and produced visualizations.
 
 2.	Sentiment analysis for customer reviews
+
 Yunhong He selected positive and negative key word to search the customer reviews and label them after eye scan. And then used these selected reviews with labels to train trituenhantaoio/bert-base-vietnamese-uncased pre-trained BERT model, and label the customer reviews with emotions such as positive, neutral and negative. Performed model evaluation and visualizations for 3 different pre-trained BERT models such as trituenhantaoio, Phobert and bert-base-uncased, as well as Supervised Machine Learning.  Setup team GitHub with folder structures. Produced sentiment analysis Machine Learning pipeline.
 
 3.	Recommendation system
+
 Kensuke Suzuki used user id, product and customer rating to train Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…” Conducted model evaluation.
 
 4.	Machine Learning for Sales Prediction
+
 Zheng Wei Lim used E-Commerce data train Supervised ML algorithms, conducted feature engineering. Performed model evaluation of multiple ML algorithms, and produce visualizations. 
 
 

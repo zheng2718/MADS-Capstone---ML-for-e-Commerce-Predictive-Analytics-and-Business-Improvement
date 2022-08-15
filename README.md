@@ -1,7 +1,7 @@
 realtime_dreamer
 ==============================
 
-This Realtime Dreamer project is performing NLP for Vietnamese language and machine learning tasks to settle a real-world business challenge of a company in Vietnam . We split our project into below four tasks:
+This Realtime Dreamer project is to use Ecommerce data to perform NLP for Vietnamese language and machine learning tasks in order to settle a real-world business challenge of a company in Vietnam . We split our project into below four tasks:
 
 1.	Customer review type classification
 

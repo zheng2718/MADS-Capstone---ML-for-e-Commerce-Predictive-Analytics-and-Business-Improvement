@@ -9,7 +9,7 @@ Suwasit Wittayaijug used customer reviews to train Phobert pre-trained BERT mode
 
 2.	Sentiment analysis for customer reviews
 
-Yunhong He selected positive and negative key word to search the customer reviews and label them after eye scan. And then used these selected reviews with labels to train trituenhantaoio/bert-base-vietnamese-uncased pre-trained BERT model, and label the customer reviews with emotions such as positive, neutral and negative. Performed model evaluation and visualizations for 3 different pre-trained BERT models such as trituenhantaoio, Phobert and bert-base-uncased, as well as Supervised Machine Learning.  Setup team GitHub with folder structures. Produced sentiment analysis Machine Learning pipeline.
+Yunhong He selected positive and negative key word to search the customer reviews and label them after eye scan. And then used these selected reviews with labels to train trituenhantaoio/bert-base-vietnamese-uncased pre-trained BERT model which will label the customer reviews with emotions such as positive, neutral and negative. Performed model evaluation and visualizations for 3 different pre-trained BERT models including trituenhantaoio, Phobert and bert-base-uncased, as well as Supervised Machine Learning algorithms.  Setup team GitHub with folder structures. Produced sentiment analysis Machine Learning pipeline.
 
 3.	Recommendation system
 

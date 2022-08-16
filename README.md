@@ -58,7 +58,7 @@ Project Organization
     |       └── sentiment analysis - model evaluation by metrics - visualization.png
     |       └── sentiment analysis - model evaluation by pre-trained bert model - visualization.png
     |       └── sentiment analysis - supervised ml model evaluation - visualization.png
-    |       └── sentiment analysis - imbalances class before oversampling - visualization.png
+    |       └── sentiment analysis - imbalanced classes before oversampling - visualization.png
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`

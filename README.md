@@ -36,7 +36,7 @@ Project Organization
     |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   │   └── Git_mockup_reviews_processed.xlsx
-    │   │   └── sentiment_analysis_emotion_trituenhantaoio_1.model
+    │   │   └── sentiment_analysis_emotion_trituenhantaoio_8.model
     │   │   └── sentiment_analysis_reviews_label.xlsx
     │   │   └── sentiment_analysis_reviews_label_processed.csv
     |   |   └── sentiment_analysis_reviews_label_split.csv

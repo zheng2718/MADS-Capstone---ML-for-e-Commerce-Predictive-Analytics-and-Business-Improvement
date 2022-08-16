@@ -1,0 +1,4 @@
+class,score,pre_trained_model,epoch,train_data_creator
+negative,1,trituenhantaoio,10,Yunhong He
+neutral,0.981481481,trituenhantaoio,10,Yunhong He
+positive,0.993333333,trituenhantaoio,10,Yunhong He

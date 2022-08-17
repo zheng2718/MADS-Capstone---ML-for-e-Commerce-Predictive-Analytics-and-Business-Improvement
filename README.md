@@ -44,7 +44,7 @@ Project Organization
     ├── README.md               <- The top-level README for developers using this project.
     ├── data
     │   ├── external            <- Data from third party sources.
-    |   |── final               <- Final data of the project
+    |   |── final               <- File with final data of the project
     |       └──  
     |
     │   ├── interim             <- Intermediate data that has been transformed.

@@ -67,8 +67,11 @@ Project Organization
     ├── models                  <- Trained and serialized models, model predictions, or model summaries
     │
     ├── notebooks               <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                              the creator's name, and a short `-` delimited description, e.g.
-    │                               `1.0-jqp-initial-data-exploration`.
+    │   |                          the creator's name, and a short `-` delimited description, e.g.
+    │   |                          `1.0-jqp-initial-data-exploration`.
+    |   └── Sentiment_Analysis_Supervised_Machine_Learning_colab.ipynb
+    |   └── Sentiment_Analysis_Supervised_Machine_Learning_Model_Evaluation_local.ipynb
+    |   └── Sentiment_Analysis_BERT_Model_Evaluation.ipynb
     │
     ├── references              <- Data dictionaries, manuals, and all other explanatory materials.
     │

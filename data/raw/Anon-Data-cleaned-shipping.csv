@@ -1,0 +1,20 @@
+productId,orderItemId,paidPrice,unitPrice,sellerDiscountTotal,createTime,shippingDays,canceledDays,shippingDistrict,shippingRegion,shippingFee,status,buyerFailedDeliveryReason,payMethod,month
+512596106,2.73576E+14,384000,384000,,1/31/2021 23:19,1,1,Quận 11,Southern_Southeast,6092,delivered,,MIXEDCARD,1
+700404651,2.73588E+14,170000,190000,-20000,1/31/2021 23:11,2,2,Thành Phố Huế,Central_North_Central,2600,delivered,,MOMO_WALLET,1
+878868949,2.7358E+14,2235000,2385000,-150000,1/31/2021 23:11,-1,0,Quận Bình Thạnh,Southern_Southeast,0,canceled,payment_issue,DEFAULT_METHOD,1
+878868949,2.72791E+14,2205000,2385000,-180000,1/31/2021 23:10,2,2,Quận Bình Thạnh,Southern_Southeast,0,delivered,,MIXEDCARD,1
+804152294,2.72792E+14,499000,599000,-100000,1/31/2021 23:10,-1,0,Huyện Giao Thủy,North_RedRiver_Delta,139200,canceled,customer_change_decision,MOMO_WALLET,1
+996170912,2.73558E+14,790000,990000,-200000,1/31/2021 23:09,2,2,Quận Bình Thạnh,Southern_Southeast,0,delivered,,MIXEDCARD,1
+546738725,2.73556E+14,274550,289000,-14450,1/31/2021 23:06,2,2,Thành Phố Vũng Tàu,Southern_Southeast,0,delivered,,MOMO_WALLET,1
+546738725,2.73556E+14,274550,289000,-14450,1/31/2021 23:06,2,2,Thành Phố Vũng Tàu,Southern_Southeast,0,delivered,,MOMO_WALLET,1
+878868949,2.72782E+14,2205000,2385000,-180000,1/31/2021 23:03,4,4,Quận Tây Hồ,North_RedRiver_Delta,0,delivered,,MIXEDCARD,1
+996170912,2.7356E+14,790000,990000,-200000,1/31/2021 23:00,2,2,Quận 3,Southern_Southeast,0,delivered,,MIXEDCARD,1
+854036295,2.73546E+14,2513000,2693000,-180000,1/31/2021 22:51,17,6,Quận Ba Đình,North_RedRiver_Delta,0,returned,logistic_issue,COD,1
+878868949,2.73573E+14,2385000,2385000,,1/31/2021 22:31,21,21,Quận Hoàng Mai,North_RedRiver_Delta,0,delivered,,COD,1
+654896497,2.72749E+14,1619000,1799000,-180000,1/31/2021 22:25,-1,3,Quận Tân Bình,Southern_Southeast,0,canceled,payment_issue,DEFAULT_METHOD,1
+783532682,2.7279E+14,958000,1108000,-150000,1/31/2021 22:16,1,1,Quận 4,Southern_Southeast,0,delivered,,MIXEDCARD,1
+654896497,2.73579E+14,1619000,1799000,-180000,1/31/2021 22:16,4,4,Quận Hoàng Mai,North_RedRiver_Delta,0,delivered,,COD,1
+826188761,2.73586E+14,247000,267000,-20000,1/31/2021 22:11,2,2,Huyện Long Thành,Southern_Southeast,45100,delivered,,MIXEDCARD,1
+546472809,2.73574E+14,309000,309000,,1/31/2021 22:06,4,4,Quận Ba Đình,North_RedRiver_Delta,0,delivered,,MIXEDCARD,1
+996170912,2.7355E+14,790000,990000,-200000,1/31/2021 21:58,2,2,Quận 3,Southern_Southeast,0,delivered,,COD,1
+1070478372,2.73563E+14,3449000,3599000,-150000,1/31/2021 21:55,4,4,Thành Phố Vinh,Central_North_Central,0,delivered,,COD,1

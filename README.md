@@ -44,6 +44,9 @@ Project Organization
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
     │   ├── external       <- Data from third party sources.
+    |   |── final          <- Final data of the project
+    |       └──  
+    |
     │   ├── interim        <- Intermediate data that has been transformed.
     |   |   └── sentiment_analysis_reivew_emotion_predition.xlsx
     |   |   └── sentiment_analysis_trituenhantaoio_train_data_from_Yunhong He_Epoch1_accuracy_per_class_df.csv
@@ -57,6 +60,8 @@ Project Organization
     |   |   └── sentiment_analysis_reviews_label_split.csv
     │   └── raw            <- The original, immutable data dump.
     │       └── Git_mockup_reviews.xlsx
+    | 
+    |
     ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries

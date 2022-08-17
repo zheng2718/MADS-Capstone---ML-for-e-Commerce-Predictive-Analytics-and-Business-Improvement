@@ -232,7 +232,7 @@ def train_model(model, pre_trained_model, model_type, Ir, eps, attention_probs_d
 
             progress_bar.set_postfix({'training_loss': '{:.3f}'.format(loss.item() / len(batch))})
 
-        torch.save(model.state_dict(), f'c:\\Users\\heyun\\Capstone\\realtime_dreamer\\data\\processed\\sentiment_analysis_emotion_{model_type}_{epoch}.model')
+        torch.save(model.state_dict(), f'c:\\Users\\heyun\\Capstone\\realtime_dreamer\\models\\sentiment_analysis_emotion_{model_type}_{epoch}.model')
 
         tqdm.write(f'\nEpoch {epoch}')
 

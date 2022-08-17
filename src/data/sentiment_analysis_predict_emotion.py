@@ -12,9 +12,8 @@ tokenizer = BertTokenizer.from_pretrained(pre_trained_model, do_lower_case=True)
 label_dict = {'positive': 2, 'neutral': 1, 'negative': 0}
 label_dict_inverse = {v: k for k, v in label_dict.items()}
 model = sauf.build_Bert_model(pre_trained_model, attention_probs_dropout_prob, hidden_dropout_prob)
-best_model_path_interim = f'c:\\Users\\heyun\\Capstone\\realtime-dreamer\\data\\interim\\sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model'
-realtime_best_model_path_interim = f'c:\\Users\\heyun\\Capstone\\realtime_dreamer\\data\\interim\\sentiment_analysis_best_bert_model.model'
-model.load_state_dict(torch.load(best_model_path_interim, map_location=torch.device('cpu')))
+realtime_best_model_path_interim = f'c:\\Users\\heyun\\Capstone\\realtime_dreamer\\models\\sentiment_analysis_best_bert_model.model'
+model.load_state_dict(torch.load(realtime_best_model_path_interim, map_location=torch.device('cpu')))
 
 def predict_text(input_text):
     inputs = tokenizer(input_text.lower(), return_tensors="pt").to(device)

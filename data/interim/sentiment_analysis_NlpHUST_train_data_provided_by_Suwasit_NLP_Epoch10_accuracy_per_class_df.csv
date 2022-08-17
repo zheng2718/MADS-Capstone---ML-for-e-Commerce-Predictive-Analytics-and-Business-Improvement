@@ -1,0 +1,4 @@
+class,score,pre_trained_model,epoch,train_data_creator,train_data_type
+negative,0.6046511627906976,NlpHUST,10,Suwasit,Reviews-Suwasit Viet Team
+neutral,0.9445488721804511,NlpHUST,10,Suwasit,Reviews-Suwasit Viet Team
+positive,0.9649667405764967,NlpHUST,10,Suwasit,Reviews-Suwasit Viet Team

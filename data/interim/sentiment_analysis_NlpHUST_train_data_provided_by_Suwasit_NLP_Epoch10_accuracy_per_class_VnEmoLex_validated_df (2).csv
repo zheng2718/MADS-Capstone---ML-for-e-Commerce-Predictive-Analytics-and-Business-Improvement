@@ -1,0 +1,4 @@
+class,score,pre_trained_model,epoch,train_data_creator,train_data_type
+negative,0.493650794,NlpHUST,10,Suwasit,VnEmoLex Validate-Viet Team
+neutral,0.636363636,NlpHUST,10,Suwasit,VnEmoLex Validate-Viet Team
+positive,0.4875,NlpHUST,10,Suwasit,VnEmoLex Validate-Viet Team

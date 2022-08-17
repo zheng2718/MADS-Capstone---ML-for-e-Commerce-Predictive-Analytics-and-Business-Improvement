@@ -1,0 +1,4 @@
+class,score,pre_trained_model,epoch,train_data_creator,train_data_type
+negative,0.5755813953488372,bert-base-uncased,10,Suwasit,Reviews-Suwasit Viet Team
+neutral,0.9468984962406015,bert-base-uncased,10,Suwasit,Reviews-Suwasit Viet Team
+positive,0.9583148558758315,bert-base-uncased,10,Suwasit,Reviews-Suwasit Viet Team

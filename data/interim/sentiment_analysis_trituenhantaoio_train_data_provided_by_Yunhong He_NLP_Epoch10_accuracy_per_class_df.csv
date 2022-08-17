@@ -1,0 +1,4 @@
+class,score,pre_trained_model,epoch,train_data_creator,train_data_type
+negative,1.0,trituenhantaoio,10,Yunhong He,Yunhong Keyword + oversample
+neutral,0.9814814814814815,trituenhantaoio,10,Yunhong He,Yunhong Keyword + oversample
+positive,0.9933333333333333,trituenhantaoio,10,Yunhong He,Yunhong Keyword + oversample

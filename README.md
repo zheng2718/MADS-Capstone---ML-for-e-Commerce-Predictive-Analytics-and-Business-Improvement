@@ -46,101 +46,102 @@ Zheng Wei Lim used E-Commerce data to train Supervised ML algorithms, conducted 
 Project Organization
 ------------
 
-    ├── LICENSE
-    ├── Makefile                <- Makefile with commands like `make data` or `make train`
-    ├── README.md               <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external            <- Data from third party sources.
-    |   └── final               <- File with final data of the project
-    |       
-    |
-    │   ├── interim             <- Intermediate data that has been transformed. Files are used in sentiment analysis BERT model evaluation
-    |   |   └── sentiment_analysis_reivew_emotion_predition.xlsx
-    |   |   └── sentiment_analysis_trituenhantaoio_train_data_from_Yunhong He_Epoch1_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_Epoch1_train_data_from_Yunhong He_eval_df.csv
-    |   |   └── model_info.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_before_oversample_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_before_oversample_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
-    |   |   └── sentiment_analysis_NlpHUST_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_NlpHUST_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_VnEmoLex_validated_df.csv
-    |   |   └── sentiment_analysis_NlpHUST_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_NlpHUST_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
-    |   |   └── sentiment_analysis_NlpHUST_NLP_Epoch10_train_data_provided_by_Suwasit_eval_VnEmoLex_validated_df.csv
-    |   |   └── sentiment_analysis_NlpHUST_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
-    |   |   └── sentiment_analysis_bert-base-uncased_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_bert-base-uncased_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_bert-base-uncased_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
-    |   |   └── sentiment_analysis_bert-base-uncased_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
-    |   |   
-    |   |   
-    |   |   
-    |   |   
-    │   ├── processed           <- The final, canonical data sets for modeling.
-    │   │   └── Git_mockup_reviews_processed.xlsx
-    │   │   └── sentiment_analysis_reviews_label.xlsx
-    │   │   └── sentiment_analysis_reviews_label_processed.csv
-    |   |   └── sentiment_analysis_reviews_label_split.csv
-    |   |
-    │   └── raw                 <- The original, immutable data dump.
-    │       └── Git_mockup_reviews.xlsx
-    | 
-    |
-    ├── docs                    <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models                  <- Trained and serialized models, model predictions, or model summaries 
-    |   └── sentiment_analysis_best_bert_model.model  <- link: https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
-    │   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model  <- link:
-    |       https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing
-    |
-    ├── notebooks               <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │   |                          the creator's name, and a short `-` delimited description, e.g.
-    │   |                          `1.0-jqp-initial-data-exploration`.
-    |   └── Sentiment_Analysis_Supervised_Machine_Learning_colab.ipynb  <- Complete Reviews label dataset is run in it which can be run in Colab.
-    |   └── Sentiment_Analysis_Supervised_Machine_Learning_Model_Evaluation_local.ipynb <- Complete Reviews label dataset is run in it
-    |   └── Sentiment_Analysis_BERT_Model_Evaluation.ipynb <- Complete Reviews label dataset is run in it which generates evaluation visualizations.
-    |   └── Sentiment_Analysis_BERT_Model_Evaluation.zip <- This notebook zip file can preserve the BERT model evaluation visualizations.
-    │
-    ├── references              <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports                 <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures             <- Generated graphics and figures to be used in reporting
-    |       └── sentiment analysis - model evaluation by individual class prediction accuracy - visualization.png
-    |       └── sentiment analysis - model evaluation by metrics - visualization.png
-    |       └── sentiment analysis - model evaluation by pre-trained bert model - visualization.png
-    |       └── sentiment analysis - supervised ml model evaluation - visualization.png
-    |       └── sentiment analysis - imbalanced classes before oversampling - visualization.png
-    │
-    ├── requirements.txt        <- The requirements file for reproducing the analysis environment, e.g.
-    │                              generated with `pip freeze > requirements.txt`
-    │
-    |── sentiment_analysis.sh   <- The bash file to run sentiment_analysis pipeline.
-    |
-    ├── setup.py                <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                     <- Source code for use in this project.
-    │   ├── __init__.py         <- Makes src a Python module
-    │   │
-    │   ├── data                <- Scripts to download or generate data
-    │   │   └── sentiment_analysis_data_utility_functions.py
-    |   |   └── sentiment_analysis_predict_emotion.py
-    |   |   └── sentiment_analysis_prepare_review_label.py
-    |   |   └── sentiment_analysis_utility_functions.py
-    │   │
-    │   ├── features            <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models              <- Scripts to train models and then use trained models to make
-    │   │   │                      predictions
-    │   │   ├── sentiment_analysis_train_bert_model.py
-    │   │   └── sentiment_analysis_utility_functions.py
-    │   │
-    │   └── visualization       <- Scripts to create exploratory and results oriented visualizations
-    │       
-    │
-    └── tox.ini                 <- tox file with settings for running tox; see tox.readthedocs.io
+├── LICENSE
+├── Makefile                <- Makefile with commands like `make data` or `make train`
+├── README.md               <- The top-level README for developers using this project.
+├── data
+│   ├── external            <- Data from third party sources.
+|   └── final               <- File with final data of the project
+|       
+|
+│   ├── interim             <- Intermediate data that has been transformed. Files are used in sentiment analysis BERT model evaluation
+|   |   └── sentiment_analysis_reivew_emotion_predition.xlsx
+|   |   └── sentiment_analysis_trituenhantaoio_train_data_from_Yunhong He_Epoch1_accuracy_per_class_df.csv
+|   |   └── sentiment_analysis_trituenhantaoio_Epoch1_train_data_from_Yunhong He_eval_df.csv
+|   |   └── model_info.csv
+|   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
+|   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_before_oversample_df.csv
+|   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
+|   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
+|   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_before_oversample_df.csv
+|   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
+|   |   └── sentiment_analysis_NlpHUST_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
+|   |   └── sentiment_analysis_NlpHUST_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_VnEmoLex_validated_df.csv
+|   |   └── sentiment_analysis_NlpHUST_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
+|   |   └── sentiment_analysis_NlpHUST_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
+|   |   └── sentiment_analysis_NlpHUST_NLP_Epoch10_train_data_provided_by_Suwasit_eval_VnEmoLex_validated_df.csv
+|   |   └── sentiment_analysis_NlpHUST_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
+|   |   └── sentiment_analysis_bert-base-uncased_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
+|   |   └── sentiment_analysis_bert-base-uncased_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
+|   |   └── sentiment_analysis_bert-base-uncased_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
+|   |   └── sentiment_analysis_bert-base-uncased_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
+|   |   
+|   |   
+|   |   
+|   |   
+│   ├── processed           <- The final, canonical data sets for modeling.
+│   │   └── Git_mockup_reviews_processed.xlsx
+│   │   └── sentiment_analysis_reviews_label.xlsx
+│   │   └── sentiment_analysis_reviews_label_processed.csv
+|   |   └── sentiment_analysis_reviews_label_split.csv
+|   |
+│   └── raw                 <- The original, immutable data dump.
+│       └── Git_mockup_reviews.xlsx
+| 
+|
+├── docs                    <- A default Sphinx project; see sphinx-doc.org for details
+│
+├── models                  <- Trained and serialized models, model predictions, or model summaries 
+|   └── sentiment_analysis_best_bert_model.model  <- link: 
+|       https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
+│   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model  <- link:
+|       https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing
+|
+├── notebooks               <- Jupyter notebooks. Naming convention is a number (for ordering),
+│   |                          the creator's name, and a short `-` delimited description, e.g.
+│   |                          `1.0-jqp-initial-data-exploration`.
+|   └── Sentiment_Analysis_Supervised_Machine_Learning_colab.ipynb  <- Complete Reviews label dataset is run in it.
+|   └── Sentiment_Analysis_Supervised_Machine_Learning_Model_Evaluation_local.ipynb <- Complete Reviews label dataset is run in it
+|   └── Sentiment_Analysis_BERT_Model_Evaluation.ipynb <- Complete Reviews label dataset is run in this notebook
+|   └── Sentiment_Analysis_BERT_Model_Evaluation.zip <- This notebook zip file can preserve the BERT model evaluation visualizations.
+│
+├── references              <- Data dictionaries, manuals, and all other explanatory materials.
+│
+├── reports                 <- Generated analysis as HTML, PDF, LaTeX, etc.
+│   └── figures             <- Generated graphics and figures to be used in reporting
+|       └── sentiment analysis - model evaluation by individual class prediction accuracy - visualization.png
+|       └── sentiment analysis - model evaluation by metrics - visualization.png
+|       └── sentiment analysis - model evaluation by pre-trained bert model - visualization.png
+|       └── sentiment analysis - supervised ml model evaluation - visualization.png
+|       └── sentiment analysis - imbalanced classes before oversampling - visualization.png
+│
+├── requirements.txt        <- The requirements file for reproducing the analysis environment, e.g.
+│                              generated with `pip freeze > requirements.txt`
+│
+|── sentiment_analysis.sh   <- The bash file to run sentiment_analysis pipeline.
+|
+├── setup.py                <- makes project pip installable (pip install -e .) so src can be imported
+├── src                     <- Source code for use in this project.
+│   ├── __init__.py         <- Makes src a Python module
+│   │
+│   ├── data                <- Scripts to download or generate data
+│   │   └── sentiment_analysis_data_utility_functions.py
+|   |   └── sentiment_analysis_predict_emotion.py
+|   |   └── sentiment_analysis_prepare_review_label.py
+|   |   └── sentiment_analysis_utility_functions.py
+│   │
+│   ├── features            <- Scripts to turn raw data into features for modeling
+│   │   └── build_features.py
+│   │
+│   ├── models              <- Scripts to train models and then use trained models to make
+│   │   │                      predictions
+│   │   ├── sentiment_analysis_train_bert_model.py
+│   │   └── sentiment_analysis_utility_functions.py
+│   │
+│   └── visualization       <- Scripts to create exploratory and results oriented visualizations
+│       
+│
+└── tox.ini                 <- tox file with settings for running tox; see tox.readthedocs.io
 
 
 --------

@@ -99,10 +99,10 @@ Project Organization
     ├── notebooks               <- Jupyter notebooks. A naming convention is a number (for ordering),
     │   |                          the creator's name, and a short `-` delimited description, e.g.
     │   |                          `1.0-jqp-initial-data-exploration.
-    |   └── Sentiment_Analysis_Supervised_Machine_Learning_colab.ipynb   <- Complete Reviews label dataset is run in this python notebook which can be run in Colab.
-    |   └── Sentiment_Analysis_Supervised_Machine_Learning_Model_Evaluation_local.ipynb <- Complete Reviews label dataset is run in this python notebook
-    |   └── Sentiment_Analysis_BERT_Model_Evaluation.ipynb <- Complete Reviews label dataset is run in this notebook which generates BERT models and evaluation figures. 
-    |   └── Sentiment_Analysis_BERT_Model_Evaluation.zip  <- Using zip file to preserve the visualizations generated in Sentiment_Analysis_BERT_Model_Evaluation.ipynb 
+    |   └── Sentiment_Analysis_Supervised_Machine_Learning_colab.ipynb   <- Complete Reviews label dataset is run in this python notebook.
+    |   └── Sentiment_Analysis_Supervised_Machine_Learning_Model_Evaluation_local.ipynb <- Complete Reviews label dataset is run in this notebook
+    |   └── Sentiment_Analysis_BERT_Model_Evaluation.ipynb <- Complete Reviews label dataset is run in this notebook.
+    |   └── Sentiment_Analysis_BERT_Model_Evaluation.zip  <- Using zip file to preserve the visualizations in the notebook. 
     │
     ├── references              <- Data dictionaries, manuals, and all other explanatory materials.
     │

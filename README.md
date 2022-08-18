@@ -105,11 +105,16 @@ Project Organization
     ├── notebooks               <- Jupyter notebooks. A naming convention is a number (for ordering),
     │   |                          the creator's name, and a short `-` delimited description, e.g.
     │   |                          `1.0-jqp-initial-data-exploration.
-    |   └── Sentiment_Analysis_Supervised_Machine_Learning_colab.ipynb   <- Complete Reviews label dataset is run.
-    |   └── Sentiment_Analysis_Supervised_Machine_Learning_Model_Evaluation_local.ipynb <- Complete Reviews label dataset is run.
-    |   └── Sentiment_Analysis_BERT_Model_Evaluation.ipynb <- Complete Reviews label dataset is run in this notebook.
-    |   └── Sentiment_Analysis_BERT_Model_Evaluation.zip  <- Using zip file to preserve the visualizations in the notebook.
-    |   └── Model-Shipping-ProductPerformance-ReviewEmotion.ipynb  <- Predictive modeling on all merged data for sales forecasting
+    |   └── Sentiment_Analysis_Supervised_Machine_Learning_colab.ipynb   
+    |       <- Complete Reviews label dataset is run in the notebook which can be run in Google Colab.
+    |   └── Sentiment_Analysis_Supervised_Machine_Learning_Model_Evaluation_local.ipynb 
+    |       <- Complete Reviews label dataset is run in this notebook.
+    |   └── Sentiment_Analysis_BERT_Model_Evaluation.ipynb 
+    |       <- Complete Reviews label dataset is run in this notebook.
+    |   └── Sentiment_Analysis_BERT_Model_Evaluation.zip  
+    |       <- Using zip file of the notebook to preserve the visualizations in the notebook.
+    |   └── Model-Shipping-ProductPerformance-ReviewEmotion.ipynb  
+    |       <- Predictive modeling on all merged data for sales forecasting
     |   └── Analytics-Shipping-Review.ipynb  <- EDA and visualization on shipping and review data
     │
     ├── references              <- Data dictionaries, manuals, and all other explanatory materials.

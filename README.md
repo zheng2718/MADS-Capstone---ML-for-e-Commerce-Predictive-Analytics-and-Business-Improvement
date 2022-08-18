@@ -54,7 +54,7 @@ Project Organization
     |   └── final               <- File with final data of the project
     |       
     |
-    │   ├── interim             <- Intermediate data that has been transformed. Files are used in sentiment analysis BERT model evaluation
+    │   ├── interim             <- Intermediate data that has been transformed. Files with BERT model evaluation metrics.
     |   |   └── sentiment_analysis_reivew_emotion_predition.xlsx
     |   |   └── sentiment_analysis_trituenhantaoio_train_data_from_Yunhong He_Epoch1_accuracy_per_class_df.csv
     |   |   └── sentiment_analysis_trituenhantaoio_Epoch1_train_data_from_Yunhong He_eval_df.csv
@@ -92,15 +92,16 @@ Project Organization
     ├── docs                    <- A default Sphinx project; see sphinx-doc.org for details
     │
     ├── models                  <- Trained and serialized models, model predictions, or model summaries 
-    |   └── sentiment_analysis_best_bert_model.model  <- link: https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
+    |   └── sentiment_analysis_best_bert_model.model  <- link for this model: 
+    |       https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
     │   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model  <- link for this model:   
     |        https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing
     |
     ├── notebooks               <- Jupyter notebooks. A naming convention is a number (for ordering),
     │   |                          the creator's name, and a short `-` delimited description, e.g.
     │   |                          `1.0-jqp-initial-data-exploration.
-    |   └── Sentiment_Analysis_Supervised_Machine_Learning_colab.ipynb   <- Complete Reviews label dataset is run in this python notebook.
-    |   └── Sentiment_Analysis_Supervised_Machine_Learning_Model_Evaluation_local.ipynb <- Complete Reviews label dataset is run in this notebook
+    |   └── Sentiment_Analysis_Supervised_Machine_Learning_colab.ipynb   <- Complete Reviews label dataset is run.
+    |   └── Sentiment_Analysis_Supervised_Machine_Learning_Model_Evaluation_local.ipynb <- Complete Reviews label dataset is run.
     |   └── Sentiment_Analysis_BERT_Model_Evaluation.ipynb <- Complete Reviews label dataset is run in this notebook.
     |   └── Sentiment_Analysis_BERT_Model_Evaluation.zip  <- Using zip file to preserve the visualizations in the notebook. 
     │

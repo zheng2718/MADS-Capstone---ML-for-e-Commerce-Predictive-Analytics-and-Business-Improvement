@@ -40,7 +40,7 @@ Kensuke Suzuki used user id, product, and customer rating to train the Memory-Ba
 
 4.	Machine Learning for Sales Prediction
 
-Zheng Wei Lim used E-Commerce data to train Supervised ML algorithms and conducted feature engineering. Performed model evaluation of multiple Supervised ML algorithms, and produce visualizations. 
+Zheng Wei Lim used E-Commerce data to develop supervised ML algorithms through feature engineering, model evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning and visualizations. 
 
 
 Project Organization
@@ -84,9 +84,13 @@ Project Organization
     │   │   └── sentiment_analysis_reviews_label.xlsx
     │   │   └── sentiment_analysis_reviews_label_processed.csv
     |   |   └── sentiment_analysis_reviews_label_split.csv
+    |   |   └── Anon-Data-merged-ship-reviewemotion-productperformance.csv
     |   |
     │   └── raw                 <- The original, immutable data dump.
     │       └── Git_mockup_reviews.xlsx
+    │       └── Anon-Data-productperformance17months.csv 
+    │       └── Anon-Data-Review-Emotion-Prediction.xlsx 
+    │       └── Anon-Data-cleaned-shipping.csv
     | 
     |
     ├── docs                    <- A default Sphinx project; see sphinx-doc.org for details
@@ -96,6 +100,7 @@ Project Organization
     |       https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
     │   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model  <- link for this model:   
     |        https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing
+    │   └── predictive-final-model.sav <- final XGBoost Random Forest model for sales prediction    
     |
     ├── notebooks               <- Jupyter notebooks. A naming convention is a number (for ordering),
     │   |                          the creator's name, and a short `-` delimited description, e.g.
@@ -103,7 +108,9 @@ Project Organization
     |   └── Sentiment_Analysis_Supervised_Machine_Learning_colab.ipynb   <- Complete Reviews label dataset is run.
     |   └── Sentiment_Analysis_Supervised_Machine_Learning_Model_Evaluation_local.ipynb <- Complete Reviews label dataset is run.
     |   └── Sentiment_Analysis_BERT_Model_Evaluation.ipynb <- Complete Reviews label dataset is run in this notebook.
-    |   └── Sentiment_Analysis_BERT_Model_Evaluation.zip  <- Using zip file to preserve the visualizations in the notebook. 
+    |   └── Sentiment_Analysis_BERT_Model_Evaluation.zip  <- Using zip file to preserve the visualizations in the notebook.
+    |   └── Model-Shipping-ProductPerformance-ReviewEmotion.ipynb  <- Predictive modeling on all merged data for sales forecasting
+    |   └── Analytics-Shipping-Review.ipynb  <- EDA and visualization on shipping and review data
     │
     ├── references              <- Data dictionaries, manuals, and all other explanatory materials.
     │

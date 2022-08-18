@@ -52,7 +52,7 @@ Project Organization
     ├── data
     │   ├── external            <- Data from third party sources.
     |   └── final               <- File with final data of the project
-    |       └──  
+    |       
     |
     │   ├── interim             <- Intermediate data that has been transformed. Files are used in sentiment analysis BERT model evaluation
     |   |   └── sentiment_analysis_reivew_emotion_predition.xlsx
@@ -75,9 +75,9 @@ Project Organization
     |   |   └── sentiment_analysis_bert-base-uncased_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
     |   |   └── sentiment_analysis_bert-base-uncased_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
     |   |   └── sentiment_analysis_bert-base-uncased_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
-    |   |   └──
-    |   |   └──
-    |   |   └──
+    |   |   
+    |   |   
+    |   |   
     |   |   
     │   ├── processed           <- The final, canonical data sets for modeling.
     │   │   └── Git_mockup_reviews_processed.xlsx

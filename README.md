@@ -60,7 +60,7 @@ Project Organization
     |   |   └── sentiment_analysis_trituenhantaoio_Epoch1_train_data_from_Yunhong He_eval_df.csv
     |   |   └── model_info.csv
     |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_trainData_from_YunhongHe_Epoch10_accuracyPerClass_before_oversample.csv
+    |   |   └── sentiment_analysis_trituenhantaoio_trainData_Fr_YunhongHe_Epoch10_accuracyPerClass_beforeOversample.csv
     |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
     |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
     |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_before_oversample_df.csv

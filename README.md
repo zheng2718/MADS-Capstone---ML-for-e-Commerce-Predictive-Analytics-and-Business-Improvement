@@ -21,13 +21,17 @@ Links:
 (2) The link to sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model is  https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing
 
 Sample files:
+
 (1) Customer review label dataset at C:\Users\heyun\Capstone\realtime_dreamer\data\processed\sentiment_analysis_reviews_label.xlsx is the small sample of the file '/content/drive/MyDrive/Realtime Dreamer/train reviews.xlsx' used in notebooks\Sentiment_Analysis_BERT_Model_Evaluation.ipynb. Column "emotion" is labelled by Yunhong He using keyword search method to select positive and negative customer reviews after eye scan.
 
 (2) Customer reviews dataset at C:\Users\heyun\Capstone\realtime_dreamer\data\processed\Git_mockup_reviews_processed.xlsx is the small sample of the customer review file 'drive/MyDrive/Realtime Dreamer/Tefal Lazada Product Reviews in TTL202207_Updated_Good_Bad.xlsx' used in notebooks\Sentiment_Analysis_BERT_Model_Evaluation.ipynb. Column "Comment classified Type 1" is labelled by Vietnamese team.
 
 BERT model evaluation files:
+
 Below evaluation files are generated in Sentiment_Analysis_BERT_Model_Evaluation.ipynb and Sentiment_Analysis_BERT_Model_Evaluation.zip, and are used to produce BERT model evaluation visualizations:
+
 model_info.csv, sentiment_analysis_...accuracy_per_class_df.csv, sentiment_analysis_...eval_df.csv, sentiment_analysis_...eval_VnEmoLex_validated_df.csv,  sentiment_analysis_...accuracy_per_class_VnEmoLex_validated_df.csv, sentiment_analysis_...eval_before_oversample_df.csv and sentiment_analysis_...accuracy_per_class_before_oversample_df.csv.
+
 
 3.	Recommendation system
 

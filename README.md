@@ -60,7 +60,7 @@ Project Organization
     |   |   └── sentiment_analysis_trituenhantaoio_Epoch1_train_data_from_Yunhong He_eval_df.csv
     |   |   └── model_info.csv
     |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_train_data_from_Yunhong He_Epoch10_accuracy_per_class_before_oversample_df.csv
+    |   |   └── sentiment_analysis_trituenhantaoio_trainData_from_YunhongHe_Epoch10_accuracyPerClass_before_oversample.csv
     |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
     |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
     |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_before_oversample_df.csv
@@ -98,8 +98,8 @@ Project Organization
     ├── models                  <- Trained and serialized models, model predictions, or model summaries 
     |   └── sentiment_analysis_best_bert_model.model  <- link for this model: 
     |       https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
-    │   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model  <- link for this model:   
-    |        https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing
+    │   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model  
+    |        <- link: https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing
     │   └── predictive-final-model.sav <- final XGBoost Random Forest model for sales prediction    
     |
     ├── notebooks               <- Jupyter notebooks. A naming convention is a number (for ordering),

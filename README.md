@@ -25,6 +25,9 @@ Sample files:
 
 (2) Customer reviews dataset at C:\Users\heyun\Capstone\realtime_dreamer\data\processed\Git_mockup_reviews_processed.xlsx is the small sample of the customer review file 'drive/MyDrive/Realtime Dreamer/Tefal Lazada Product Reviews in TTL202207_Updated_Good_Bad.xlsx' used in notebooks\Sentiment_Analysis_BERT_Model_Evaluation.ipynb. Column "Comment classified Type 1" is labelled by Vietnamese team.
 
+BERT model evaluation files:
+Below evaluation files are generated in Sentiment_Analysis_BERT_Model_Evaluation.ipynb and Sentiment_Analysis_BERT_Model_Evaluation.zip, and are used to produce BERT model evaluation visualizations:
+model_info.csv, sentiment_analysis_...accuracy_per_class_df.csv, sentiment_analysis_...eval_df.csv, sentiment_analysis_...eval_VnEmoLex_validated_df.csv,  sentiment_analysis_...accuracy_per_class_VnEmoLex_validated_df.csv, sentiment_analysis_...eval_before_oversample_df.csv and sentiment_analysis_...accuracy_per_class_before_oversample_df.csv.
 
 3.	Recommendation system
 
@@ -47,18 +50,37 @@ Project Organization
     |   └── final               <- File with final data of the project
     |       └──  
     |
-    │   ├── interim             <- Intermediate data that has been transformed.
+    │   ├── interim             <- Intermediate data that has been transformed. Files are used in sentiment analysis BERT model evaluation
     |   |   └── sentiment_analysis_reivew_emotion_predition.xlsx
     |   |   └── sentiment_analysis_trituenhantaoio_train_data_from_Yunhong He_Epoch1_accuracy_per_class_df.csv
     |   |   └── sentiment_analysis_trituenhantaoio_Epoch1_train_data_from_Yunhong He_eval_df.csv
-    |   |   
+    |   |   └── model_info.csv
+    |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
+    |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_before_oversample_df.csv
+    |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
+    |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
+    |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_before_oversample_df.csv
+    |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
+    |   |   └── sentiment_analysis_NlpHUST_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
+    |   |   └── sentiment_analysis_NlpHUST_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_VnEmoLex_validated_df.csv
+    |   |   └── sentiment_analysis_NlpHUST_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
+    |   |   └── sentiment_analysis_NlpHUST_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
+    |   |   └── sentiment_analysis_NlpHUST_NLP_Epoch10_train_data_provided_by_Suwasit_eval_VnEmoLex_validated_df.csv
+    |   |   └── sentiment_analysis_NlpHUST_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
+    |   |   └── sentiment_analysis_bert-base-uncased_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
+    |   |   └── sentiment_analysis_bert-base-uncased_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
+    |   |   └── sentiment_analysis_bert-base-uncased_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
+    |   |   └── sentiment_analysis_bert-base-uncased_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
+    |   |   └──
+    |   |   └──
+    |   |   └──
     |   |   
     │   ├── processed           <- The final, canonical data sets for modeling.
     │   │   └── Git_mockup_reviews_processed.xlsx
     │   │   └── sentiment_analysis_reviews_label.xlsx
     │   │   └── sentiment_analysis_reviews_label_processed.csv
     |   |   └── sentiment_analysis_reviews_label_split.csv
-        |
+    |   |
     │   └── raw                 <- The original, immutable data dump.
     │       └── Git_mockup_reviews.xlsx
     | 

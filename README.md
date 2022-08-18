@@ -92,7 +92,7 @@ Project Organization
     ├── docs                    <- A default Sphinx project; see sphinx-doc.org for details
     │
     ├── models                  <- Trained and serialized models, model predictions, or model summaries 
-    |   └── sentiment_analysis_best_bert_model.model  <- link for this model: https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
+    |   └── sentiment_analysis_best_bert_model.model  <- link: https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
     │   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model  <- link for this model:   
     |        https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing
     |

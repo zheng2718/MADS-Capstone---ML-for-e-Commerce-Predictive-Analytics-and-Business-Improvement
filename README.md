@@ -6,11 +6,13 @@ This Realtime Dreamer project is to use real Ecommerce data to perform NLP for V
 
 1.	Customer Reviews Type classification
  
-This task is to build a NLP model to predict the review classes using the Reviews dataset. The data collection process was completed by the customer service team, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, labeling the type of the review manually, as shown in the example below:
+This task is to build a NLP model to predict the review classes using the Reviews dataset. The data collection process was completed by the customer service team, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, labeling the type of the review manually
+
+The pipeline script of this task created: reviewtype_script_.sh
  
  
 Google Colab set up  and installation
-To use PhoBERT model, we need GPU resources. Google Colab offers free GPU and TPU! Since we will be training a large neural network, we will need to take full advantage of this.
+To use PhoBERT model, we need GPU resources. Google Colab offers free GPU. Since we will be training a large neural network, we will need to take full advantage of this.
 
 GPUs can be added by going to the menu and selecting: Edit -> Notebook Settings -> Add accelerator ( GPU )
 
@@ -26,23 +28,24 @@ For this task, we adopted a model called PHO_BERT, a BERT base program (Bidirect
 <img width="441" alt="Screen Shot 2565-08-19 at 22 46 25" src="https://user-images.githubusercontent.com/100912986/185657495-4b1c93b2-90a3-4fc0-985c-152225ab1d64.png">
  
  
-Data loading and preparation: src/data/reviewtype__prepare_review_label.py
+Data loading and preparation
 It will load, clean, and up-sample data to handle the two minority classes imbalanced. This process will take raw Reviews data  (stored in /data/raw/Git_mockup_review.xlsx. )
 
 
 And output reviewType_pre_process.csv
  
  
-Train_test_split the data src/data/reviewtype__train_test_val_split.py
+Train_test_split the data 
+
 We split data to Train and Test set , with test size =0.2 and then we split the Train data again to train_df and Val_df for model training and model loss validation, the process will take input of reviewType_pre_process.csv  and output reviewType_df_upload.csv ready to transmit to the dataloader function.
  
  
-Training (reviewType_train_phobert.py)
+Train the Phobert model
  
 reviewtype__train_test_val_split.py in src/data/ will  import PhoBERT's word separator (Tokenization) ,’vinai/phobert-base’ as below 
- 
-from transformers import AutoModel, AutoTokenizer
-from transformers import BertForSequenceClassification, BertTokenizer, AdamW, get_linear_schedule_with_warmup, AutoModel, AutoTokenizer
+ <img width="1100" alt="Screen Shot 2565-08-19 at 23 15 18" src="https://user-images.githubusercontent.com/100912986/185662455-03f91b69-d32d-4d53-a724-07d8aaef50fb.png">
+
+
  
  
 Then we select Phobert  Vietnamese NLP as Tokenizer
@@ -52,6 +55,7 @@ Then we select Phobert  Vietnamese NLP as Tokenizer
 
  
 which is used to convert the text into tokens corresponding to PhoBERT's lexicon. We load BertForSequenceClassification, which is a regular BERT model with a single linear layer added above for classification (Khanh, 2020). This process will be used to classify sentences. Once we provide the input data, the entire pre-trained BERT model and classifier will be trained with our specific task.
+
 
  <img width="464" alt="Screen Shot 2565-08-19 at 22 48 29" src="https://user-images.githubusercontent.com/100912986/185657647-227f228d-9160-4249-8cfe-94e8373da4f4.png">
 
@@ -89,6 +93,7 @@ Again the best model is “Phobert- upsampling minority lass, which able to prov
 
 In conclusion
 We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. For this reason, it is the best algorithm to predict the reviews classification tasks because of its superiority compared to other algorithms. While the data imbalance was an issue due to moderate, we overcame it by over-sampling the minority. The outcome was optimal based on the elements of the task and no data preprocessing. The Phobert model requires parameter tuning, and from the results, we were able to increase hidden dropout to 0.4.
+
 
 
 2.	Sentiment analysis for customer reviews

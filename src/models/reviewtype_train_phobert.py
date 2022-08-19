@@ -45,7 +45,7 @@ if __name__ == '__main__':
 
     import argparse
     path_data_final ='data/final/'
-    path_data_interim=+'reviewtype_pho_bert_eval_df.csv'
+    path_data_interim= 'data/interim/'
     
     parser = argparse.ArgumentParser()
     parser.add_argument('input_file', help='sentiment analysis reviews label data with train and validation split(csv)')

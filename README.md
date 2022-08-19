@@ -167,7 +167,7 @@ Hugging Face pre-trained BERT model trituenhantaoio/bert-base-vietnamese-uncased
 (b) Customer reviews dataset at C:\Users\heyun\Capstone\realtime_dreamer\data\processed\Git_mockup_reviews_processed.xlsx is the small sample of the customer review file 'drive/MyDrive/Realtime Dreamer/Tefal Lazada Product Reviews in TTL202207_Updated_Good_Bad.xlsx' used in notebooks\Sentiment_Analysis_BERT_Model_Evaluation.ipynb. Column "Comment classified Type 1" is labeled by the Vietnamese team.
 
 
-(C) BERT model evaluation files:
+(c) BERT model evaluation files:
 
 Sentiment analysis model evaluation files are generated in Sentiment_Analysis_BERT_Model_Evaluation.ipynb and Sentiment_Analysis_BERT_Model_Evaluation.zip, and are used to produce BERT model evaluation visualizations, located at https://github.com/yunhonghe/realtime_dreamer/tree/main/data/interim
 

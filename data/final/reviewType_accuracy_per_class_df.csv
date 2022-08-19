@@ -1,0 +1,6 @@
+class,score,pre_trained_model,epoch,train_data_creator
+Product,0.9309153713298791,vinai,20,Suwasit
+Quality,0.8189448441247003,vinai,20,Suwasit
+Logistic,0.8051948051948052,vinai,20,Suwasit
+Sale,0.9083557951482479,vinai,20,Suwasit
+Service,0.821608040201005,vinai,20,Suwasit

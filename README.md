@@ -114,7 +114,7 @@ Yunhong He created reviews label dataset, trained and evaluated 3 Hugging Face P
 
 Yunhong He used clear positive and negative keyword search and eye scan to select customer reviews for emotion labeling. There is imbalanced data in train reviews.xlsx. 8% of the labels are negative class while 87% of the labels are positive class.  As the task mainly focuses on finding the reviews with 4 or 5 ratings but have negative emotions, F1 macro score is important for model evaluation. Oversampling negative class by random.choices function can make the size of negative class as same as that of positive class.
 
-<img width="300" alt="Sentiment Analysis Imbalanced Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20imbalanced%20classes%20before%20oversampling%20-%20visualization.png">
+<img width="250" alt="Sentiment Analysis Imbalanced Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20imbalanced%20classes%20before%20oversampling%20-%20visualization.png">
 
 
 (2) Model Selection and Evaluation
@@ -137,12 +137,11 @@ Model performance focus on the F1 macro score due to the imbalanced label for th
 
 <img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Metrics" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20metrics%20-%20visualization.png">
 
-<img width="1000" alt="Sentiment Analysis Model Evaluation by Classification Accuracy of Individual Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20individual%20class%20prediction%20accuracy%20-%20visualization.png">
+<img width="800" alt="Sentiment Analysis Model Evaluation by Classification Accuracy of Individual Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20individual%20class%20prediction%20accuracy%20-%20visualization.png">
 
 
 Below are the links to the sentiment analysis BERT models generated.
 
-Links:
 (1) The link to /models/sentiment_analysis_best_bert_model.model is https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
 
 (2) The link to /models/sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model is  https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing

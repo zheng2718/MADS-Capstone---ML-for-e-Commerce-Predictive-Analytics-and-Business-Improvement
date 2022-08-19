@@ -227,7 +227,7 @@ Project Organization
     |   └── final               <- File with final data of the project
     |       └── reviewtype__accuracy_per_class_df.csv
     |       └── reviewtype_phobert_model.pt
-    
+    | 
     |
     │   ├── interim             <- Intermediate data that has been transformed. Files with BERT model evaluation metrics.
     |   |   └── sentiment_analysis_reivew_emotion_predition.xlsx
@@ -306,6 +306,7 @@ Project Organization
     |       └── sentiment analysis - model evaluation by pre-trained bert model - visualization.png
     |       └── sentiment analysis - supervised ml model evaluation - visualization.png
     |       └── sentiment analysis - imbalanced classes before oversampling - visualization.png
+    |       └── sentiment analysis - models
     |       └── reviewType_model_compare_traditional.png
     |       └── reviewType_model_compare.png
     |       └── confusion_phobert.png

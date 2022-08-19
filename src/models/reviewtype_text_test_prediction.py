@@ -41,7 +41,7 @@ def predict_text(input_text):
 
 
 
-model_path = '/content/drive/MyDrive/git_pipeline_capstone/reviewtype_phobert_model.pt'
+model_path = 'data/final/reviewtype_phobert_model.pt'
 model = torch.load(model_path)
 model.eval()
 

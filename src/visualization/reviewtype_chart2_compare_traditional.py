@@ -31,8 +31,9 @@ from altair_saver import save
 
 if __name__ == '__main__':
     import argparse
+    path_visualization='src/visualization/'
     parser = argparse.ArgumentParser()
     model_compare_chart = rcuf.compare_tranditional()   
-    save(model_compare_chart, '/content/drive/MyDrive/git_pipeline_capstone/reviewType_model_compare_traditional.png')
+    save(model_compare_chart, path_visualization+'reviewType_model_compare_traditional.png')
     print('The comparison chart is now ready..please check.')
 

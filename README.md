@@ -69,49 +69,7 @@ model = BertForSequenceClassification.from_pretrained(
                                         )
  
 We set the training loop by asking the model to compute gradience and putting the model in training mode, then unpack our input data. Then we delete the gradience in the previous iteration, Backpropagation, and update the weight using optimize.step() then, by each Epoch,we save the best model which has the lowest validation loss.
-Example of the training loop
- optimizer1 = setup_optimizer(model, Ir, eps)
-  for epoch in tqdm(range(1, epochs+1)):
-      epoch_list.append(epoch)
-      model.train()
-      loss_train_total = 0
-      
-      progress_bar = tqdm(dataloader_train, 
-                          desc='Epoch {:1d}'.format(epoch), 
-                          leave=False, 
-                          disable=False)
-      
-      for batch in progress_bar:
-          model.zero_grad()
-          batch = tuple(b.to(device) for b in batch)
-          inputs = {
-              'input_ids': batch[0],
-              'attention_mask': batch[1],
-              'labels': batch[2]
-          }
-          
-          outputs = model(**inputs)
-          loss = outputs[0]
-          loss_train_total +=loss.item()
-          loss.backward()
-          
-          torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
- 
-          optimizer1.step()
-          
-          progress_bar.set_postfix({'training_loss': '{:.3f}'.format(loss.item()/len(batch))})     
-      
-      tqdm.write('\nEpoch {epoch}')
-      
-      loss_train_avg = loss_train_total/len(dataloader_train)
-      
-      val_loss, predictions, true_vals = evaluate(model,dataloader_validation)
- 
-      if val_loss < tmp_loss:
-        print('Save Model -----------------')
-        torch.save(model, model_path)
-        tmp_loss = val_loss
- 
+
  
 The result of each training epoch will be saved in the reviewType_pho_bert_eval_df.csv in the ‘data/interim’ directory,
  

@@ -16,6 +16,7 @@ GPUs can be added by going to the menu and selecting: Edit -> Notebook Settings 
 
 Then run the cell below to confirm that the GPU has been received.
  
+ 
 from google.colab import drive
 drive.mount('/content/drive')
 gpu_info = !nvidia-smi

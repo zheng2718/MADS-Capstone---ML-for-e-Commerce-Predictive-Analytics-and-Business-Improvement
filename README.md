@@ -5,7 +5,8 @@ realtime_dreamer
 This Realtime Dreamer project is to use real Ecommerce data to perform NLP for Vietnamese language and machine learning tasks in order to settle a real-world business challenge of a company in Vietnam. We split our project into four tasks:
 
 
-1.	Customer Reviews Type classification
+
+##1.	Customer Reviews Type classification
  
 This task is to build a NLP model to predict the review classes using the Reviews dataset. The data collection process was completed by the customer service team, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, labeling the type of the review manually
 

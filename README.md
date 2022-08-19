@@ -4,9 +4,140 @@ realtime_dreamer
 This Realtime Dreamer project is to use real Ecommerce data to perform NLP for Vietnamese language and machine learning tasks in order to settle a real-world business challenge of a company in Vietnam. We split our project into four tasks:
 
 
-1.	Customer review type classification
+1.	Customer Reviews Type classification
+ 
+This task is to build a NLP model to predict the review classes using the Reviews dataset. The data collection process was completed by the customer service team, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, labeling the type of the review manually, as shown in the example below:
+ 
+ 
+Google Colab set up  and installation
+To use PhoBERT model, we need GPU resources. Google Colab offers free GPU and TPU! Since we will be training a large neural network, we will need to take full advantage of this.
 
-Suwasit Wittayaijug used customer reviews to train Phobert pre-trained BERT model and then classify review types such as delivery, product, quality, and service. Performed model evaluation and produce visualizations.
+GPUs can be added by going to the menu and selecting: Edit -> Notebook Settings -> Add accelerator ( GPU )
+
+Then run the cell below to confirm that the GPU has been received.
+ 
+from google.colab import drive
+drive.mount('/content/drive')
+gpu_info = !nvidia-smi
+gpu_info = '\n'.join(gpu_info)
+if gpu_info.find('failed') >= 0:
+  print('Not connected to a GPU')
+else:
+  print(gpu_info)
+Installation
+
+For this task, we adopted a model called PHO_BERT, a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. We can use these models to extract high-quality linguistic features from our review text data, or we can refine these models for a specific task, such as classification, real-time recognition, and answer questions. Pre-trained PhoBERT models are the state-of-the-art language models for Vietnamese (Pho, i.e., "Phở", is a popular food in Vietnam). These keywords will determine the additional steps performed in this task.
+
+We will do the following installation.
+
+!pip install transformers
+!pip install torch
+!pip install openpyxl
+!pip install  altair_saver
+!npm install vega-lite vega-cli canvas
+ 
+ 
+Data loading and preparation: src/data/reviewtype__prepare_review_label.py
+It will load, clean, and up-sample data to handle the two minority classes imbalanced. This process will take raw Reviews data  (stored in /data/raw/Git_mockup_review.xlsx. )
+
+And output reviewType_pre_process.csv
+ 
+ 
+Train_test_split the data src/data/reviewtype__train_test_val_split.py
+We split data to Train and Test set , with test size =0.2 and then we split the Train data again to train_df and Val_df for model training and model loss validation, the process will take input of reviewType_pre_process.csv  and output reviewType_df_upload.csv ready to transmit to the dataloader function.
+ 
+ 
+Training (reviewType_train_phobert.py)
+ 
+reviewtype__train_test_val_split.py in src/data/ will  import PhoBERT's word separator (Tokenization) ,’vinai/phobert-base’ as below 
+ 
+from transformers import AutoModel, AutoTokenizer
+from transformers import BertForSequenceClassification, BertTokenizer, AdamW, get_linear_schedule_with_warmup, AutoModel, AutoTokenizer
+ 
+ 
+Then we select Phobert  Vietnamese NLP as Tokenizer
+tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base")
+ 
+ 
+which is used to convert the text into tokens corresponding to PhoBERT's lexicon. We load BertForSequenceClassification, which is a regular BERT model with a single linear layer added above for classification (Khanh, 2020). This process will be used to classify sentences. Once we provide the input data, the entire pre-trained BERT model and classifier will be trained with our specific task.
+ 
+model = BertForSequenceClassification.from_pretrained(
+                                          'vinai/phobert-base', 
+                                          num_labels = len(label_dict),
+                                          output_attentions = False,
+                                          output_hidden_states = False
+                                        )
+ 
+We set the training loop by asking the model to compute gradience and putting the model in training mode, then unpack our input data. Then we delete the gradience in the previous iteration, Backpropagation, and update the weight using optimize.step() then, by each Epoch,we save the best model which has the lowest validation loss.
+Example of the training loop
+ optimizer1 = setup_optimizer(model, Ir, eps)
+  for epoch in tqdm(range(1, epochs+1)):
+      epoch_list.append(epoch)
+      model.train()
+      loss_train_total = 0
+      
+      progress_bar = tqdm(dataloader_train, 
+                          desc='Epoch {:1d}'.format(epoch), 
+                          leave=False, 
+                          disable=False)
+      
+      for batch in progress_bar:
+          model.zero_grad()
+          batch = tuple(b.to(device) for b in batch)
+          inputs = {
+              'input_ids': batch[0],
+              'attention_mask': batch[1],
+              'labels': batch[2]
+          }
+          
+          outputs = model(**inputs)
+          loss = outputs[0]
+          loss_train_total +=loss.item()
+          loss.backward()
+          
+          torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+ 
+          optimizer1.step()
+          
+          progress_bar.set_postfix({'training_loss': '{:.3f}'.format(loss.item()/len(batch))})     
+      
+      tqdm.write('\nEpoch {epoch}')
+      
+      loss_train_avg = loss_train_total/len(dataloader_train)
+      
+      val_loss, predictions, true_vals = evaluate(model,dataloader_validation)
+ 
+      if val_loss < tmp_loss:
+        print('Save Model -----------------')
+        torch.save(model, model_path)
+        tmp_loss = val_loss
+ 
+ 
+The result of each training epoch will be saved in the reviewType_pho_bert_eval_df.csv in the ‘data/interim’ directory,
+ 
+Model tuning comparison
+We create reviewtype_chart1_tuning.py to compare the result of the best Phobert model with different hyperparameter and data process tuning, the other models have been trained from Colab environments and uploaded thier the Evaluation_df into ‘data/external’ directory; we are focusing on the F1 macro score and,F1 Average score and validation lost of each trained Epoch,  the result is shown in the ‘report/’ directory.<image001.png>
+ 
+The best model (number #5)  hyper parameter tuning recorded as below:
+ 
+hidden_dropout_prob = 0.4
+
+attention_probs_dropout_prob = 0.1
+pre_trained_model = 'vinai/phobert-base'
+model_type = pre_trained_model.split('/')[0]
+batch_size = 8
+epochs = 1
+Ir = 1e-5
+eps = 1e-8
+ 
+ 
+Comparing Phobert with other algorithms
+We also compare the result of all Phobert models with other traditional ML algorithms such as Random forest, SVM, and XGM classifier that are trained by using GridserchCv to tune hyperparameters. The best score from each parameter selected is imported to the ‘data/external’.
+
+Again the best model is “Phobert- upsampling minority lass, which able to provide F1 macro score at 0.88)
+<image002.png>
+In conclusion
+We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. For this reason, it is the best algorithm to predict the reviews classification tasks because of its superiority compared to other algorithms. While the data imbalance was an issue due to moderate, we overcame it by over-sampling the minority. The outcome was optimal based on the elements of the task and no data preprocessing. The Phobert model requires parameter tuning, and from the results, we were able to increase hidden dropout to 0.4.
 
 
 2.	Sentiment analysis for customer reviews

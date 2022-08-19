@@ -32,7 +32,7 @@ from altair_saver import save
 
 if __name__ == '__main__':
     import argparse
-    path_visualization='src/visualization/'
+    path_visualization='report/'
     parser = argparse.ArgumentParser()
     parser.add_argument('input_file', help='review label dataset processed (csv)')
     args = parser.parse_args()

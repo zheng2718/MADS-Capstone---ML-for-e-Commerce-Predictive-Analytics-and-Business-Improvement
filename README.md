@@ -26,6 +26,10 @@ Then run the cell below to confirm that the GPU has been received.
 
 For this task, we adopted a model called PHO_BERT, a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. We can use these models to extract high-quality linguistic features from our review text data, or we can refine these models for a specific task, such as classification, real-time recognition, and answer questions. Pre-trained PhoBERT models are the state-of-the-art language models for Vietnamese (Pho, i.e., "Phở", is a popular food in Vietnam). These keywords will determine the additional steps performed in this task.
 
+<img width="441" alt="Screen Shot 2565-08-19 at 23 15 18" src="[https://user-images.githubusercontent.com/100912986/185662455-03f91b69-d32d-4d53-a724-07d8aaef50fb.png](https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20imbalanced%20classes%20before%20oversampling%20-%20visualization.png)">
+
+
+
 
 <img width="441" alt="Screen Shot 2565-08-19 at 22 46 25" src="https://user-images.githubusercontent.com/100912986/185657495-4b1c93b2-90a3-4fc0-985c-152225ab1d64.png">
  

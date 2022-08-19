@@ -32,12 +32,13 @@ from altair_saver import save
 
 if __name__ == '__main__':
     import argparse
+    path_visualization='src/visualization/'
     parser = argparse.ArgumentParser()
     parser.add_argument('input_file', help='review label dataset processed (csv)')
     args = parser.parse_args()
     eval_df = pd.read_csv(args.input_file)
     model_compare_df = rcuf.build_df__phobert_comparision(eval_df)
     model_compare_chart=rcuf.combined_graph(model_compare_df)
-    save(model_compare_chart, '/content/drive/MyDrive/git_pipeline_capstone/reviewType_model_compare.png')
+    save(model_compare_chart, path_visualization+'reviewType_model_compare.png')
     print('Model comparison chart is saved ,please check')
 

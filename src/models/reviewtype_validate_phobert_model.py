@@ -44,7 +44,10 @@ train_data_provider = 'Suwasit'
 if __name__ == '__main__':
 
     import argparse
-
+    
+    path_data_final ='data/final/'
+    path_data_interim= 'data/interim/'
+    
     parser = argparse.ArgumentParser()
     parser.add_argument('input_file', help='sentiment analysis reviews label data with train and validation split(csv)')
     args = parser.parse_args()
@@ -53,13 +56,13 @@ if __name__ == '__main__':
     tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base")
     dataloader_test = rcuf.create_data_loader(df_test, tokenizer, MAX_LEN, batch_size)
     model = rcuf.build_Bert_model(pre_trained_model, attention_probs_dropout_prob, hidden_dropout_prob)
-    model_path =  '/content/drive/MyDrive/git_pipeline_capstone/reviewtype_phobert_model.pt'
+    model_path =  path_data_final +'reviewtype_phobert_model.pt'
     model = torch.load(model_path)
     _, predictions, true_vals = rcuf.evaluate(model,dataloader_test)
     accuracy_per_class_df = rcuf.accuracy_per_class(predictions, true_vals, model_type, epochs, train_data_provider)
-    accuracy_per_class_df_path = '/content/drive/MyDrive/git_pipeline_capstone/reviewtype__accuracy_per_class_df.csv'
+    accuracy_per_class_df_path = path_data_final+'reviewtype__accuracy_per_class_df.csv'
     accuracy_per_class_df.to_csv(accuracy_per_class_df_path, index=False)
-    eval_df = pd.read_csv('/content/drive/MyDrive/git_pipeline_capstone/reviewtype_pho_bert_eval_df.csv')
+    eval_df = pd.read_csv(path_data_interim+'reviewtype_pho_bert_eval_df.csv')
     true_vals= true_vals.reshape(-1)
     confusion_chart=rcuf.confusion_matrix_function (true_vals,predictions)
     print(confusion_chart)

@@ -6,7 +6,7 @@ echo ""
 echo "Step 1: Import and prepare reviews label data..."
 echo ""
 
-python src/data/reviewtype__prepare_review_label.py data/processed/Reviews.xlsx data/processed/reviewType_pre_process.csv
+python src/data/reviewtype__prepare_review_label.py data/raw/Git_mockup_reviews.xlsx data/processed/reviewType_pre_process.csv
 echo ""
 
 

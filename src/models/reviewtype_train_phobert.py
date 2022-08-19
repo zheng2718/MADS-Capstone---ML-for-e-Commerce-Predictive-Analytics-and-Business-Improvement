@@ -44,7 +44,9 @@ train_data_provider = 'Suwasit'
 if __name__ == '__main__':
 
     import argparse
-
+    path_data_final ='data/final/'
+    path_data_interim=+'reviewtype_pho_bert_eval_df.csv'
+    
     parser = argparse.ArgumentParser()
     parser.add_argument('input_file', help='sentiment analysis reviews label data with train and validation split(csv)')
     args = parser.parse_args()
@@ -62,10 +64,10 @@ if __name__ == '__main__':
     dataloader_test = rcuf.create_data_loader(df_test, tokenizer, MAX_LEN, batch_size)
 
     model = rcuf.build_Bert_model(pre_trained_model, attention_probs_dropout_prob, hidden_dropout_prob)
-    model_path =  '/content/drive/MyDrive/git_pipeline_capstone/reviewtype_phobert_model.pt'
+    model_path =  path_data_final+'reviewtype_phobert_model.pt'
     torch.save(model.state_dict(), model_path)
 
     eval_df, model = rcuf.train_model_phobert(model, model_path,pre_trained_model, model_type, Ir, eps, attention_probs_dropout_prob, hidden_dropout_prob,
                                       epochs, batch_size, dataloader_train, dataloader_validation, train_data_provider)
-    eval_df_path = '/content/drive/MyDrive/git_pipeline_capstone/reviewtype_pho_bert_eval_df.csv'
+    eval_df_path = path_data_interim+'reviewtype_pho_bert_eval_df.csv'
     eval_df.to_csv(eval_df_path , index=False)

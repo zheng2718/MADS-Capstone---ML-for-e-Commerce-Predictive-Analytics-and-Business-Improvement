@@ -112,6 +112,7 @@ Yunhong He used clear positive and negative keyword search and eye scan to selec
 
 <img width="1391" alt="Screen Shot Sentiment Analysis Model Evaluation by Pre-Trained BERT Model" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20metrics%20-%20visualization.png">
 
+
 (2) Model Selection and Evaluation
 
 Hugging Face pre-trained BERT models and Supervised machine learning algorithms are trained and evaluated in the sentiment analysis of the reviews.

@@ -129,7 +129,7 @@ Hugging Face pre-trained BERT models and Supervised machine learning algorithms 
 Graph 2: Sentiment Analysis - Models
 
 
-A)	pre-trained BERT model are evaluated based on F1 scores (macro, micro and weighted), train and validation losses.
+pre-trained BERT model are evaluated based on F1 scores (macro, micro and weighted), train and validation losses.
 
 Model performance mainly focus on the F1 macro score due to the imbalanced label for the negative class. The best BERT model is defined as the pre-trained BERT model with the highest F1 macro score at the best epoch among 10 epochs. 
 

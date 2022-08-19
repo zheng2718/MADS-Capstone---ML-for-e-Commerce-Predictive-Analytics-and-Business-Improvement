@@ -153,7 +153,7 @@ Graph 4: Sentiment Analysis Model Evaluation by Metrics
 Graph 5: Sentiment Analysis Model Evaluation by Individual Class Prediction Accuracy
 
 
-<img width="500" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20supervised%20ml%20model%20evaluation%20-%20visualization.png">
+<img width="600" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20supervised%20ml%20model%20evaluation%20-%20visualization.png">
 
 Graph 6: Sentiment Analysis Supervised ML Classifier Model Evaluation
 

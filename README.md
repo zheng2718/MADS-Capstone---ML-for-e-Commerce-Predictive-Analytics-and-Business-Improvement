@@ -138,7 +138,15 @@ Based on below Model Evaluation visualizations, it is found that trituenhantaoio
 <img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Pre-Trained BERT Model"     src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20pre-trained%20bert%20model%20-%20visualization.png">
 
 
+
+
+
 <img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Metrics" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20metrics%20-%20visualization.png">
+
+
+
+
+
 
 <img width="800" alt="Sentiment Analysis Model Evaluation by Classification Accuracy of Individual Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20individual%20class%20prediction%20accuracy%20-%20visualization.png">
 

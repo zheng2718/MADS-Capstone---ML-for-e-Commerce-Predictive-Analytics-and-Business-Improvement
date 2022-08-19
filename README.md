@@ -16,30 +16,19 @@ GPUs can be added by going to the menu and selecting: Edit -> Notebook Settings 
 
 Then run the cell below to confirm that the GPU has been received.
  
- 
-from google.colab import drive
-drive.mount('/content/drive')
-gpu_info = !nvidia-smi
-gpu_info = '\n'.join(gpu_info)
-if gpu_info.find('failed') >= 0:
-  print('Not connected to a GPU')
-else:
-  print(gpu_info)
-Installation
+ <img width="395" alt="Screen Shot 2565-08-19 at 22 45 00" src="https://user-images.githubusercontent.com/100912986/185657079-c7f6c68e-d468-4913-bff8-f4d30baaa124.png">
+
+
 
 For this task, we adopted a model called PHO_BERT, a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. We can use these models to extract high-quality linguistic features from our review text data, or we can refine these models for a specific task, such as classification, real-time recognition, and answer questions. Pre-trained PhoBERT models are the state-of-the-art language models for Vietnamese (Pho, i.e., "Phở", is a popular food in Vietnam). These keywords will determine the additional steps performed in this task.
 
-We will do the following installation.
 
-!pip install transformers
-!pip install torch
-!pip install openpyxl
-!pip install  altair_saver
-!npm install vega-lite vega-cli canvas
+<img width="441" alt="Screen Shot 2565-08-19 at 22 46 25" src="https://user-images.githubusercontent.com/100912986/185657495-4b1c93b2-90a3-4fc0-985c-152225ab1d64.png">
  
  
 Data loading and preparation: src/data/reviewtype__prepare_review_label.py
 It will load, clean, and up-sample data to handle the two minority classes imbalanced. This process will take raw Reviews data  (stored in /data/raw/Git_mockup_review.xlsx. )
+
 
 And output reviewType_pre_process.csv
  
@@ -57,17 +46,16 @@ from transformers import BertForSequenceClassification, BertTokenizer, AdamW, ge
  
  
 Then we select Phobert  Vietnamese NLP as Tokenizer
-tokenizer = AutoTokenizer.from_pretrained("vinai/phobert-base")
- 
+
+
+ <img width="553" alt="Screen Shot 2565-08-19 at 22 49 32" src="https://user-images.githubusercontent.com/100912986/185657737-cc1f708b-c317-48f7-a630-df0a2db08292.png">
+
  
 which is used to convert the text into tokens corresponding to PhoBERT's lexicon. We load BertForSequenceClassification, which is a regular BERT model with a single linear layer added above for classification (Khanh, 2020). This process will be used to classify sentences. Once we provide the input data, the entire pre-trained BERT model and classifier will be trained with our specific task.
- 
-model = BertForSequenceClassification.from_pretrained(
-                                          'vinai/phobert-base', 
-                                          num_labels = len(label_dict),
-                                          output_attentions = False,
-                                          output_hidden_states = False
-                                        )
+
+ <img width="464" alt="Screen Shot 2565-08-19 at 22 48 29" src="https://user-images.githubusercontent.com/100912986/185657647-227f228d-9160-4249-8cfe-94e8373da4f4.png">
+
+
  
 We set the training loop by asking the model to compute gradience and putting the model in training mode, then unpack our input data. Then we delete the gradience in the previous iteration, Backpropagation, and update the weight using optimize.step() then, by each Epoch,we save the best model which has the lowest validation loss.
 
@@ -75,7 +63,10 @@ We set the training loop by asking the model to compute gradience and putting th
 The result of each training epoch will be saved in the reviewType_pho_bert_eval_df.csv in the ‘data/interim’ directory,
  
 Model tuning comparison
-We create reviewtype_chart1_tuning.py to compare the result of the best Phobert model with different hyperparameter and data process tuning, the other models have been trained from Colab environments and uploaded thier the Evaluation_df into ‘data/external’ directory; we are focusing on the F1 macro score and,F1 Average score and validation lost of each trained Epoch,  the result is shown in the ‘report/’ directory.<image001.png>
+We create reviewtype_chart1_tuning.py to compare the result of the best Phobert model with different hyperparameter and data process tuning, the other models have been trained from Colab environments and uploaded thier the Evaluation_df into ‘data/external’ directory; we are focusing on the F1 macro score and,F1 Average score and validation lost of each trained Epoch,  the result is shown in the ‘report/’ directory.
+
+![model_compar](https://user-images.githubusercontent.com/100912986/185656740-a483b745-edcc-4c71-bfaf-e94c755584c5.png)
+
  
 The best model (number #5)  hyper parameter tuning recorded as below:
  
@@ -94,7 +85,8 @@ Comparing Phobert with other algorithms
 We also compare the result of all Phobert models with other traditional ML algorithms such as Random forest, SVM, and XGM classifier that are trained by using GridserchCv to tune hyperparameters. The best score from each parameter selected is imported to the ‘data/external’.
 
 Again the best model is “Phobert- upsampling minority lass, which able to provide F1 macro score at 0.88)
-<image002.png>
+![model_compare_traditional](https://user-images.githubusercontent.com/100912986/185656357-71bf8779-837d-4a76-b95a-3cb803bec2ab.png)
+
 In conclusion
 We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. For this reason, it is the best algorithm to predict the reviews classification tasks because of its superiority compared to other algorithms. While the data imbalance was an issue due to moderate, we overcame it by over-sampling the minority. The outcome was optimal based on the elements of the task and no data preprocessing. The Phobert model requires parameter tuning, and from the results, we were able to increase hidden dropout to 0.4.
 
@@ -141,8 +133,23 @@ Project Organization
     ├── README.md               <- The top-level README for developers using this project.
     ├── data
     │   ├── external            <- Data from third party sources.
+    │       └── df__phobert_all.sav
+    │       └── df__phobert_grouping.sav
+    │       └── df_phobert_remove.sav
+    │       └── df__phobert_all_upsamples.sav
+    │       └── df_predict_all.sav
+    │       └── df_predict_upsampling.sav
+    │       └── df_predict_grouping.sav
+    │       └── df_predict_remove.sav
+    │       └── phobert1_eval_df_.csv
+    │       └── phobert2_eval_df_.csv
+    │       └── phobert3_eval_df_.csv
+    │       └── phobert3_dropout_eval_df_.csv
+    
     |   └── final               <- File with final data of the project
-    |       
+    |       └── reviewtype__accuracy_per_class_df.csv
+    |       └── reviewtype_phobert_model.pt
+    
     |
     │   ├── interim             <- Intermediate data that has been transformed. Files with BERT model evaluation metrics.
     |   |   └── sentiment_analysis_reivew_emotion_predition.xlsx
@@ -165,7 +172,7 @@ Project Organization
     |   |   └── sentiment_analysis_bert-base-uncased_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
     |   |   └── sentiment_analysis_bert-base-uncased_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
     |   |   └── sentiment_analysis_bert-base-uncased_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
-    |   |   
+    |   |   └── reviewType_pho_bert_eval_df.csv
     |   |   
     |   |   
     |   |   
@@ -174,7 +181,10 @@ Project Organization
     │   │   └── sentiment_analysis_reviews_label.xlsx
     │   │   └── sentiment_analysis_reviews_label_processed.csv
     |   |   └── sentiment_analysis_reviews_label_split.csv
-    |   |   └── Anon-Data-merged-ship-reviewemotion-productperformance.csv
+    |   |   └── reviewType_pre_process.csv
+    |   |   └── reviewType_df_upload.csv
+
+    
     |   |
     │   └── raw                 <- The original, immutable data dump.
     │       └── Git_mockup_reviews.xlsx
@@ -216,6 +226,10 @@ Project Organization
     |       └── sentiment analysis - model evaluation by pre-trained bert model - visualization.png
     |       └── sentiment analysis - supervised ml model evaluation - visualization.png
     |       └── sentiment analysis - imbalanced classes before oversampling - visualization.png
+            └── reviewType_model_compare_traditional.png
+            └── reviewType_model_compare.png
+            └── confusion_phobert.png
+            
     │
     ├── requirements.txt        <- The requirements file for reproducing the analysis environment, e.g.
     │                              generated with `pip freeze > requirements.txt`
@@ -231,6 +245,8 @@ Project Organization
     |   |   └── sentiment_analysis_predict_emotion.py
     |   |   └── sentiment_analysis_prepare_review_label.py
     |   |   └── sentiment_analysis_utility_functions.py
+    |   |   └── reviewtype__prepare_review_label.py
+    |   |   └── reviewtype__train_test_val_split.py
     │   │
     │   ├── features            <- Scripts to turn raw data into features for modeling
     │   │   └── build_features.py
@@ -239,9 +255,13 @@ Project Organization
     │   │   │                      predictions
     │   │   ├── sentiment_analysis_train_bert_model.py 
     │   │   └── sentiment_analysis_utility_functions.py
+    │   │   └── reviewtype_train_phobert.py    
+    │   │   └── reviewtype_validate_phobert_model.py    
+    │   │   └── reviewtype_text_test_prediction.py     
     │   │
     │   └── visualization       <- Scripts to create exploratory and results-oriented visualizations
-    │       
+    │       └── reviewtype_chart1_tuning.py
+            └── reviewtype_chart2_compare_traditional.py
     │
     └── tox.ini                 <- tox file with settings for running tox; see tox.readthedocs.io
 

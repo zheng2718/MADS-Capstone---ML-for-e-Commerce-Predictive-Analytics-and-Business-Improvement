@@ -99,6 +99,9 @@ We can conclude that we can use Phobert as a tokenizer and transform it to train
 
 
 
+
+
+
 2.	Sentiment analysis for customer reviews
 
 Yunhong He used clear positive and negative keyword search and eye scan to select customer reviews for emotion labeling, and then oversample 

@@ -158,8 +158,9 @@ Graph 5: Sentiment Analysis Model Evaluation by Individual Class Prediction Accu
 Graph 6: Sentiment Analysis Supervised ML Classifier Model Evaluation
 
 
+<img width="600" alt="Sentiment Analysis - Emotions" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20Emotions.png">
 
-
+Graph 7: Sentiment Analysis - Emotions
 
 (3) Summary
 

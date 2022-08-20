@@ -35,7 +35,8 @@ To run the Phobert require installation  transformer and pytorch, so we have to 
 <img width="441" alt="Screen Shot 2565-08-19 at 22 46 25" src="https://user-images.githubusercontent.com/100912986/185759858-25d6f3c5-12b6-4a94-ae55-47b70de51c8a.png">
 
  
-Data loading and preparation
+Data loading and preparation:
+
 It will load, clean, and up-sample data to handle the two minority classes imbalanced. This process will take raw Reviews data  (stored in /data/raw/Git_mockup_review.xlsx. )
 
 

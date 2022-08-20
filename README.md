@@ -30,6 +30,8 @@ For further analysis, the Vietnamese token was broken down from the larger origi
 
 Generally, PhoBERT  NLP  is to  able to extract high-quality linguistic features from our review text data. or we apply this models for a specific task, such as classification, real-time recognition, and answer questions, among others. Pre-trained PhoBERT models are considered as the state-of-the-art language models for Vietnamese (Pho, i.e., "Phở", is a popular food in Vietnam).
 
+To run the Phobert require installation  transformer and pytorch, so we have to install:
+
 <img width="441" alt="Screen Shot 2565-08-19 at 23 15 18" src="[https://user-images.githubusercontent.com/100912986/185662455-03f91b69-d32d-4d53-a724-07d8aaef50fb.png](https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20imbalanced%20classes%20before%20oversampling%20-%20visualization.png)">
 
 

@@ -8,7 +8,7 @@ This Realtime Dreamer project is to use real Ecommerce data to perform NLP for V
 
 1.	Customer Reviews Type classification
  
-This task is to build a NLP model to predict the review classes using the Reviews dataset. The data collection process was completed by the customer service team, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, labeling the type of the review manually
+Our  goal is to build a NLP model to predict the review classes using the Product_reviews_dataset.xlsx. The data collection process was completed by the customer service team of a company, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, along with labeling the type of the review manually
 
 The pipeline script of this task created: reviewtype_script_.sh
  
@@ -24,7 +24,11 @@ Then run the cell below to confirm that the GPU has been received.
 
 
 
-For this task, we adopted a model called PHO_BERT, a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. We can use these models to extract high-quality linguistic features from our review text data, or we can refine these models for a specific task, such as classification, real-time recognition, and answer questions. Pre-trained PhoBERT models are the state-of-the-art language models for Vietnamese (Pho, i.e., "Phở", is a popular food in Vietnam). These keywords will determine the additional steps performed in this task.
+For further analysis, the Vietnamese token was broken down from the larger original text. Many Vietnamese pre-trained NLP models are able to handle the task. For this task, we adopted a model called PhoBERT, which is a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. The objective of using this model  is to compare the performance of  PhoBERT  NLP to other traditional algorithms.
+
+ 
+
+Generally, PhoBERT  NLP  is to  able to extract high-quality linguistic features from our review text data. or we apply this models for a specific task, such as classification, real-time recognition, and answer questions, among others. Pre-trained PhoBERT models are considered as the state-of-the-art language models for Vietnamese (Pho, i.e., "Phở", is a popular food in Vietnam).
 
 <img width="441" alt="Screen Shot 2565-08-19 at 23 15 18" src="[https://user-images.githubusercontent.com/100912986/185662455-03f91b69-d32d-4d53-a724-07d8aaef50fb.png](https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20imbalanced%20classes%20before%20oversampling%20-%20visualization.png)">
 

@@ -32,13 +32,8 @@ Generally, PhoBERT  NLP  is to  able to extract high-quality linguistic features
 
 To run the Phobert require installation  transformer and pytorch, so we have to install:
 
-<img width="441" alt="Screen Shot 2565-08-19 at 23 15 18" src="[https://user-images.githubusercontent.com/100912986/185662455-03f91b69-d32d-4d53-a724-07d8aaef50fb.png](https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20imbalanced%20classes%20before%20oversampling%20-%20visualization.png)">
+<img width="441" alt="Screen Shot 2565-08-19 at 22 46 25" src="https://user-images.githubusercontent.com/100912986/185759858-25d6f3c5-12b6-4a94-ae55-47b70de51c8a.png">
 
-
-
-
-<img width="441" alt="Screen Shot 2565-08-19 at 22 46 25" src="https://user-images.githubusercontent.com/100912986/185657495-4b1c93b2-90a3-4fc0-985c-152225ab1d64.png">
- 
  
 Data loading and preparation
 It will load, clean, and up-sample data to handle the two minority classes imbalanced. This process will take raw Reviews data  (stored in /data/raw/Git_mockup_review.xlsx. )

@@ -98,7 +98,7 @@ eps = 1e-8
 Comparing Phobert with other algorithms
 We also compare the result of all Phobert models with other traditional ML algorithms such as Random forest, SVM, and XGM classifier that are trained by using GridserchCv to tune hyperparameters. The best score from each parameter selected is imported to the ‘data/external’.
 
-Again the best model is “Phobert- upsampling minority lass, which able to provide F1 macro score at 0.88)
+Again the best model is “Phobert- upsampling minority lass, which able to provide F1 macro score at 0.90)
 ![model_compare_traditional](https://user-images.githubusercontent.com/100912986/185656357-71bf8779-837d-4a76-b95a-3cb803bec2ab.png)
 
 

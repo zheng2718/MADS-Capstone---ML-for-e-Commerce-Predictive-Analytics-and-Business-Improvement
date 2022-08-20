@@ -26,8 +26,6 @@ Then run the cell below to confirm that the GPU has been received.
 
 For further analysis, the Vietnamese token was broken down from the larger original text. Many Vietnamese pre-trained NLP models are able to handle the task. For this task, we adopted a model called PhoBERT, which is a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. The objective of using this model  is to compare the performance of  PhoBERT  NLP to other traditional algorithms.
 
- 
-
 Generally, PhoBERT  NLP  is to  able to extract high-quality linguistic features from our review text data. or we apply this models for a specific task, such as classification, real-time recognition, and answer questions, among others. Pre-trained PhoBERT models are considered as the state-of-the-art language models for Vietnamese (Pho, i.e., "Phở", is a popular food in Vietnam).
 
 To run the Phobert require installation  transformer and pytorch, so we have to install:
@@ -54,8 +52,6 @@ reviewtype__train_test_val_split.py in src/data/ will  import PhoBERT's word sep
  <img width="1100" alt="Screen Shot 2565-08-19 at 23 15 18" src="https://user-images.githubusercontent.com/100912986/185662455-03f91b69-d32d-4d53-a724-07d8aaef50fb.png">
 
 
- 
- 
 Then we select Phobert  Vietnamese NLP as Tokenizer
 
 
@@ -68,7 +64,6 @@ which is used to convert the text into tokens corresponding to PhoBERT's lexicon
  <img width="464" alt="Screen Shot 2565-08-19 at 22 48 29" src="https://user-images.githubusercontent.com/100912986/185657647-227f228d-9160-4249-8cfe-94e8373da4f4.png">
 
 
- 
 We set the training loop by asking the model to compute gradience and putting the model in training mode, then unpack our input data. Then we delete the gradience in the previous iteration, Backpropagation, and update the weight using optimize.step() then, by each Epoch,we save the best model which has the lowest validation loss.
 
  

@@ -98,8 +98,10 @@ Again the best model is “Phobert- upsampling minority lass, which able to prov
 ![model_compare_traditional](https://user-images.githubusercontent.com/100912986/185656357-71bf8779-837d-4a76-b95a-3cb803bec2ab.png)
 
 Model Testing 
-we have run  several manual Vietnamese sentense testing ,for example , we input text to the model, and predict the classs  
-input_text='Bàn ủi hơi nước cầm tay tiện lợi Tefal - DT6130E0, hàng chính hãng bảo hành 2 năm'
+we have run  several manual Vietnamese sentense testing ,for example , we input text to the model, and predict a class.
+
+Input_text='Bàn ủi hơi nước cầm tay tiện lợi Tefal - DT6130E0, hàng chính hãng bảo hành 2 năm'
+
 Predict review type :  Quality
 
 In conclusion

@@ -187,7 +187,7 @@ As below Graph 9: Sentiment Analysis Dashboard shows, positive reviews mainly co
 
 
 
-<img width="1300" alt="Sentiment Analysis - Emotions vs high ratings of 4 and 5" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Emotions%20Dashboard.png">
+<img width="1300" alt="Sentiment Analysis - Emotions vs high ratings of 4 and 5" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Emotion%20Dashboard.png">
 
 Graph 9: Sentiment Analysis Dashboard
 

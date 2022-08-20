@@ -97,12 +97,15 @@ We also compare the result of all Phobert models with other traditional ML algor
 Again the best model is “Phobert- upsampling minority lass, which able to provide F1 macro score at 0.88)
 ![model_compare_traditional](https://user-images.githubusercontent.com/100912986/185656357-71bf8779-837d-4a76-b95a-3cb803bec2ab.png)
 
+
 Model Testing 
+
 we have run  several manual Vietnamese sentense testing ,for example , we input text to the model, and predict a class.
 
 Input_text='Bàn ủi hơi nước cầm tay tiện lợi Tefal - DT6130E0, hàng chính hãng bảo hành 2 năm'
 
 Predict review type :  Quality
+
 
 In conclusion
 We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. For this reason, it is the best algorithm to predict the reviews classification tasks because of its superiority compared to other algorithms. While the data imbalance was an issue due to moderate, we overcame it by over-sampling the minority. The outcome was optimal based on the elements of the task and no data preprocessing. The Phobert model requires parameter tuning, and from the results, we were able to increase hidden dropout to 0.4.

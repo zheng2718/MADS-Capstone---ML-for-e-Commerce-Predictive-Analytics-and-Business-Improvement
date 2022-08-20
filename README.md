@@ -174,8 +174,6 @@ Interactive graph: https://public.tableau.com/app/profile/agnes.he/viz/Sentiment
 
 Graph 7: Sentiment Analysis - Emotions
 
-Link to above Sentiment Analysis dashboard: 
-https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
 
 From below graph 8: Among the reviews with high rating of 4 and 5, 3% of them are actually negative, 35% are neutral.  This indicates that some of the online customers overstated the ratings to 4 and 5 while they actually have neutral or negative emotions.
 
@@ -184,18 +182,15 @@ From below graph 8: Among the reviews with high rating of 4 and 5, 3% of them ar
 
 Graph 8: Sentiment Analysis - Emotions vs High Ratings
 
-Link to above Sentiment Analysis dashboard: 
-https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
 
-As below Graph 9: Sentiment Analysis Dashboard shows, positive reviews mainly come from Quality (26%) and Product (25%).  17% of Logistic reviews, 10% of Service reviews, 5% of Sales reviews are negative, Their average of rating for negative emotion was 3.4,  which indicates that customers showed their dissatisfaction mainly in Logistic, next is Service and then Sales.  Customers are quite happy with Products with 98% of positive emotion and average rating of 4.9.
-Additionally, 53% of Quality related reviews indicates neutral emotion.
+As below Graph 9: Sentiment Analysis Dashboard shows, positive reviews mainly come from Quality (27%) and Product (25%).  45% of Sales reviews, 16% of Logistic reviews, 10% of Service reviews are negative, Their average of rating for negative emotion was 3.5,  2.9 and 3.4,  which indicates that customers showed their dissatisfaction mainly in Sales, next is Logistic  and then Service. Service reviews has lowest average rating.  Customers are quite happy with Products with 95% of positive emotion and average rating of 4.9.  Additionally, 52% of Quality related reviews indicates neutral emotion.
+
 
 
 <img width="1300" alt="Sentiment Analysis - Emotions vs high ratings of 4 and 5" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Emotions%20Dashboard.png">
 
 Graph 9: Sentiment Analysis Dashboard
 
-Link to above Sentiment Analysis dashboard: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
 
 
 (3) Summary

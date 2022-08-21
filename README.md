@@ -245,12 +245,20 @@ and the final output recommendation_for_user_52354.csv will be in the data/final
 4.	Machine Learning for Sales Prediction
 
 Zheng Wei Lim used data of E-Commerce sales, customer, and product data to develop supervised ML algorithms through feature engineering and selection, model evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning and visualizations. 
+
 The final model used is a XGBoost Random Forest model with R2 score of 0.95 and RMSE of 82.7m - an improvement of 77.8% over the baseline model. This indicates that the model has high accuracy of predicting future revenue from past sales data, enabling the company to be more responsive and confident in its revenue forecasting. 
 
-<img width="464" alt="Predictive modeling - feature engineering and selection" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-features-correlation.jpg">
+<img width="464" alt="Predictive Modeling - Feature Engineering and Selection" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-features-correlation.jpg">
+Feature Engineering and Selection of Models
+
+<img width="464" alt="Predictive Modeling - Model Development and Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modleing-viz-model-evaluation.jpg">
+Model Development and Evaluation
+
+<img width="464" alt="Predictive Modeling - Model Development and Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-final-model-optuna-optimizationhistory.jpg">
+Final XGBoost Random Forest Model with Hyperparameter Tuning
 
 
-
+------------
 Project Organization
 ------------
 

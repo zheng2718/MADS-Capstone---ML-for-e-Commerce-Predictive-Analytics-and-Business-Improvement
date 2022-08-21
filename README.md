@@ -141,7 +141,7 @@ Graph 1: Sentiment Analysis Process
 
 Yunhong He used clear positive and negative keyword search and eye scan to select customer reviews for emotion labeling. 
 
-<img width="900" alt="Sentiment Analysis Imbalanced Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess.png">
+<img width="500" alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess.png">
 
 Graph 2: Sentiment Analysis Data Pre-processing
 
@@ -222,7 +222,7 @@ Above interactive graph is in Tab "Emotions Dashboard" at below link: https://pu
 As shown in the below Graph 10: Sentiment Analysis Dashboard, positive reviews mainly come from Product (24%) and Quality (21%). Customers are quite happy with Products with 95% of positive emotion and average rating of 4.9.  50% of Sales reviews, 18% of Logistic reviews, 13% of Service reviews are negative, Their average of rating for negative emotion was 3.6,  2.9 and 3.5,  which indicates that customers showed their dissatisfaction mainly in Sales, and then Logistic  and Service. Service reviews has lowest average rating in negative class. Additionally, 60% of Quality related reviews indicates neutral emotion.
 
 
-<img width="1300" alt="Sentiment Analysis - Emotions vs high ratings of 4 and 5" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20emotions%20vs%20content%20class%20dashboard.png">
+<img width="1300" alt="Sentiment Analysis - Emotions Dashboard" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20emotions%20vs%20content%20class%20dashboard.png">
 
 Graph 10: Sentiment Analysis Dashboard
 

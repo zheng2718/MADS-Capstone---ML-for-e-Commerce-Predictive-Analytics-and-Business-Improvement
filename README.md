@@ -20,8 +20,7 @@ GPUs can be added by going to the menu and selecting: Edit -> Notebook Settings 
 
 Then run the cell below to confirm that the GPU has been received.
  
- <img width="395" alt="Screen Shot 2565-08-19 at 22 45 00" src="https://user-images.githubusercontent.com/100912986/185657079-c7f6c68e-d468-4913-bff8-f4d30baaa124.png">
-
+    device = torch.device(“cuda:0” if torch.cuda.is_available() else “cpu”)
 
 
 For further analysis, the Vietnamese token was broken down from the larger original text. Many Vietnamese pre-trained NLP models are able to handle the task. For this task, we adopted a model called PhoBERT, which is a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. The objective of using this model  is to compare the performance of  PhoBERT  NLP to other traditional algorithms.

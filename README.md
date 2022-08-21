@@ -268,11 +268,11 @@ Project Organization
     │   │   └── phobert3_eval_df_.csv
     │   │   └── phobert3_dropout_eval_df_.csv
     |   └── final               <- File with final data of the project
-    |       └── reviewtype__accuracy_per_class_df.csv
-    |       └── reviewtype_phobert_model.pt
-    |       └── recommendation_for_user_52354.csv
-    | 
-    |
+    │   │   └── reviewtype__accuracy_per_class_df.csv
+    │   │   └── reviewtype_phobert_model.pt
+    │   │   └── recommendation_for_user_52354.csv
+    │   │ 
+    │   │
     │   ├── interim             <- Intermediate data that has been transformed. Files with BERT model evaluation metrics.
     |   |   └── sentiment_analysis_reivew_emotion_predition.xlsx
     |   |   └── sentiment_analysis_trituenhantaoio_train_data_from_Yunhong He_Epoch1_accuracy_per_class_df.csv

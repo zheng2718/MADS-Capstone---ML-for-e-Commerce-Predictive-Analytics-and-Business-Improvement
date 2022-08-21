@@ -131,14 +131,15 @@ We can conclude that we can use Phobert as a tokenizer and transform it to train
 
 Yunhong He created reviews label dataset, trained and evaluated 3 Hugging Face Pre-trained BERT models including trituenhantaoio/bert-base-vietnamese-uncased, NlpHUST/vibert4news-base-cased, and bert-base-uncased, as well as Supervised Machine Learning algorithms, produced model evaluation visualizations. Setup team GitHub with folder structures. Created sentiment analysis Deep Learning and Machine Learning pipeline. Run /realtime_dreamer/sentiment_analysis.sh.
 
-<img width="800" alt="Sentiment Analysis Task" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20tasks.png">
+<img width="400" alt="Sentiment Analysis Task" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20tasks.png">
 
 Graph 1: Sentiment Analysis Task
 
+<strong>  </strong><br/>
 
 <img width="800" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
 
-Graph 1: Sentiment Analysis Process
+Graph 2: Sentiment Analysis Process
 
 <strong>  </strong><br/>
 
@@ -148,14 +149,14 @@ Yunhong He used clear positive and negative keyword search and eye scan to selec
 
 <img width="800" alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess.png">
 
-Graph 2: Sentiment Analysis Data Pre-processing
+Graph 3: Sentiment Analysis Data Pre-processing
 
 There is imbalanced data in train reviews.xlsx. 8% of the labels are negative class while 87% of the labels are positive class.  As the task mainly focuses on finding the reviews with 4 or 5 ratings but have negative emotions, F1 macro score is important for model evaluation. Oversampling negative class by random.choices function can make the size of negative class as same as that of positive class.
 
 
 <img width="250" alt="Sentiment Analysis Imbalanced Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20imbalanced%20classes%20before%20oversampling%20-%20visualization.png">
 
-Graph 3: Imbalanced Emotion Classes
+Graph 4: Imbalanced Emotion Classes
 
 <strong>  </strong><br/>
 
@@ -165,7 +166,7 @@ Hugging Face pre-trained BERT models and Supervised machine learning algorithms 
 
 <img width="900" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20models.png">
 
-Graph 4: Sentiment Analysis - Models
+Graph 5: Sentiment Analysis - Models
 
 <strong>  </strong><br/>
 
@@ -173,7 +174,7 @@ pre-trained BERT model are evaluated based on F1 scores (macro, micro and weight
 
 <img width="800" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20BERT%20Model%20training%20-%20Fine%20Tuning%20and%20Evaluation.png">
 
-Graph 5: Sentiment Analysis BERT Model Training, Fine Tuning and Evaluation
+Graph 6: Sentiment Analysis BERT Model Training, Fine Tuning and Evaluation
 
 Model performance mainly focus on the F1 macro score due to the imbalanced label for the negative class. The best BERT model is defined as the pre-trained BERT model with the highest F1 macro score at the best epoch among 10 epochs. 
 
@@ -183,12 +184,12 @@ From below Model Evaluation Visualizations, we can see that trituenhantaoio pre-
 
 <img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Pre-Trained BERT Model"     src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20pre-trained%20bert%20model%20-%20visualization.png">
 
-Graph 6: Sentiment Analysis Model Evaluation by Pre-trained BERT Model
+Graph 7: Sentiment Analysis Model Evaluation by Pre-trained BERT Model
 
 
 <img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Metrics" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20metrics%20-%20visualization.png">
 
-Graph 7: Sentiment Analysis Model Evaluation by Metrics
+Graph 8: Sentiment Analysis Model Evaluation by Metrics
 
 
 <strong>  </strong><br/>
@@ -196,7 +197,7 @@ Graph 7: Sentiment Analysis Model Evaluation by Metrics
 
 <img width="800" alt="Sentiment Analysis Model Evaluation by Classification Accuracy of Individual Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20individual%20class%20prediction%20accuracy%20-%20visualization.png">
 
-Graph 8: Sentiment Analysis Model Evaluation by Individual Class Prediction Accuracy
+Graph 9: Sentiment Analysis Model Evaluation by Individual Class Prediction Accuracy
 
 <strong>  </strong><br/>
 
@@ -205,7 +206,7 @@ Supervised machine learning algorithms are evaluated based on F1 scores (macro, 
 
 <img width="800" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Supervised%20Machine%20Learning%20Process.png">
 
-Graph 9: Sentiment Analysis - Supervised Machine Learning Process
+Graph 10: Sentiment Analysis - Supervised Machine Learning Process
 
 <strong>  </strong><br/>
 
@@ -214,7 +215,7 @@ Below graph shows that The classification performance of Supervised ML classifie
 
 <img width="600" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20supervised%20ml%20model%20evaluation%20-%20visualization.png">
 
-Graph 10: Sentiment Analysis Supervised ML Classifier Model Evaluation
+Graph 11: Sentiment Analysis Supervised ML Classifier Model Evaluation
 
 <strong>  </strong><br/>
 
@@ -222,21 +223,21 @@ Based on the above model evaluation, Hugging Face pre-trained BERT model trituen
 
 <strong>  </strong><br/>
 
-From below Graph 11: Sentiment Analysis - Emotions vs Ratings, we can see that the customer emotion in 39% of total reviews are actually neutral but gave the highest average ratings of 5. 7% of the toal reviews are negative but have average rating of 3.6 above median level.
+From below Graph 12: Sentiment Analysis - Emotions vs Ratings, we can see that the customer emotion in 39% of total reviews are actually neutral but gave the highest average ratings of 5. 7% of the toal reviews are negative but have average rating of 3.6 above median level.
 
 <img width="600" alt="Sentiment Analysis - Emotions" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Emotions%20vs%20rating.png">
 
-Graph 11: Sentiment Analysis - Emotions vs Ratings
+Graph 13: Sentiment Analysis - Emotions vs Ratings
 
 Above interactive graph is in Tab "Emotions Dashboard" at below link: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
 
 <strong>    </strong><br/>
 
-As shown in graph 12: Sentiment Analysis - Emotions vs High Ratings, among the reviews with high rating of 4 and 5, 4% of them are actually negative, 41% are neutral.  This indicates that 45% of the online customers overstated the ratings to 4 and 5 while they actually have neutral or negative emotions.
+As shown in graph 14: Sentiment Analysis - Emotions vs High Ratings, among the reviews with high rating of 4 and 5, 4% of them are actually negative, 41% are neutral.  This indicates that 45% of the online customers overstated the ratings to 4 and 5 while they actually have neutral or negative emotions.
 
 <img width="600" alt="Sentiment Analysis - Emotions vs high ratings of 4 and 5" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20emotions%20vs%20higher%20ratings%204%20and%205.png">
 
-Graph 12: Sentiment Analysis - Emotions vs High Ratings
+Graph 14: Sentiment Analysis - Emotions vs High Ratings
 
 Above interactive graph is in Tab "Emotions Dashboard" at below link: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
 
@@ -244,12 +245,12 @@ Above interactive graph is in Tab "Emotions Dashboard" at below link: https://pu
 
 <strong>  </strong><br/>
 
-As shown in the below Graph 13 Sentiment Analysis Dashboard, positive reviews mainly come from Product (24%) and Quality (21%). Customers are quite happy with Products with 95% of positive emotion and average rating of 4.9.  50% of Sales reviews, 18% of Logistic reviews, 13% of Service reviews are negative, Their average of rating for negative emotion was 3.6,  2.9 and 3.5,  which indicates that customers showed their dissatisfaction mainly in Sales, and then Logistic  and Service. Service reviews has lowest average rating in negative class. Additionally, 60% of Quality related reviews indicates neutral emotion.
+As shown in the below Graph 15 Sentiment Analysis Dashboard, positive reviews mainly come from Product (24%) and Quality (21%). Customers are quite happy with Products with 95% of positive emotion and average rating of 4.9.  50% of Sales reviews, 18% of Logistic reviews, 13% of Service reviews are negative, Their average of rating for negative emotion was 3.6,  2.9 and 3.5,  which indicates that customers showed their dissatisfaction mainly in Sales, and then Logistic  and Service. Service reviews has lowest average rating in negative class. Additionally, 60% of Quality related reviews indicates neutral emotion.
 
 
 <img width="1300" alt="Sentiment Analysis - Emotions Dashboard" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20emotions%20vs%20content%20class%20dashboard.png">
 
-Graph 13: Sentiment Analysis Dashboard
+Graph 15: Sentiment Analysis Dashboard
 
 Above interactive sentiment analysis visualization dashboard is in Tab "Sentiment Analysis Dashboard" at below link: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
 

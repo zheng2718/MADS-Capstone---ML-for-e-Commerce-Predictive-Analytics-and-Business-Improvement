@@ -51,23 +51,31 @@ We split data to Train and Test set , with test size =0.2 and then we split the 
 reviewtype__train_test_val_split.py in src/data/ will  import PhoBERT's word separator (Tokenization) ,’vinai/phobert-base’ as below 
       
       
-       from transformers import AutoModel, AutoTokenizer
-       from transformers import BertForSequenceClassification
+      from transformers import AutoModel, AutoTokenizer
+      from transformers import BertForSequenceClassification
 
       phobert = AutoModel.from_pretrained(“vinai/phobert-base”).to(device)
-      tokenizer = AutoTokenizer.from_pretrained(“vinai/phobert-base”)
 
 
 Then we select Phobert  Vietnamese NLP as Tokenizer
 
 
- <img width="553" alt="Screen Shot 2565-08-19 at 22 49 32" src="https://user-images.githubusercontent.com/100912986/185657737-cc1f708b-c317-48f7-a630-df0a2db08292.png">
+      tokenizer = AutoTokenizer.from_pretrained(“vinai/phobert-base”)
+
 
  
 which is used to convert the text into tokens corresponding to PhoBERT's lexicon. We load BertForSequenceClassification, which is a regular BERT model with a single linear layer added above for classification (Khanh, 2020). This process will be used to classify sentences. Once we provide the input data, the entire pre-trained BERT model and classifier will be trained with our specific task.
 
 
  <img width="464" alt="Screen Shot 2565-08-19 at 22 48 29" src="https://user-images.githubusercontent.com/100912986/185657647-227f228d-9160-4249-8cfe-94e8373da4f4.png">
+
+      model = BertForSequenceClassification.from_pretrained(
+         'vinai/phobert-base', 
+         num_labels = len(label_dict),
+         output_attentions = False,
+         output_hidden_states = False
+        )
+      model = model.to(device)
 
 
 We set the training loop by asking the model to compute gradience and putting the model in training mode, then unpack our input data. Then we delete the gradience in the previous iteration, Backpropagation, and update the weight using optimize.step() then, by each Epoch,we save the best model which has the lowest validation loss.

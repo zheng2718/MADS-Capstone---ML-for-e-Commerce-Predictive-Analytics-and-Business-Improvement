@@ -67,7 +67,6 @@ Then we select Phobert  Vietnamese NLP as Tokenizer
 which is used to convert the text into tokens corresponding to PhoBERT's lexicon. We load BertForSequenceClassification, which is a regular BERT model with a single linear layer added above for classification (Khanh, 2020). This process will be used to classify sentences. Once we provide the input data, the entire pre-trained BERT model and classifier will be trained with our specific task.
 
 
- <img width="464" alt="Screen Shot 2565-08-19 at 22 48 29" src="https://user-images.githubusercontent.com/100912986/185657647-227f228d-9160-4249-8cfe-94e8373da4f4.png">
 
       model = BertForSequenceClassification.from_pretrained(
          'vinai/phobert-base', 
@@ -86,7 +85,8 @@ The result of each training epoch will be saved in the reviewType_pho_bert_eval_
 <strong><br/>Model tuning comparison</strong><br/>
 We create reviewtype_chart1_tuning.py to compare the result of the best Phobert model with different hyperparameter and data process tuning, the other models have been trained from Colab environments and uploaded thier the Evaluation_df into ‘data/external’ directory; we are focusing on the F1 macro score and,F1 Average score and validation lost of each trained Epoch,  the result is shown in the ‘report/’ directory.
 
-![model_compar](https://user-images.githubusercontent.com/100912986/185656740-a483b745-edcc-4c71-bfaf-e94c755584c5.png)
+![reviewType_model_compare (2)](https://user-images.githubusercontent.com/100912986/185786647-6143751e-93fc-4076-bbcd-a79fd6d4c555.png)
+
 
  
 The best model (number #5)  hyper parameter tuning recorded as below:
@@ -106,8 +106,8 @@ eps = 1e-8
 We also compare the result of all Phobert models with other traditional ML algorithms such as Random forest, SVM, and XGM classifier that are trained by using GridserchCv to tune hyperparameters. The best score from each parameter selected is imported to the ‘data/external’.
 
 Again the best model is “Phobert- upsampling minority lass, which able to provide F1 macro score at 0.90)
-![model_compare_traditional](https://user-images.githubusercontent.com/100912986/185656357-71bf8779-837d-4a76-b95a-3cb803bec2ab.png)
 
+![reviewType_model_compare_traditional (1)](https://user-images.githubusercontent.com/100912986/185786652-38bb2353-2fe8-4791-903b-f47697751be3.png)
 
 <strong><br/>Model Testing </strong><br/>
 

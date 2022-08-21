@@ -202,6 +202,8 @@ From below Graph 8: Sentiment Analysis - Emotions vs Ratings, we can see that th
 
 Graph 8: Sentiment Analysis - Emotions vs Ratings
 
+Link to above interactive graph: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
+
 <strong>  </strong><br/>
 
 As shown in graph 9: Sentiment Analysis - Emotions vs High Ratings, among the reviews with high rating of 4 and 5, 4% of them are actually negative, 41% are neutral.  This indicates that 45% of the online customers overstated the ratings to 4 and 5 while they actually have neutral or negative emotions.
@@ -209,6 +211,9 @@ As shown in graph 9: Sentiment Analysis - Emotions vs High Ratings, among the re
 <img width="600" alt="Sentiment Analysis - Emotions vs high ratings of 4 and 5" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20emotions%20vs%20higher%20ratings%204%20and%205.png">
 
 Graph 9: Sentiment Analysis - Emotions vs High Ratings
+
+Link to above interactive graph: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
+
 
 <strong>  </strong><br/>
 

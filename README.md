@@ -213,6 +213,10 @@ Graph 10: Sentiment Analysis Supervised ML Classifier Model Evaluation
 
 <strong>  </strong><br/>
 
+Based on the above model evaluation, Hugging Face pre-trained BERT model trituenhantaoio/bert-base-vietnamese-uncased is chosen to conduct sentiment analysis for emotion classification of online customer reviews due to its best performance in terms of its stable and fast convergence of closing to zero for train loss, validation loss, and closing to 1 for F1 scores (macro, micro and weighted), and classification accuracy for positive, neutral and negative emotions across 10 epochs.  The train data created by clear positive or negative keyword search and eye scan to select the reviews for emotion labeling can significantly improve the BERT model performance, and thus is used to train the BERT model.
+
+<strong>  </strong><br/>
+
 From below Graph 11: Sentiment Analysis - Emotions vs Ratings, we can see that the customer emotion in 39% of total reviews are actually neutral but gave the highest average ratings of 5. 7% of the toal reviews are negative but have average rating of 3.6 above median level.
 
 <img width="600" alt="Sentiment Analysis - Emotions" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Emotions%20vs%20rating.png">

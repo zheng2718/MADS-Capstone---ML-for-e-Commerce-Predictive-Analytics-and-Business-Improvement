@@ -13,7 +13,7 @@ Our  goal is to build a NLP model to predict the review classes using the custo
 The pipeline script of this task created: reviewtype_script_.sh
  
  
-<strong><br/>Google Colab set up  and installation</strong><br/>
+<br/><strong><br/>Google Colab set up  and installation</strong><br/>
 To use PhoBERT model, we need GPU resources. Google Colab offers free GPU. Since we will be training a large neural network, we will need to take full advantage of this.
 
 GPUs can be added by going to the menu and selecting: Edit -> Notebook Settings -> Add accelerator ( GPU )
@@ -34,7 +34,7 @@ To run the Phobert require installation  transformer and pytorch, so we have to 
 
     !pip install torch
     
-<strong>Data loading and preparation:</strong><br/>
+<br/><strong>Data loading and preparation:</strong><br/>
 
 It will load, clean, and up-sample data to handle the two minority classes imbalanced. This process will take raw Reviews data  (stored in /data/raw/Git_mockup_review.xlsx. )
 
@@ -42,12 +42,12 @@ It will load, clean, and up-sample data to handle the two minority classes imbal
 And output reviewType_pre_process.csv
  
  
-<strong>Train_test_split the data </strong><br/>
+<br/><strong>Train_test_split the data </strong><br/>
 
 We split data to Train and Test set , with test size =0.2 and then we split the Train data again to train_df and Val_df for model training and model loss validation, the process will take input of reviewType_pre_process.csv  and output reviewType_df_upload.csv ready to transmit to the dataloader function.
  
  
-<strong>Train the Phobert model</strong><br/>
+<br/><strong>Train the Phobert model</strong><br/>
 reviewtype__train_test_val_split.py in src/data/ will  import PhoBERT's word separator (Tokenization) ,’vinai/phobert-base’ as below 
       
       
@@ -102,7 +102,7 @@ Ir = 1e-5
 eps = 1e-8
  
  
-<strong>Comparing Phobert with other algorithms</strong><br/>
+<br/><strong>Comparing Phobert with other algorithms</strong><br/>
 We also compare the result of all Phobert models with other traditional ML algorithms such as Random forest, SVM, and XGM classifier that are trained by using GridserchCv to tune hyperparameters. The best score from each parameter selected is imported to the ‘data/external’.
 
 Again the best model is “Phobert- upsampling minority lass, which able to provide F1 macro score at 0.90)

@@ -23,15 +23,16 @@ Then run the cell below to confirm that the GPU has been received.
     device = torch.device(“cuda:0” if torch.cuda.is_available() else “cpu”)
 
 
-For further analysis, the Vietnamese token was broken down from the larger original text. Many Vietnamese pre-trained NLP models are able to handle the task. For this task, we adopted a model called PhoBERT, which is a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. The objective of using this model  is to compare the performance of  PhoBERT  NLP to other traditional algorithms.
+For this task, we adopted a model called PhoBERT, which is a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. The objective of using this model  is to compare the performance of  PhoBERT  NLP to other traditional algorithms.
 
-Generally, PhoBERT  NLP  is to  able to extract high-quality linguistic features from our review text data. or we apply this models for a specific task, such as classification, real-time recognition, and answer questions, among others. Pre-trained PhoBERT models are considered as the state-of-the-art language models for Vietnamese (Pho, i.e., "Phở", is a popular food in Vietnam).
 
 To run the Phobert require installation  transformer and pytorch, so we have to install:
 
 <img width="441" alt="Screen Shot 2565-08-19 at 22 46 25" src="https://user-images.githubusercontent.com/100912986/185759858-25d6f3c5-12b6-4a94-ae55-47b70de51c8a.png">
 
- 
+    !pip install transformer
+
+    !pip install torch
 <strong><br/>Data loading and preparation:</strong><br/>
 
 It will load, clean, and up-sample data to handle the two minority classes imbalanced. This process will take raw Reviews data  (stored in /data/raw/Git_mockup_review.xlsx. )

@@ -231,11 +231,17 @@ Sentiment analysis model evaluation files are generated in Sentiment_Analysis_BE
 
 3.	Recommendation system
 
-To run the SVD algorithm for the recommender system, you will be required to install a python library called surprise: 
-```pip install surprise```
-'pip install surprise'
+Kensuke Suzuki used user id, product, and customer rating to train the Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…”.
 
-Kensuke Suzuki used user id, product, and customer rating to train the Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…” Conducted model evaluation.
+To run the SVD algorithm for the recommender system, you will be required to install a python library called surprise: 
+
+```pip install surprise```
+
+After installing Surprise, run 
+```recommendation_system.sh```
+and the final output recommendation_for_user_52354.csv will be in the data/final folder. 
+
+
 
 
 4.	Machine Learning for Sales Prediction

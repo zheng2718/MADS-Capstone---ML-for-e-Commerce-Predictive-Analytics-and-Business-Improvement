@@ -247,7 +247,7 @@ and the final output recommendation_for_user_52354.csv will be in the data/final
 Zheng Wei Lim used data of E-Commerce sales, customer, and product data to develop supervised ML algorithms through feature engineering and selection, model evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning and visualizations. 
 The final model used is a XGBoost Random Forest model with R2 score of 0.95 and RMSE of 82.7m - an improvement of 77.8% over the baseline model. This indicates that the model has high accuracy of predicting future revenue from past sales data, enabling the company to be more responsive and confident in its revenue forecasting. 
 
-![alt text](https://github.com/realtime_dreamer/reports/figures/Predictive-modeling-viz-features-correlation.jpg)
+<img width="464" alt="Predictive modeling - feature engineering and selection" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-features-correlation.jpg">
 
 
 

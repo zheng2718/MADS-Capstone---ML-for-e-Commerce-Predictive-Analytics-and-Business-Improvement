@@ -137,7 +137,7 @@ Graph 1: Sentiment Analysis Process
 
 
 
-<strong>(1) Data used to train the model<br/>
+<strong>(1) Data used to train the model</strong><br/>
 
 Yunhong He used clear positive and negative keyword search and eye scan to select customer reviews for emotion labeling. There is imbalanced data in train reviews.xlsx. 8% of the labels are negative class while 87% of the labels are positive class.  As the task mainly focuses on finding the reviews with 4 or 5 ratings but have negative emotions, F1 macro score is important for model evaluation. Oversampling negative class by random.choices function can make the size of negative class as same as that of positive class.
 

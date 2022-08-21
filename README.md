@@ -255,19 +255,18 @@ Project Organization
     ├── README.md               <- The top-level README for developers using this project.
     ├── data
     │   ├── external            <- Data from third party sources.
-    │       └── df__phobert_all.sav
-    │       └── df__phobert_grouping.sav
-    │       └── df_phobert_remove.sav
-    │       └── df__phobert_all_upsamples.sav
-    │       └── df_predict_all.sav
-    │       └── df_predict_upsampling.sav
-    │       └── df_predict_grouping.sav
-    │       └── df_predict_remove.sav
-    │       └── phobert1_eval_df_.csv
-    │       └── phobert2_eval_df_.csv
-    │       └── phobert3_eval_df_.csv
-    │       └── phobert3_dropout_eval_df_.csv
-    
+    │   │   └── df__phobert_all.sav
+    │   │   └── df__phobert_grouping.sav
+    │   │   └── df_phobert_remove.sav
+    │   │   └── df__phobert_all_upsamples.sav
+    │   │   └── df_predict_all.sav
+    │   │   └── df_predict_upsampling.sav
+    │   │   └── df_predict_grouping.sav
+    │   │   └── df_predict_remove.sav
+    │   │   └── phobert1_eval_df_.csv
+    │   │   └── phobert2_eval_df_.csv
+    │   │   └── phobert3_eval_df_.csv
+    │   │   └── phobert3_dropout_eval_df_.csv
     |   └── final               <- File with final data of the project
     |       └── reviewtype__accuracy_per_class_df.csv
     |       └── reviewtype_phobert_model.pt
@@ -307,8 +306,6 @@ Project Organization
     |   |   └── reviewType_pre_process.csv
     |   |   └── reviewType_df_upload.csv
     |   |   └── reviews_with_user_id.csv
-
-    
     |   |
     │   └── raw                 <- The original, immutable data dump.
     │       └── Git_mockup_reviews.xlsx
@@ -321,31 +318,31 @@ Project Organization
     │
     ├── models                  <- Trained and serialized models, model predictions, or model summaries 
     |   └── sentiment_analysis_best_bert_model.model  <- link for this model: 
-    |       https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
+    │   │   https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
     │   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model  
-    |        <- link: https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing
+    │   │    <- link: https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing
     │   └── predictive-final-model.sav <- final XGBoost Random Forest model for sales prediction    
     |
     ├── notebooks               <- Jupyter notebooks. A naming convention is a number (for ordering),
     │   |                          the creator's name, and a short `-` delimited description, e.g.
     │   |                          `1.0-jqp-initial-data-exploration.
     |   └── Sentiment_Analysis_Supervised_Machine_Learning_colab.ipynb   
-    |       <- Complete Reviews label dataset is run in the notebook which can be run in Google Colab.
+    |   |   <- Complete Reviews label dataset is run in the notebook which can be run in Google Colab.
     |   └── Sentiment_Analysis_Supervised_Machine_Learning_Model_Evaluation_local.ipynb 
-    |       <- Complete Reviews label dataset is run in this notebook.
+    |   |   <- Complete Reviews label dataset is run in this notebook.
     |   └── Sentiment_Analysis_BERT_Model_Evaluation.ipynb 
-    |       <- Complete Reviews label dataset is run in this notebook.
+    |   |   <- Complete Reviews label dataset is run in this notebook.
     |   └── Sentiment_Analysis_BERT_Model_Evaluation.zip  
-    |       <- Using zip file of the notebook to preserve the visualizations in the notebook.
+    |   |   <- Using zip file of the notebook to preserve the visualizations in the notebook.
     |   └── Model-Shipping-ProductPerformance-ReviewEmotion.ipynb  
-    |       <- Predictive modeling on all merged data for sales forecasting
+    |   |   <- Predictive modeling on all merged data for sales forecasting
     |   └── Analytics-Shipping-Review.ipynb  <- EDA and visualization on shipping and review data
     │
     ├── references              <- Data dictionaries, manuals, and all other explanatory materials.
     │
     ├── reports                 <- Generated analysis as HTML, PDF, LaTeX, etc.
     |   └── Sentiment Analysis.docx  <- Sentiment Analysis report
-    |
+    │   │
     │   └── figures             <- Generated graphics and figures to be used in reporting
     |       └── sentiment analysis - model evaluation by individual class prediction accuracy - visualization.png
     |       └── sentiment analysis - model evaluation by metrics - visualization.png
@@ -362,6 +359,7 @@ Project Organization
     │                              generated with `pip freeze > requirements.txt`
     │
     |── sentiment_analysis.sh   <- The bash file to run the sentiment_analysis pipeline.
+    |── recommendation_system.sh   <- The bash file to run the recommendation_system pipeline.
     |
     ├── setup.py                <- makes project pip installable (pip install -e .) so src can be imported
     ├── src                     <- Source code for use in this project.

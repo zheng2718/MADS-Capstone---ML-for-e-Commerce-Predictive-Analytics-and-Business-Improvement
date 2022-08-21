@@ -263,6 +263,7 @@ Project Organization
     |   └── final               <- File with final data of the project
     |       └── reviewtype__accuracy_per_class_df.csv
     |       └── reviewtype_phobert_model.pt
+    |       └── recommendation_for_user_52354.csv
     | 
     |
     │   ├── interim             <- Intermediate data that has been transformed. Files with BERT model evaluation metrics.

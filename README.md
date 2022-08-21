@@ -147,7 +147,7 @@ Graph 2: Sentiment Analysis Process
 
 Yunhong He used clear positive and negative keyword search and eye scan to select customer reviews for emotion labeling. 
 
-<img width="800" alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess.png">
+<img width="800" alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocessing.png">
 
 Graph 3: Sentiment Analysis Data Pre-processing
 

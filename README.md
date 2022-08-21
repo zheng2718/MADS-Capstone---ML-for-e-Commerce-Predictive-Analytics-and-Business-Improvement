@@ -209,7 +209,7 @@ As shown in the below Graph 10: Sentiment Analysis Dashboard, positive reviews m
 
 Graph 10: Sentiment Analysis Dashboard
 
-Link for above sentiment analysis visualization dashboards: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
+Link for above interactive sentiment analysis visualization dashboards: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
 
 (3) Summary
 

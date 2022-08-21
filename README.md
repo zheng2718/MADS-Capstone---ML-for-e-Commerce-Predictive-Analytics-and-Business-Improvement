@@ -131,7 +131,7 @@ We can conclude that we can use Phobert as a tokenizer and transform it to train
 
 Yunhong He created reviews label dataset, trained and evaluated 3 Hugging Face Pre-trained BERT models including trituenhantaoio/bert-base-vietnamese-uncased, NlpHUST/vibert4news-base-cased, and bert-base-uncased, as well as Supervised Machine Learning algorithms, produced model evaluation visualizations. Setup team GitHub with folder structures. Created sentiment analysis Deep Learning and Machine Learning pipeline. Run /realtime_dreamer/sentiment_analysis.sh.
 
-<img width="700" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
+<img width="800" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
 
 Graph 1: Sentiment Analysis Process
 
@@ -141,7 +141,7 @@ Graph 1: Sentiment Analysis Process
 
 Yunhong He used clear positive and negative keyword search and eye scan to select customer reviews for emotion labeling. 
 
-<img width="700" alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess.png">
+<img width="800" alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess.png">
 
 Graph 2: Sentiment Analysis Data Pre-processing
 
@@ -166,7 +166,7 @@ Graph 4: Sentiment Analysis - Models
 
 pre-trained BERT model are evaluated based on F1 scores (macro, micro and weighted), train and validation losses.
 
-<img width="700" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20BERT%20Model%20training%20-%20Fine%20Tuning%20and%20Evaluation.png">
+<img width="800" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20BERT%20Model%20training%20-%20Fine%20Tuning%20and%20Evaluation.png">
 
 Graph 5: Sentiment Analysis BERT Model Training, Fine Tuning and Evaluation
 
@@ -198,7 +198,7 @@ Graph 8: Sentiment Analysis Model Evaluation by Individual Class Prediction Accu
 
 Supervised machine learning algorithms are evaluated based on F1 scores (macro, micro, and weighted)
 
-<img width="700" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Supervised%20Machine%20Learning%20Process.png">
+<img width="800" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Supervised%20Machine%20Learning%20Process.png">
 
 Graph 9: Sentiment Analysis - Supervised Machine Learning Process
 

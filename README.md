@@ -141,7 +141,7 @@ Graph 1: Sentiment Analysis Process
 
 Yunhong He used clear positive and negative keyword search and eye scan to select customer reviews for emotion labeling. 
 
-<img width="800" alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess.png">
+<img width="700" alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess.png">
 
 Graph 2: Sentiment Analysis Data Pre-processing
 
@@ -173,7 +173,7 @@ Graph 5: Sentiment Analysis BERT Model Training, Fine Tuning and Evaluation
 Model performance mainly focus on the F1 macro score due to the imbalanced label for the negative class. The best BERT model is defined as the pre-trained BERT model with the highest F1 macro score at the best epoch among 10 epochs. 
 
 
-From belowModel Evaluation Visualizations, we can see that trituenhantaoio pre-trained BERT model outperformed other pre-trained BERT models in terms of its stable and fast convergence of closing to zero for train loss, validation loss, and closing to 1 for F1 scores (macro, micro and weighted), and classification accuracy for positive, neutral and negative emotions across 10 epochs. Moreover, the train data created by clear positive or negative keyword search and eye scan to select the reviews for emotion labeling and oversamping the negative class can significantly improve the BERT model performance.
+From below Model Evaluation Visualizations, we can see that trituenhantaoio pre-trained BERT model outperformed other pre-trained BERT models in terms of its stable and fast convergence of closing to zero for train loss, validation loss, and closing to 1 for F1 scores (macro, micro and weighted), and classification accuracy for positive, neutral and negative emotions across 10 epochs. Moreover, the train data created by clear positive or negative keyword search and eye scan to select the reviews for emotion labeling and oversamping the negative class can significantly improve the BERT model performance.
 
 
 <img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Pre-Trained BERT Model"     src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20pre-trained%20bert%20model%20-%20visualization.png">

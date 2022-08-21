@@ -171,8 +171,6 @@ From belowModel Evaluation Visualizations, we can see that trituenhantaoio pre-t
 Graph 4: Sentiment Analysis Model Evaluation by Pre-trained BERT Model
 
 
-<strong>  </strong><br/>
-
 <img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Metrics" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20metrics%20-%20visualization.png">
 
 Graph 5: Sentiment Analysis Model Evaluation by Metrics

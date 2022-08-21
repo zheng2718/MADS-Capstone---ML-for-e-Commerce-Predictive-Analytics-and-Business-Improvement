@@ -131,7 +131,7 @@ We can conclude that we can use Phobert as a tokenizer and transform it to train
 
 Yunhong He created reviews label dataset, trained and evaluated 3 Hugging Face Pre-trained BERT models including trituenhantaoio/bert-base-vietnamese-uncased, NlpHUST/vibert4news-base-cased, and bert-base-uncased, as well as Supervised Machine Learning algorithms, produced model evaluation visualizations. Setup team GitHub with folder structures. Created sentiment analysis Deep Learning and Machine Learning pipeline. Run /realtime_dreamer/sentiment_analysis.sh.
 
-<img width="1000" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
+<img width="1000" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
 
 Graph 1: Sentiment Analysis Process
 

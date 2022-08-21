@@ -34,7 +34,7 @@ To run the Phobert require installation  transformer and pytorch, so we have to 
 
     !pip install torch
     
-<strong><br/>Data loading and preparation:</strong><br/>
+<strong>Data loading and preparation:</strong><br/>
 
 It will load, clean, and up-sample data to handle the two minority classes imbalanced. This process will take raw Reviews data  (stored in /data/raw/Git_mockup_review.xlsx. )
 
@@ -42,12 +42,12 @@ It will load, clean, and up-sample data to handle the two minority classes imbal
 And output reviewType_pre_process.csv
  
  
-<strong><br/>Train_test_split the data </strong><br/>
+<strong>Train_test_split the data </strong><br/>
 
 We split data to Train and Test set , with test size =0.2 and then we split the Train data again to train_df and Val_df for model training and model loss validation, the process will take input of reviewType_pre_process.csv  and output reviewType_df_upload.csv ready to transmit to the dataloader function.
  
  
-<strong><br/>Train the Phobert model</strong><br/>
+<strong>Train the Phobert model</strong><br/>
 reviewtype__train_test_val_split.py in src/data/ will  import PhoBERT's word separator (Tokenization) ,’vinai/phobert-base’ as below 
       
       
@@ -102,7 +102,7 @@ Ir = 1e-5
 eps = 1e-8
  
  
-<strong><br/>Comparing Phobert with other algorithms</strong><br/>
+<strong>Comparing Phobert with other algorithms</strong><br/>
 We also compare the result of all Phobert models with other traditional ML algorithms such as Random forest, SVM, and XGM classifier that are trained by using GridserchCv to tune hyperparameters. The best score from each parameter selected is imported to the ‘data/external’.
 
 Again the best model is “Phobert- upsampling minority lass, which able to provide F1 macro score at 0.90)
@@ -118,7 +118,7 @@ Input_text='Bàn ủi hơi nước cầm tay tiện lợi Tefal - DT6130E0, hàn
 Predict review type :  Quality
 
 
-<strong><br/>In conclusion</strong><br/>
+<strong>In conclusion</strong><br/>
 We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. For this reason, it is the best algorithm to predict the reviews classification tasks because of its superiority compared to other algorithms. While the data imbalance was an issue due to moderate, we overcame it by over-sampling the minority. The outcome was optimal based on the elements of the task and no data preprocessing. The Phobert model requires parameter tuning, and from the results, we were able to increase hidden dropout to 0.4.
 
 

@@ -42,7 +42,7 @@ def recommender(data, user_id, output_file):
     user_recommendation['user_id'] = user_id
     user_recommendation = user_recommendation.reset_index()
     user_recommendation = user_recommendation[['user_id', 'Items', 'Estimate_Score']]
-    user_recommendation.to_csv(swag_output_file, index = False)
+    user_recommendation.to_csv(output_file, index = False)
 #     return user_recommendation
 
 

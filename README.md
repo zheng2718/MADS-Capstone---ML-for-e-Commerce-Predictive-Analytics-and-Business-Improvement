@@ -202,7 +202,7 @@ From below Graph 8: Sentiment Analysis - Emotions vs Ratings, we can see that th
 
 Graph 8: Sentiment Analysis - Emotions vs Ratings
 
-Link to above interactive graph: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
+Above interactive graph is in Tab "Emotions Dashboard" at below link: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
 
 <strong>  </strong><br/>
 
@@ -212,7 +212,8 @@ As shown in graph 9: Sentiment Analysis - Emotions vs High Ratings, among the re
 
 Graph 9: Sentiment Analysis - Emotions vs High Ratings
 
-Link to above interactive graph: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
+Above interactive graph is in Tab "Emotions Dashboard" at below link: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
+
 
 
 <strong>  </strong><br/>
@@ -224,7 +225,7 @@ As shown in the below Graph 10: Sentiment Analysis Dashboard, positive reviews m
 
 Graph 10: Sentiment Analysis Dashboard
 
-Link for above interactive sentiment analysis visualization dashboards: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
+Above interactive sentiment analysis visualization dashboard is in Tab "Sentiment Analysis Dashboard" at below link: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
 
 <strong>  </strong><br/>
 

@@ -1,12 +1,12 @@
-realtime_dreamer
+<h1>realtime_dreamer</h1>
 ==============================
 <img width="1391" alt="Screen Shot 2565-08-19 at 23 56 15" src="https://user-images.githubusercontent.com/100912986/185674568-bfac3364-6555-4d8c-88c0-79101a23269e.png">
 
 This Realtime Dreamer project is to use real Ecommerce data to perform NLP for Vietnamese language and machine learning tasks in order to settle a real-world business challenge of a company in Vietnam. We split our project into four tasks:
 
+The full report,please visit our blog post :https://madsrealtimedreamer.wordpress.com/
 
-
-1.	Customer Reviews Type classification
+<h2>1.	Customer Reviews Type classification</h2>
  
 Our  goal is to build a NLP model to predict the review classes using the Product_reviews_dataset.xlsx. The data collection process was completed by the customer service team of a company, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, along with labeling the type of the review manually
 
@@ -113,7 +113,7 @@ We can conclude that we can use Phobert as a tokenizer and transform it to train
 
 
 
-2.	Sentiment analysis for customer reviews
+<h2>2.	Sentiment analysis for customer reviews</h2>
 
 <img width="1300" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
 
@@ -229,7 +229,7 @@ Sentiment analysis model evaluation files are generated in Sentiment_Analysis_BE
 
 
 
-3.	Recommendation system
+<h2>3.	Recommendation system</h2>
 
 Kensuke Suzuki used user id, product, and customer rating to train the Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…”.
 
@@ -242,23 +242,15 @@ After installing Surprise, run
 and the final output recommendation_for_user_52354.csv will be in the data/final folder. 
 
 
-4.	Machine Learning for Sales Prediction
+<h2>4.	Machine Learning for Sales Prediction</h2>
 
 Zheng Wei Lim used data of E-Commerce sales, customer, and product data to develop supervised ML algorithms through feature engineering and selection, model evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning and visualizations. 
-
 The final model used is a XGBoost Random Forest model with R2 score of 0.95 and RMSE of 82.7m - an improvement of 77.8% over the baseline model. This indicates that the model has high accuracy of predicting future revenue from past sales data, enabling the company to be more responsive and confident in its revenue forecasting. 
 
-<img width="464" alt="Predictive Modeling - Feature Engineering and Selection" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-features-correlation.jpg">
-Feature Engineering and Selection of Models
-
-<img width="464" alt="Predictive Modeling - Model Development and Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modleing-viz-model-evaluation.jpg">
-Model Development and Evaluation
-
-<img width="464" alt="Predictive Modeling - Model Development and Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-final-model-optuna-optimizationhistory.jpg">
-Final XGBoost Random Forest Model with Hyperparameter Tuning
+<img width="464" alt="Predictive modeling - feature engineering and selection" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-features-correlation.jpg">
 
 
-------------
+
 Project Organization
 ------------
 

@@ -97,7 +97,7 @@ attention_probs_dropout_prob = 0.1
 pre_trained_model = 'vinai/phobert-base'
 model_type = pre_trained_model.split('/')[0]
 batch_size = 8
-epochs = 1
+epochs = 2
 Ir = 1e-5
 eps = 1e-8
  

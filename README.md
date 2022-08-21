@@ -115,6 +115,10 @@ We can conclude that we can use Phobert as a tokenizer and transform it to train
 
 2.	Sentiment analysis for customer reviews
 
+<img width="1300" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
+
+Graph 1: Sentiment Analysis Process
+
 Yunhong He created reviews label dataset, trained and evaluated 3 Hugging Face Pre-trained BERT models including trituenhantaoio/bert-base-vietnamese-uncased, NlpHUST/vibert4news-base-cased, and bert-base-uncased, as well as Supervised Machine Learning algorithms, produced model evaluation visualizations. Setup team GitHub with folder structures. Created sentiment analysis Deep Learning and Machine Learning pipeline. Run /realtime_dreamer/sentiment_analysis.sh.
 
 (1) Data used to train the model
@@ -125,7 +129,7 @@ Below are Model Evaluation Visualizations:
 
 <img width="250" alt="Sentiment Analysis Imbalanced Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20imbalanced%20classes%20before%20oversampling%20-%20visualization.png">
 
-Graph 1: Imbalanced Emotion Classes
+Graph 2: Imbalanced Emotion Classes
 
 (2) Model Selection and Evaluation
 
@@ -133,7 +137,7 @@ Hugging Face pre-trained BERT models and Supervised machine learning algorithms 
 
 <img width="1300" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20models.png">
 
-Graph 2: Sentiment Analysis - Models
+Graph 3: Sentiment Analysis - Models
 
 
 pre-trained BERT model are evaluated based on F1 scores (macro, micro and weighted), train and validation losses.
@@ -142,14 +146,14 @@ Model performance mainly focus on the F1 macro score due to the imbalanced label
 
 <img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Pre-Trained BERT Model"     src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20pre-trained%20bert%20model%20-%20visualization.png">
 
-Graph 3: Sentiment Analysis Model Evaluation by Pre-trained BERT Model
+Graph 4: Sentiment Analysis Model Evaluation by Pre-trained BERT Model
 
 
 
 
 <img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Metrics" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20metrics%20-%20visualization.png">
 
-Graph 4: Sentiment Analysis Model Evaluation by Metrics
+Graph 5: Sentiment Analysis Model Evaluation by Metrics
 
 
 
@@ -157,39 +161,39 @@ Graph 4: Sentiment Analysis Model Evaluation by Metrics
 
 <img width="800" alt="Sentiment Analysis Model Evaluation by Classification Accuracy of Individual Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20individual%20class%20prediction%20accuracy%20-%20visualization.png">
 
-Graph 5: Sentiment Analysis Model Evaluation by Individual Class Prediction Accuracy
+Graph 6: Sentiment Analysis Model Evaluation by Individual Class Prediction Accuracy
 
 
 <img width="600" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20Emotions.png">
 
 
 
-Graph 6: Sentiment Analysis Supervised ML Classifier Model Evaluation
+Graph 7: Sentiment Analysis Supervised ML Classifier Model Evaluation
 
 Interactive graph: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysis-Emotions?publish=yes
 
 
-From below Graph 7: Sentiment Analysis Emotions, we can see that the customer emotion in 39% of total reviews are actually neutral but gave the highest average ratings of 5. 7% of the toal reviews are negative but have average rating of 3.6 above median level.
+From below Graph 8: Sentiment Analysis - Emotions vs Ratings, we can see that the customer emotion in 39% of total reviews are actually neutral but gave the highest average ratings of 5. 7% of the toal reviews are negative but have average rating of 3.6 above median level.
 
 <img width="600" alt="Sentiment Analysis - Emotions" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Emotions%20vs%20rating.png">
 
-Graph 7: Sentiment Analysis - Emotions vs Ratings
+Graph 8: Sentiment Analysis - Emotions vs Ratings
 
 
-From graph 8: Among the reviews with high rating of 4 and 5, 4% of them are actually negative, 41% are neutral.  This indicates that 45% of the online customers overstated the ratings to 4 and 5 while they actually have neutral or negative emotions.
+As shown in graph 9: Sentiment Analysis - Emotions vs High Ratings, among the reviews with high rating of 4 and 5, 4% of them are actually negative, 41% are neutral.  This indicates that 45% of the online customers overstated the ratings to 4 and 5 while they actually have neutral or negative emotions.
 
 <img width="600" alt="Sentiment Analysis - Emotions vs high ratings of 4 and 5" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20emotions%20vs%20higher%20ratings%204%20and%205.png">
 
-Graph 8: Sentiment Analysis - Emotions vs High Ratings
+Graph 9: Sentiment Analysis - Emotions vs High Ratings
 
 
 
-As shown in the below Graph 9: Sentiment Analysis Dashboard, positive reviews mainly come from Product (24%) and Quality (21%).  50% of Sales reviews, 18% of Logistic reviews, 13% of Service reviews are negative, Their average of rating for negative emotion was 3.6,  2.9 and 3.5,  which indicates that customers showed their dissatisfaction mainly in Sales, and then Logistic  and Service. Service reviews has lowest average rating in negative class. Customers are quite happy with Products with 95% of positive emotion and average rating of 4.9. Additionally, 60% of Quality related reviews indicates neutral emotion.
+As shown in the below Graph 10: Sentiment Analysis Dashboard, positive reviews mainly come from Product (24%) and Quality (21%).  50% of Sales reviews, 18% of Logistic reviews, 13% of Service reviews are negative, Their average of rating for negative emotion was 3.6,  2.9 and 3.5,  which indicates that customers showed their dissatisfaction mainly in Sales, and then Logistic  and Service. Service reviews has lowest average rating in negative class. Customers are quite happy with Products with 95% of positive emotion and average rating of 4.9. Additionally, 60% of Quality related reviews indicates neutral emotion.
 
 
 <img width="1300" alt="Sentiment Analysis - Emotions vs high ratings of 4 and 5" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20emotions%20vs%20content%20class%20dashboard.png">
 
-Graph 9: Sentiment Analysis Dashboard
+Graph 10: Sentiment Analysis Dashboard
 
 Link for above sentiment analysis visualization dashboards: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
 

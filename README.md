@@ -127,7 +127,7 @@ We can conclude that we can use Phobert as a tokenizer and transform it to train
 <strong>  </strong><br/>
 
 
-<h2>2.	Sentiment analysis for customer reviews</h2>
+<h2>2.	Sentiment Analysis For Customer Reviews</h2>
 
 Yunhong He created reviews label dataset, trained and evaluated 3 Hugging Face Pre-trained BERT models including trituenhantaoio/bert-base-vietnamese-uncased, NlpHUST/vibert4news-base-cased, and bert-base-uncased, as well as Supervised Machine Learning algorithms, produced model evaluation visualizations. Setup team GitHub with folder structures. Created sentiment analysis Deep Learning and Machine Learning pipeline. Run /realtime_dreamer/sentiment_analysis.sh.
 

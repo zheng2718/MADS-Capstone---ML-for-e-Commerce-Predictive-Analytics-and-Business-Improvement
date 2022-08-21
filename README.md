@@ -158,7 +158,7 @@ Graph 3: Imbalanced Emotion Classes
 
 Hugging Face pre-trained BERT models and Supervised machine learning algorithms are trained and evaluated in the sentiment analysis of the reviews.
 
-<img width="900" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20models.png">
+<img width="700" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20models.png">
 
 Graph 4: Sentiment Analysis - Models
 
@@ -166,7 +166,7 @@ Graph 4: Sentiment Analysis - Models
 
 pre-trained BERT model are evaluated based on F1 scores (macro, micro and weighted), train and validation losses.
 
-<img width="900" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20BERT%20Model%20training%20-%20Fine%20Tuning%20and%20Evaluation.png">
+<img width="700" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20BERT%20Model%20training%20-%20Fine%20Tuning%20and%20Evaluation.png">
 
 Graph 5: Sentiment Analysis BERT Model Training, Fine Tuning and Evaluation
 
@@ -198,7 +198,7 @@ Graph 8: Sentiment Analysis Model Evaluation by Individual Class Prediction Accu
 
 Supervised machine learning algorithms are evaluated based on F1 scores (macro, micro, and weighted)
 
-<img width="800" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Supervised%20Machine%20Learning%20Process.png">
+<img width="700" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Supervised%20Machine%20Learning%20Process.png">
 
 Graph 9: Sentiment Analysis - Supervised Machine Learning Process
 

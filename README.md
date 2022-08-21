@@ -297,6 +297,7 @@ Project Organization
     |   |   └── sentiment_analysis_reviews_label_split.csv
     |   |   └── reviewType_pre_process.csv
     |   |   └── reviewType_df_upload.csv
+    |   |   └── reviews_with_user_id.csv
 
     
     |   |
@@ -374,7 +375,8 @@ Project Organization
     │   │   └── sentiment_analysis_utility_functions.py
     │   │   └── reviewtype_train_phobert.py    
     │   │   └── reviewtype_validate_phobert_model.py    
-    │   │   └── reviewtype_text_test_prediction.py     
+    │   │   └── reviewtype_text_test_prediction.py
+    │   │   └── recommendation_system.py
     │   │
     │   └── visualization       <- Scripts to create exploratory and results-oriented visualizations
     │       └── reviewtype_chart1_tuning.py

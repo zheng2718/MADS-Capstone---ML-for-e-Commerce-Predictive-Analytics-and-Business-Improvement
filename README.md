@@ -242,8 +242,6 @@ After installing Surprise, run
 and the final output recommendation_for_user_52354.csv will be in the data/final folder. 
 
 
-
-
 4.	Machine Learning for Sales Prediction
 
 Zheng Wei Lim used E-Commerce data to develop supervised ML algorithms through feature engineering, model evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning and visualizations. 

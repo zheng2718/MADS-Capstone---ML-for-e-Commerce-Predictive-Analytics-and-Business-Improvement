@@ -137,7 +137,7 @@ Graph 1: Sentiment Analysis Task
 
 <strong>  </strong><br/>
 
-<img width="800" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
+<img width="800" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20process.png">
 
 Graph 2: Sentiment Analysis Process
 

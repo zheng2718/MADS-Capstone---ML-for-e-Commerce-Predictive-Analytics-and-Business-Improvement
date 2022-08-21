@@ -135,7 +135,7 @@ Yunhong He created reviews label dataset, trained and evaluated 3 Hugging Face P
 
 Graph 1: Sentiment Analysis Process
 
-
+<strong>  </strong><br/>
 
 <strong>(1) Data used to train the model</strong><br/>
 
@@ -146,6 +146,8 @@ Yunhong He used clear positive and negative keyword search and eye scan to selec
 
 Graph 2: Imbalanced Emotion Classes
 
+<strong>  </strong><br/>
+
 <strong>(2) Model Selection and Evaluation</strong><br/>
 
 Hugging Face pre-trained BERT models and Supervised machine learning algorithms are trained and evaluated in the sentiment analysis of the reviews.
@@ -154,12 +156,14 @@ Hugging Face pre-trained BERT models and Supervised machine learning algorithms 
 
 Graph 3: Sentiment Analysis - Models
 
+<strong>  </strong><br/>
 
 pre-trained BERT model are evaluated based on F1 scores (macro, micro and weighted), train and validation losses.
 
 Model performance mainly focus on the F1 macro score due to the imbalanced label for the negative class. The best BERT model is defined as the pre-trained BERT model with the highest F1 macro score at the best epoch among 10 epochs. 
 
-Below are Model Evaluation Visualizations. It is found that trituenhantaoio pre-trained BERT model outperformed other pre-trained BERT models in terms of its stable and fast convergence of closing to zero for train loss, validation loss, and closing to 1 for F1 scores (macro, micro and weighted), and classification accuracy for positive, neutral and negative emotions across 10 epochs. Moreover, the train data created by clear positive or negative keyword search and eye scan to select the reviews for emotion labeling and oversamping the negative class can significantly improve the BERT model performance.
+
+From belowModel Evaluation Visualizations, we can see that trituenhantaoio pre-trained BERT model outperformed other pre-trained BERT models in terms of its stable and fast convergence of closing to zero for train loss, validation loss, and closing to 1 for F1 scores (macro, micro and weighted), and classification accuracy for positive, neutral and negative emotions across 10 epochs. Moreover, the train data created by clear positive or negative keyword search and eye scan to select the reviews for emotion labeling and oversamping the negative class can significantly improve the BERT model performance.
 
 
 <img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Pre-Trained BERT Model"     src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20pre-trained%20bert%20model%20-%20visualization.png">
@@ -167,20 +171,21 @@ Below are Model Evaluation Visualizations. It is found that trituenhantaoio pre-
 Graph 4: Sentiment Analysis Model Evaluation by Pre-trained BERT Model
 
 
-
+<strong>  </strong><br/>
 
 <img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Metrics" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20metrics%20-%20visualization.png">
 
 Graph 5: Sentiment Analysis Model Evaluation by Metrics
 
 
-
+<strong>  </strong><br/>
 
 
 <img width="800" alt="Sentiment Analysis Model Evaluation by Classification Accuracy of Individual Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20individual%20class%20prediction%20accuracy%20-%20visualization.png">
 
 Graph 6: Sentiment Analysis Model Evaluation by Individual Class Prediction Accuracy
 
+<strong>  </strong><br/>
 
 <img width="600" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20Emotions.png">
 
@@ -188,8 +193,10 @@ Graph 6: Sentiment Analysis Model Evaluation by Individual Class Prediction Accu
 
 Graph 7: Sentiment Analysis Supervised ML Classifier Model Evaluation
 
+
 Interactive graph: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysis-Emotions?publish=yes
 
+<strong>  </strong><br/>
 
 From below Graph 8: Sentiment Analysis - Emotions vs Ratings, we can see that the customer emotion in 39% of total reviews are actually neutral but gave the highest average ratings of 5. 7% of the toal reviews are negative but have average rating of 3.6 above median level.
 
@@ -197,6 +204,7 @@ From below Graph 8: Sentiment Analysis - Emotions vs Ratings, we can see that th
 
 Graph 8: Sentiment Analysis - Emotions vs Ratings
 
+<strong>  </strong><br/>
 
 As shown in graph 9: Sentiment Analysis - Emotions vs High Ratings, among the reviews with high rating of 4 and 5, 4% of them are actually negative, 41% are neutral.  This indicates that 45% of the online customers overstated the ratings to 4 and 5 while they actually have neutral or negative emotions.
 
@@ -204,7 +212,7 @@ As shown in graph 9: Sentiment Analysis - Emotions vs High Ratings, among the re
 
 Graph 9: Sentiment Analysis - Emotions vs High Ratings
 
-
+<strong>  </strong><br/>
 
 As shown in the below Graph 10: Sentiment Analysis Dashboard, positive reviews mainly come from Product (24%) and Quality (21%).  50% of Sales reviews, 18% of Logistic reviews, 13% of Service reviews are negative, Their average of rating for negative emotion was 3.6,  2.9 and 3.5,  which indicates that customers showed their dissatisfaction mainly in Sales, and then Logistic  and Service. Service reviews has lowest average rating in negative class. Customers are quite happy with Products with 95% of positive emotion and average rating of 4.9. Additionally, 60% of Quality related reviews indicates neutral emotion.
 
@@ -215,10 +223,13 @@ Graph 10: Sentiment Analysis Dashboard
 
 Link for above interactive sentiment analysis visualization dashboards: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
 
+<strong>  </strong><br/>
+
 <strong>(3) Summary</strong><br/>
 
 Based on above Model Evaluation visualizations, it is found that trituenhantaoio pre-trained BERT model outperformed other pre-trained BERT models in terms of its stable and fast convergence of closing to zero for train loss, validation loss, and closing to 1 for F1 scores (macro, micro and weighted), and classification accuracy for positive, neutral and negative emotions across 10 epochs. Therefore model generated by trituenhantaoio at one of the 10 epochs with the highest F1 score macro is chosen as sentiment_analysis_best_bert_model.model.  The train data created by clear positive or negative keyword search and eye scan to select the reviews for emotion labeling and oversamping the negative class can significantly improve the BERT model performance, and thus this method is used to train the BERT model in order to gain best performance of emotion classification for the company to better understand the needs of their customers in order to improve their logistic, customer services and sales performance.
 
+<strong>  </strong><br/>
 
 <strong>(4) Other information</strong><br/>
 

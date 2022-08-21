@@ -184,7 +184,7 @@ Graph 8: Sentiment Analysis - Emotions vs High Ratings
 
 
 
-From below Graph 9: Sentiment Analysis Dashboard, we can see Positive reviews mainly come from Product (24%) and Quality (21%).  50% of Sales reviews, 18% of Logistic reviews, 13% of Service reviews are negative, Their average of rating for negative emotion was 3.6,  2.9 and 3.5,  which indicates that customers showed their dissatisfaction mainly in Sales, and then Logistic  and Service. Service reviews has lowest average rating in negative class. Customers are quite happy with Products with 95% of positive emotion and average rating of 4.9. Additionally, 60% of Quality related reviews indicates neutral emotion.
+As shown in the below Graph 9: Sentiment Analysis Dashboard, positive reviews mainly come from Product (24%) and Quality (21%).  50% of Sales reviews, 18% of Logistic reviews, 13% of Service reviews are negative, Their average of rating for negative emotion was 3.6,  2.9 and 3.5,  which indicates that customers showed their dissatisfaction mainly in Sales, and then Logistic  and Service. Service reviews has lowest average rating in negative class. Customers are quite happy with Products with 95% of positive emotion and average rating of 4.9. Additionally, 60% of Quality related reviews indicates neutral emotion.
 
 
 <img width="1300" alt="Sentiment Analysis - Emotions vs high ratings of 4 and 5" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20emotions%20vs%20content%20class%20dashboard.png">

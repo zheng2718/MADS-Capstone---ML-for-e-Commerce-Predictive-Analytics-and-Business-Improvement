@@ -28,11 +28,12 @@ For this task, we adopted a model called PhoBERT, which is a BERT base program (
 
 To run the Phobert require installation  transformer and pytorch, so we have to install:
 
-<img width="441" alt="Screen Shot 2565-08-19 at 22 46 25" src="https://user-images.githubusercontent.com/100912986/185759858-25d6f3c5-12b6-4a94-ae55-47b70de51c8a.png">
+
 
     !pip install transformer
 
     !pip install torch
+    
 <strong><br/>Data loading and preparation:</strong><br/>
 
 It will load, clean, and up-sample data to handle the two minority classes imbalanced. This process will take raw Reviews data  (stored in /data/raw/Git_mockup_review.xlsx. )
@@ -48,7 +49,13 @@ We split data to Train and Test set , with test size =0.2 and then we split the 
  
 <strong><br/>Train the Phobert model</strong><br/>
 reviewtype__train_test_val_split.py in src/data/ will  import PhoBERT's word separator (Tokenization) ,’vinai/phobert-base’ as below 
- <img width="1100" alt="Screen Shot 2565-08-19 at 23 15 18" src="https://user-images.githubusercontent.com/100912986/185662455-03f91b69-d32d-4d53-a724-07d8aaef50fb.png">
+      
+      
+       from transformers import AutoModel, AutoTokenizer
+       from transformers import BertForSequenceClassification
+
+      phobert = AutoModel.from_pretrained(“vinai/phobert-base”).to(device)
+      tokenizer = AutoTokenizer.from_pretrained(“vinai/phobert-base”)
 
 
 Then we select Phobert  Vietnamese NLP as Tokenizer

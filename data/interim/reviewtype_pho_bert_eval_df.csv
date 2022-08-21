@@ -1,2 +1,0 @@
-epoch,train_loss,val_loss,F1_score_weighted,F1_score_macro,F1_score_micro,batch_size,Ir,eps,pre_trained_model,hidden_dropout_prob,attention_probs_dropout_prob,note,train_data_creator
-1,0.8445599699264201,0.5590339578215092,0.7909359442027981,0.7612925350904449,0.7953913388955105,8,1e-05,1e-08,vinai/phobert-base,0.4,0.1,Added and splited Self-judged Review emotions into train and valiation by 8:2,Suwasit

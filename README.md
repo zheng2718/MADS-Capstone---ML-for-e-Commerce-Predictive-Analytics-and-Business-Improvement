@@ -205,9 +205,7 @@ Graph 9: Sentiment Analysis - Supervised Machine Learning Process
 <strong>  </strong><br/>
 
 
-Below graph shows that the classification performance of Supervised ML classifiers is very poor in terms of less than 0.4 F1 macro score for all the models. F1 micro and weighted scores are also lower than those in BERT models.
-![image](https://user-images.githubusercontent.com/86810194/185805810-8c04b6d0-80ce-466d-be95-6a4c40fa034d.png)
-
+Below graph shows that The classification performance of Supervised ML classifiers is very poor in terms of less than 0.4 F1 macro score for all the models. F1 micro and weighted scores are also lower than those in BERT models.
 
 <img width="600" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20supervised%20ml%20model%20evaluation%20-%20visualization.png">
 

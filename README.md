@@ -358,7 +358,7 @@ Project Organization
     ├── requirements.txt        <- The requirements file for reproducing the analysis environment, e.g.
     │                              generated with `pip freeze > requirements.txt`
     │
-    |── sentiment_analysis.sh   <- The bash file to run the sentiment_analysis pipeline.
+    |── sentiment_analysis.sh      <- The bash file to run the sentiment_analysis pipeline.
     |── recommendation_system.sh   <- The bash file to run the recommendation_system pipeline.
     |
     ├── setup.py                <- makes project pip installable (pip install -e .) so src can be imported

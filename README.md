@@ -13,7 +13,7 @@ Our  goal is to build a NLP model to predict the review classes using the Produ
 The pipeline script of this task created: reviewtype_script_.sh
  
  
-Google Colab set up  and installation
+<strong><br/>Google Colab set up  and installation</strong><br/>
 To use PhoBERT model, we need GPU resources. Google Colab offers free GPU. Since we will be training a large neural network, we will need to take full advantage of this.
 
 GPUs can be added by going to the menu and selecting: Edit -> Notebook Settings -> Add accelerator ( GPU )
@@ -33,7 +33,7 @@ To run the Phobert require installation  transformer and pytorch, so we have to 
 <img width="441" alt="Screen Shot 2565-08-19 at 22 46 25" src="https://user-images.githubusercontent.com/100912986/185759858-25d6f3c5-12b6-4a94-ae55-47b70de51c8a.png">
 
  
-Data loading and preparation:
+<strong><br/>Data loading and preparation:</strong><br/>
 
 It will load, clean, and up-sample data to handle the two minority classes imbalanced. This process will take raw Reviews data  (stored in /data/raw/Git_mockup_review.xlsx. )
 
@@ -41,13 +41,12 @@ It will load, clean, and up-sample data to handle the two minority classes imbal
 And output reviewType_pre_process.csv
  
  
-Train_test_split the data 
+<strong><br/>Train_test_split the data </strong><br/>
 
 We split data to Train and Test set , with test size =0.2 and then we split the Train data again to train_df and Val_df for model training and model loss validation, the process will take input of reviewType_pre_process.csv  and output reviewType_df_upload.csv ready to transmit to the dataloader function.
  
  
-Train the Phobert model
- 
+<strong><br/>Train the Phobert model</strong><br/>
 reviewtype__train_test_val_split.py in src/data/ will  import PhoBERT's word separator (Tokenization) ,’vinai/phobert-base’ as below 
  <img width="1100" alt="Screen Shot 2565-08-19 at 23 15 18" src="https://user-images.githubusercontent.com/100912986/185662455-03f91b69-d32d-4d53-a724-07d8aaef50fb.png">
 
@@ -69,7 +68,7 @@ We set the training loop by asking the model to compute gradience and putting th
  
 The result of each training epoch will be saved in the reviewType_pho_bert_eval_df.csv in the ‘data/interim’ directory,
  
-Model tuning comparison
+<strong><br/>Model tuning comparison</strong><br/>
 We create reviewtype_chart1_tuning.py to compare the result of the best Phobert model with different hyperparameter and data process tuning, the other models have been trained from Colab environments and uploaded thier the Evaluation_df into ‘data/external’ directory; we are focusing on the F1 macro score and,F1 Average score and validation lost of each trained Epoch,  the result is shown in the ‘report/’ directory.
 
 ![model_compar](https://user-images.githubusercontent.com/100912986/185656740-a483b745-edcc-4c71-bfaf-e94c755584c5.png)
@@ -88,14 +87,14 @@ Ir = 1e-5
 eps = 1e-8
  
  
-Comparing Phobert with other algorithms
+<strong><br/>Comparing Phobert with other algorithms</strong><br/>
 We also compare the result of all Phobert models with other traditional ML algorithms such as Random forest, SVM, and XGM classifier that are trained by using GridserchCv to tune hyperparameters. The best score from each parameter selected is imported to the ‘data/external’.
 
 Again the best model is “Phobert- upsampling minority lass, which able to provide F1 macro score at 0.90)
 ![model_compare_traditional](https://user-images.githubusercontent.com/100912986/185656357-71bf8779-837d-4a76-b95a-3cb803bec2ab.png)
 
 
-Model Testing 
+<strong><br/>Model Testing </strong><br/>
 
 we have run  several manual Vietnamese sentense testing ,for example , we input text to the model, and predict a class.
 
@@ -104,7 +103,7 @@ Input_text='Bàn ủi hơi nước cầm tay tiện lợi Tefal - DT6130E0, hàn
 Predict review type :  Quality
 
 
-In conclusion
+<strong><br/>In conclusion</strong><br/>
 We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. For this reason, it is the best algorithm to predict the reviews classification tasks because of its superiority compared to other algorithms. While the data imbalance was an issue due to moderate, we overcame it by over-sampling the minority. The outcome was optimal based on the elements of the task and no data preprocessing. The Phobert model requires parameter tuning, and from the results, we were able to increase hidden dropout to 0.4.
 
 

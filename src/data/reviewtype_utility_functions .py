@@ -307,10 +307,7 @@ def train_model_phobert(model, model_path ,pre_trained_model, model_type, Ir, ep
       eval_df['attention_probs_dropout_prob'] = attention_probs_dropout_prob
       eval_df['note'] = 'Added and splited Self-judged Review emotions into train and valiation by 8:2'
       eval_df['train_data_creator'] = train_data_provider 
-
   return eval_df, model
-
-
 
 
 
@@ -363,18 +360,6 @@ def generate_predition_data(df):
     review_df1['emotion'] = review_df1['Review Content'].apply(predict_text)
     review_emotion_prediction = pd.merge(review_df, review_df1[['index', 'emotion']], how='left', on='index')
     return review_emotion_prediction
-
-
-#def prepare_model_df(eval_df_path_list, accuracy_per_class_path_list, model_path_list, best_epoch_f1_score_macro_list):
-#    model_df = pd.DataFrame()
-#    model_df['eval_df_path'] = eval_df_path_list
-#    model_df['accuracy_per_class_path'] = accuracy_per_class_path_list
-#    model_df['model_path'] = model_path_list
-#    model_df['best_epoch_F1_score_macro'] = best_epoch_f1_score_macro_list
-#    model_df.to_csv(f'c:\\Users\\heyun\\Capstone\\realtime_dreamer\\data\\interim\\sentiment_analysis_model_info.csv',
-#                    index=False)
-#    return model_df
-
 
 def draw_F1_scores(df, domain, width, height, first_line_title, second_line_title, epochs):
     if epochs == 1:

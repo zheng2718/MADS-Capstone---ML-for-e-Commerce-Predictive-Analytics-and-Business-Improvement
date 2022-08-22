@@ -474,12 +474,20 @@ Project Organization
     |       └── sentiment analysis - model evaluation by pre-trained bert model - visualization.png
     |       └── sentiment analysis - supervised ml model evaluation - visualization.png
     |       └── sentiment analysis - imbalanced classes before oversampling - visualization.png
-    |       └── sentiment analysis - models
+    |       └── sentiment analysis models.png
+    |       └── sentiment analysis - BERT Model training - Fine Tuning and
+    |       └── sentiment analysis - Data preprocess steps.png
+    |       └── sentiment analysis - Emotions vs rating.png
+    |       └── sentiment analysis - Supervised Machine Learning Process.png
+    |       └── sentiment analysis - emotions vs content class dashboard.png
+    |       └── Sentiment analysis process.png
+    │       └── sentiment analysis - imbalanced classes before oversampling - visualization.png
+    |       └── sentiment analysis emotions vs higher ratings 4 and 5.png
+    |       └── sentiment analysis tasks.png
     |       └── reviewType_model_compare_traditional.png
     |       └── reviewType_model_compare.png
     |       └── confusion_phobert.png
-    |        
-    │
+    |
     ├── requirements.txt        <- The requirements file for reproducing the analysis environment, e.g.
     │                              generated with `pip freeze > requirements.txt`
     │

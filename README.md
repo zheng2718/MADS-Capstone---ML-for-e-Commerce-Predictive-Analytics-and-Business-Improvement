@@ -302,13 +302,18 @@ After installing Surprise, run
 and the final output recommendation_for_user_52354.csv will be in the data/final folder. 
 
 There were a couple of roadblocks encountered during the analysis and as it stands today, we cannot implement the recommendation system. We will talk about limitations we have encountered and how we overcame them, and the limitations that make it impossible to implement the recommendation system.
+
 One of the limitations comes from the fact that this company does not natively provide an ID for each user. To overcome this, we made labels for users based on unique names and addresses. Even with this workaround, there have been questions about data integrity because there was a user that made approximately 1100 purchases, for context, the next user only made 24 purchases. This could skew the results because of how frequently that particular user shows up.
+
 Another limitation that we encountered was that the dataset was limited to kitchenware appliances, so this meant that our recommendations were limited to kitchenware appliances. This is important because, without the full basket of items, this narrows the accuracy of the recommendation system. While we were doing the analysis, we encountered a limitation that made it impossible for us to continue. It was found that there were multiple items associated with MODEL/DESC number. We had tried to distinguish by trying to find a sub-category, but the sub-category did not provide clarification. This is important because it makes it impossible to do a recommendation if multiple items are tied to a certain MODEL/DESC number.
+
 We have decided to build out the recommendation system using collaborative filtering to show how it could work within the data given. But before such a system is to be implemented within the organization, we recommend that they take these steps before doing so:
+
 •	Give each user an ID
 •	Give each item a unique MODEL/DESC number
 •	When preparing a dataset, make sure to include the full basket of items on the website
 •	Encourage users to leave reviews
+
 With these recommendations implemented, our team believes that the company will be able to implement a recommendation system.
 
 

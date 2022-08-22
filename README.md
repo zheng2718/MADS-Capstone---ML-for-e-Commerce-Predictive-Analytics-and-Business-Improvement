@@ -326,9 +326,9 @@ We have decided to build out the recommendation system using collaborative filte
 With these recommendations implemented, our team believes that the company will be able to implement a recommendation system.
 
 
-<h2>4.	Machine Learning for Sales Prediction</h2>
+<h2>4.	Machine Learning for Sales Predictive Modeling</h2>
 
-Zheng Wei Lim used data of E-Commerce sales, customer, and product data to perform EDA and build supervised ML algorithms through feature engineering and selection, model development and evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning, and provided visualizations to avoid black box models. 
+Zheng Wei Lim used data of E-Commerce sales, customer, and product data to perform EDA and predictive modeling through feature engineering and selection, model development and evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning, and provided visualizations to avoid black box models. 
 
 The final model used is a XGBoost Random Forest model with R2 score of 0.95 and RMSE of 88.5m - an improvement of 75.0% over the baseline model. This indicates that the model has high accuracy of predicting future revenue from past sales data, enabling the company to be more responsive and confident in its revenue forecasting. 
 

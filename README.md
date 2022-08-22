@@ -97,7 +97,7 @@ We create reviewtype_chart1_tuning.py to compare the result of the best Phobert 
  
 The best model (number #5)  hyper parameter tuning recorded as below:
  
-hidden_dropout_prob = 0.4
+hidden_dropout_prob = 0.1
 
 attention_probs_dropout_prob = 0.1
 pre_trained_model = 'vinai/phobert-base'
@@ -106,7 +106,17 @@ batch_size = 8
 epochs = 2
 Ir = 1e-5
 eps = 1e-8
- 
+
+<br/><strong>Handling overfitting </strong><br/>
+Even though our model can provide F1 score at 90% , however, we can see that the model started to overfit after epoch2, therefore , we run some experiments to tune the parameter, by 
+
+perform early stopping. increase hidden_dropout  (0.1,0.4)increase training data, increase batch_size (8,16,24)
+![image](https://user-images.githubusercontent.com/100912986/185909774-a04936ba-e148-4f66-8a43-28ff94241a75.png)
+
+
+we can find that the model with Batch_size 24 with hidden_dropout =0.4 is able to run for many epoch and the accuracy at epoch number #20 is shown as below
+<img width="402" alt="Screen Shot 2565-08-22 at 18 10 49" src="https://user-images.githubusercontent.com/100912986/185909857-5bbe6dca-9956-411a-8437-1a96f3dbfb59.png">
+
  
 <br/><strong>Comparing Phobert with other algorithms</strong><br/>
 We also compare the result of all Phobert models with other traditional ML algorithms such as Random forest, SVM, and XGM classifier that are trained by using GridserchCv to tune hyperparameters. The best score from each parameter selected is imported to the ‘data/external’.

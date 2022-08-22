@@ -13,11 +13,8 @@ import numpy as np
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score, roc_auc_score, ConfusionMatrixDisplay
 from sklearn.model_selection import train_test_split
-
 import pickle
-
 import matplotlib.pyplot as plt
-
 import random
 from sklearn.metrics import f1_score
 import torch as torch
@@ -366,17 +363,6 @@ def generate_predition_data(df):
     review_df1['emotion'] = review_df1['Review Content'].apply(predict_text)
     review_emotion_prediction = pd.merge(review_df, review_df1[['index', 'emotion']], how='left', on='index')
     return review_emotion_prediction
-
-
-#def prepare_model_df(eval_df_path_list, accuracy_per_class_path_list, model_path_list, best_epoch_f1_score_macro_list):
-#    model_df = pd.DataFrame()
-#    model_df['eval_df_path'] = eval_df_path_list
-#    model_df['accuracy_per_class_path'] = accuracy_per_class_path_list
-#    model_df['model_path'] = model_path_list
-#    model_df['best_epoch_F1_score_macro'] = best_epoch_f1_score_macro_list
-#    model_df.to_csv(f'c:\\Users\\heyun\\Capstone\\realtime_dreamer\\data\\interim\\sentiment_analysis_model_info.csv',
-#                    index=False)
-#    return model_df
 
 
 def draw_F1_scores(df, domain, width, height, first_line_title, second_line_title, epochs):

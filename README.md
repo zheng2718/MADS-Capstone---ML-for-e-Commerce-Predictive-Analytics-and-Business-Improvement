@@ -281,6 +281,18 @@ Hugging Face pre-trained BERT model trituenhantaoio outperformed other pre-train
 
 <strong>  </strong><br/>
 
+<strong>Contribution To The Team Project</strong><br/>
+
+1. Performed sentiment analysis for online customer reviews. Set up a sentiment analysis pipeline.
+
+2. Created over 23 reusable functions for data import, data preprocessing, oversampling minority class, data split into train and validation, data encoding, BERT model training and evaluation,  generation of datasets for model evaluation metrics, generation of various visualizations for BERT model evaluation. About 20 of these functions are reused by both task 1 and task 2 in the team.
+
+3. Created strategy and coding method to handle imbalanced classes in both task 1 and task 2 by oversampling minority classes using random.choices function, and using stratify parameter in train_test_split() function.
+
+4. Setup Realtime Dreamer team GitHub with folder structures.
+
+<strong>  </strong><br/>
+
 <strong>(4) Other information</strong><br/>
 
 (A) The zip file of Sentiment_Analysis_BERT_Model_Evaluation.ipynb can preserve the model evaluation visualizations and is located at https://github.com/yunhonghe/realtime_dreamer/blob/main/notebooks/Sentiment_Analysis_BERT_Model_Evaluation.7z

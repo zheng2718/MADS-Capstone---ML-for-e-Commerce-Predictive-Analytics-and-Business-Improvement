@@ -112,7 +112,8 @@ eps = 1e-8<br/>
 <br/><strong>Handling overfitting </strong><br/>
 Even though our model can provide F1 score at 90% , however, we can see that the model started to overfit after epoch2, therefore , we run some experiments to tune the parameter, by 
 
-perform early stopping. increase hidden_dropout  (0.1,0.4)increase training data, increase batch_size (8,16,24)
+<br/>-perform early stopping: increase hidden_dropout (0.1,0.4)<br/>
+<br/>increase training data, increase batch_size (8,16,24)<br/>
 
 <br/><img width="445" alt="Screen Shot 2565-08-22 at 18 39 12" src="https://user-images.githubusercontent.com/100912986/185912784-7ca4a8ec-d77b-43c8-8185-1285733e18a3.png"><br/>
 

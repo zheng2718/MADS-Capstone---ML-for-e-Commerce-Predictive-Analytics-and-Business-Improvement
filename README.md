@@ -291,7 +291,7 @@ Sentiment analysis model evaluation files are generated in Sentiment_Analysis_BE
 
 <h2>3.	Recommendation system</h2>
 
-Kensuke Suzuki used user id, product, and customer rating to train the Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…”.
+Kensuke Suzuki used user id, product, and customer rating to train the Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…”. In our analysis, we determined that the company is not ready to implement a recommendation system at this time. W e have decided to build out a recommendation system To show what an example of what an output looks like. For the example, we are showing the recommendations for User 52354.
 
 To run the SVD algorithm for the recommender system, you will be required to install a python library called surprise: 
 

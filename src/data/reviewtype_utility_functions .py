@@ -13,12 +13,9 @@ import numpy as np
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score, roc_auc_score, ConfusionMatrixDisplay
 from sklearn.model_selection import train_test_split
-
 import pickle
-
 import matplotlib.pyplot as plt
-
-import random
+imort random
 from sklearn.metrics import f1_score
 import torch as torch
 from torch.utils.data import DataLoader, TensorDataset, RandomSampler, SequentialSampler
@@ -147,7 +144,9 @@ def build_Bert_model(pre_trained_model, attention_probs_dropout_prob, hidden_dro
                                           'vinai/phobert-base', 
                                           num_labels = len(label_dict),
                                           output_attentions = False,
-                                          output_hidden_states = False
+                                          output_hidden_states = False,
+                                          hidden_dropout_prob= hidden_dropout_prob,
+                                          attention_probs_dropout_prob=attention_probs_dropout_prob,
                                         )
     model = model.to(device)
 

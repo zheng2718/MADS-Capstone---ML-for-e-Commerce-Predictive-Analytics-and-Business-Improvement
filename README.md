@@ -7,8 +7,9 @@ This Realtime Dreamer project is to use real Ecommerce data to perform NLP for V
 For the full report,please visit our blog post :https://madsrealtimedreamer.wordpress.com/
 
 <h2>1.	Customer Reviews Type classification</h2>
- 
-Our  goal is to build a NLP model to predict the review classes using the customer reviews (sample data: Git_mockup_reviews.xlsx). The data collection process was completed by the customer service team of the company, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, along with labeling the type of the review manually
+ ![image](https://user-images.githubusercontent.com/100912986/185839880-370c8cee-b316-4287-a7e1-40e9a7fdd1c9.png)
+
+Our  goal is to build a NLP model to predict the review classes using the customer reviews (sample data: Git_mockup_reviews.xlsx). The data collection process was completed by the customer service team of the company, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, along with labeling the type of the review manually
 
 The pipeline script of this task created: reviewtype_script_.sh
  

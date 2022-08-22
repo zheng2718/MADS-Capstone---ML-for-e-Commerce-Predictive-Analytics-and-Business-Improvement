@@ -4,7 +4,8 @@
 
 This Realtime Dreamer project is to use real Ecommerce data to perform NLP for Vietnamese language and machine learning tasks in order to settle a real-world business challenge of a company in Vietnam. We split our project into four tasks:
 
-For the full report,please visit our blog post :https://madsrealtimedreamer.wordpress.com/
+For the full report, please visit our blog: https://madsrealtimedreamer.wordpress.com/
+Capstone Video Link: https://drive.google.com/file/d/1hJkoycGnJdH8OE1k9IqpxXhdyVOSLkBK/view?usp=sharing
 
 <h2>1.	Customer Reviews Type classification</h2>
 
@@ -326,15 +327,26 @@ With these recommendations implemented, our team believes that the company will 
 
 <h2>4.	Machine Learning for Sales Prediction</h2>
 
-Zheng Wei Lim used data of E-Commerce sales, customer, and product data to develop supervised ML algorithms through feature engineering and selection, model evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning and visualizations. 
+Zheng Wei Lim used data of E-Commerce sales, customer, and product data to perform EDA and build supervised ML algorithms through feature engineering and selection, model development and evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning, and provided visualizations to avoid black box models. 
+
+Predictive modeling notebook: https://github.com/yunhonghe/realtime_dreamer/blob/main/notebooks/Model-Shipping-ProductPerformance-ReviewEmotion.ipynb
+EDA notebook: https://github.com/yunhonghe/realtime_dreamer/blob/main/notebooks/Analytics-Shipping-Review.ipynb
+
 The final model used is a XGBoost Random Forest model with R2 score of 0.95 and RMSE of 82.7m - an improvement of 77.8% over the baseline model. This indicates that the model has high accuracy of predicting future revenue from past sales data, enabling the company to be more responsive and confident in its revenue forecasting. 
 
-<img width="464" alt="Predictive modeling - feature engineering and selection" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-features-correlation.jpg">
+<img width="464" alt="Predictive modeling - Feature Engineering and Selection" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-features-correlation.jpg">
+Feature Engineering and Selection
+
+<img width="464" alt="Predictive modeling - Model Development and Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modleing-viz-model-evaluation.jpg">
+Model Development and Evaluation
+
+<img width="464" alt="Predictive modeling - Hyperparameter Tuning" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-final-model-optuna-optimizationhistory.jpg">
+Hyperparameter Tuning
 
 
-
+--------------------
 Project Organization
-------------
+--------------------
 
     ├── LICENSE
     ├── Makefile                <- Makefile with commands like `make data` or `make train`

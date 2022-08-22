@@ -93,8 +93,7 @@ The result of each training epoch will be saved in the reviewType_pho_bert_eval_
 <strong><br/>Model Tuning comparison  </strong><br/>
 We create reviewtype_chart1_tuning.py to compare the result of the best Phobert model with different hyperparameter and data process tuning, the other models have been trained from Colab environments and uploaded thier the Evaluation_df into ‘data/external’ directory; we are focusing on the F1 macro score and,F1 Average score and validation lost of each trained Epoch,  the result is shown in the ‘report/’ directory.
 
-<img width="457" alt="Screen Shot 2565-08-22 at 18 42 58" src="https://user-images.githubusercontent.com/100912986/185913470-f8add998-32aa-4128-b2dc-6e8899188753.png">
-<img width="438" alt="Screen Shot 2565-08-22 at 18 43 11" src="https://user-images.githubusercontent.com/100912986/185913485-e5d5a002-e4e2-4211-a255-bbb7ee6e88e1.png">
+<img width="457" alt="Screen Shot 2565-08-22 at 18 42 58" src="https://user-images.githubusercontent.com/100912986/185913470-f8add998-32aa-4128-b2dc-6e8899188753.png"><img width="438" alt="Screen Shot 2565-08-22 at 18 43 11" src="https://user-images.githubusercontent.com/100912986/185913485-e5d5a002-e4e2-4211-a255-bbb7ee6e88e1.png">
 
  
 The best model (number #4)  hyper parameter tuning recorded as below:
@@ -111,7 +110,6 @@ eps = 1e-8<br/>
 
 <br/><strong>Handling overfitting </strong><br/>
 Even though our model can provide F1 score at 90% , however, we can see that the model started to overfit after epoch2, therefore , we run some experiments to tune the parameter, by 
-
 <br/>-perform early stopping: increase hidden_dropout (0.1,0.4)<br/>
 <br/>-increase training data, increase batch_size (8,16,24)<br/>
 
@@ -125,7 +123,7 @@ we can find that the model with Batch_size 24 with hidden_dropout =0.4 is able t
 <br/><strong>Comparing Phobert with other algorithms</strong><br/>
 We also compare the result of all Phobert models with other traditional ML algorithms such as Random forest, SVM, and XGM classifier that are trained by using GridserchCv to tune hyperparameters. The best score from each parameter selected is imported to the ‘data/external’.
 
-Again the best model is “Phobert- upsampling minority lass, which able to provide F1 macro score at 0.90)
+Again the best model is “Phobert- upsampling minority class, which able to provide F1 macro score at 0.90)
 
 ![reviewType_model_compare_traditional (1)](https://user-images.githubusercontent.com/100912986/185786652-38bb2353-2fe8-4791-903b-f47697751be3.png)
 
@@ -139,7 +137,7 @@ Predict review type :  Quality
 
 
 <strong>In conclusion</strong><br/>
-We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. For this reason, it is the best algorithm to predict the reviews classification tasks because of its superiority compared to other algorithms. While the data imbalance was an issue due to moderate, we overcame it by over-sampling the minority. The outcome was optimal based on the elements of the task and no data preprocessing. The Phobert model requires parameter tuning, and from the results, we were able to increase hidden dropout to 0.4.
+We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. For this reason, it is the best algorithm to predict the reviews classification tasks because of its superiority compared to other algorithms. While the data imbalance was an issue due to moderate, we overcame it by over-sampling the minority. The outcome was optimal based on the elements of the task and no data preprocessing. The PhoBERT model requires parameter tuning, and from the results, we were able to increase batch_size to 24 and  dropout to 0.4 to be the best to handle overfitting.
 
 
 <strong>  </strong><br/>

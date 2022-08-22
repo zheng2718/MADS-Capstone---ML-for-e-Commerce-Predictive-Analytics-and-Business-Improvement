@@ -147,7 +147,9 @@ def build_Bert_model(pre_trained_model, attention_probs_dropout_prob, hidden_dro
                                           'vinai/phobert-base', 
                                           num_labels = len(label_dict),
                                           output_attentions = False,
-                                          output_hidden_states = False
+                                          output_hidden_states = False,
+                                          hidden_dropout_prob= hidden_dropout_prob,
+                                          attention_probs_dropout_prob=attention_probs_dropout_prob,
                                         )
     model = model.to(device)
 

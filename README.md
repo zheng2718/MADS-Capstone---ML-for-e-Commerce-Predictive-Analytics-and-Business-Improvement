@@ -101,13 +101,13 @@ The best model (number #4)  hyper parameter tuning recorded as below:
  
 hidden_dropout_prob = 0.1
 
-attention_probs_dropout_prob = 0.1
-pre_trained_model = 'vinai/phobert-base'
-model_type = pre_trained_model.split('/')[0]
-batch_size = 8
-epochs = 2
-Ir = 1e-5
-eps = 1e-8
+attention_probs_dropout_prob = 0.1<br/>
+pre_trained_model = 'vinai/phobert-base'<br/>
+model_type = pre_trained_model.split('/')[0]<br/>
+batch_size = 8<br/>
+epochs = 2<br/>
+Ir = 1e-5<br/>
+eps = 1e-8<br/>
 
 <br/><strong>Handling overfitting </strong><br/>
 Even though our model can provide F1 score at 90% , however, we can see that the model started to overfit after epoch2, therefore , we run some experiments to tune the parameter, by 

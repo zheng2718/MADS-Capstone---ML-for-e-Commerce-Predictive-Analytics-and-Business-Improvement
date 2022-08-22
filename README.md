@@ -146,7 +146,7 @@ We can conclude that we can use Phobert as a tokenizer and transform it to train
 <strong>  </strong><br/>
 
 
-<h2>2.	Sentiment Analysis For Customer Reviews</h2>
+<h2>2.	Sentiment Analysis For Online Customer Reviews</h2>
 
 Yunhong He conducted Sentiment Analysis for Online Customer Reviews. Some content of the online customer reviews does not reflect the ratings. For example, some with 5-rating reviews have negative comments and emotions such as positive, neutral, and negative. Sentiment analysis for Vietnamese reviews is needed for the company to better understand their customers’ needs in order to improve product and sales performance.
 

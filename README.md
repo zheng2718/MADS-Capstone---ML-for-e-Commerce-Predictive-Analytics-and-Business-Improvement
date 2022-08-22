@@ -310,8 +310,11 @@ Another limitation that we encountered was that the dataset was limited to kitch
 We have decided to build out the recommendation system using collaborative filtering to show how it could work within the data given. But before such a system is to be implemented within the organization, we recommend that they take these steps before doing so:
 
 •	Give each user an ID
+
 •	Give each item a unique MODEL/DESC number
+
 •	When preparing a dataset, make sure to include the full basket of items on the website
+
 •	Encourage users to leave reviews
 
 With these recommendations implemented, our team believes that the company will be able to implement a recommendation system.

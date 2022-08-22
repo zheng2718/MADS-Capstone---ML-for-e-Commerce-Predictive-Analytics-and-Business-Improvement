@@ -8,7 +8,8 @@ For the full report,please visit our blog post :https://madsrealtimedreamer.word
 
 <h2>1.	Customer Reviews Type classification</h2>
 
-<img width="370" alt="Screen Shot 2565-08-22 at 12 27 30" src="https://user-images.githubusercontent.com/100912986/185845676-5109c5cc-5be0-43bf-b1f0-02ae45240112.png">
+
+<img width="426" alt="Screen Shot 2565-08-22 at 12 29 41" src="https://user-images.githubusercontent.com/100912986/185845938-8a8ada6f-1325-4300-b306-c572414ed7f9.png">
 
 
 Our  goal is to build a NLP model to predict the review classes using the customer reviews (sample data: Git_mockup_reviews.xlsx). The data collection process was completed by the customer service team of the company, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, along with labeling the type of the review manually

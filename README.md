@@ -150,13 +150,13 @@ We can conclude that we can use Phobert as a tokenizer and transform it to train
 
 Yunhong He created reviews label dataset, trained and evaluated 3 Hugging Face Pre-trained BERT models including trituenhantaoio/bert-base-vietnamese-uncased, NlpHUST/vibert4news-base-cased, and bert-base-uncased, as well as Supervised Machine Learning algorithms, produced model evaluation visualizations. Setup team GitHub with folder structures. Created sentiment analysis Deep Learning and Machine Learning pipeline. Run /realtime_dreamer/sentiment_analysis.sh.
 
-<img width="400" alt="Sentiment Analysis Task" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20tasks.png">
+<img width="400" alt="Sentiment Analysis Task" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20tasks.png">
 
 Graph 1: Sentiment Analysis Task
 
 <strong>  </strong><br/>
 
-<img width="800" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20process.png">
+<img width="800" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
 
 Graph 2: Sentiment Analysis Process
 
@@ -183,7 +183,7 @@ Graph 4: Imbalanced Emotion Classes
 
 Hugging Face pre-trained BERT models and Supervised machine learning algorithms are trained and evaluated in the sentiment analysis of the reviews.
 
-<img width="900" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20%20models.png">
+<img width="900" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20models.png">
 
 Graph 5: Sentiment Analysis - Models
 
@@ -254,7 +254,7 @@ Above interactive graph is in Tab "Emotions Dashboard" at below link: https://pu
 
 As shown in graph 13: Sentiment Analysis - Emotions vs High Ratings, among the reviews with high rating of 4 and 5, 4% of them are actually negative, 41% are neutral.  This indicates that 45% of the online customers overstated the ratings to 4 and 5 while they actually have neutral or negative emotions.
 
-<img width="600" alt="Sentiment Analysis - Emotions vs high ratings of 4 and 5" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20emotions%20vs%20higher%20ratings%204%20and%205.png">
+<img width="600" alt="Sentiment Analysis - Emotions vs high ratings of 4 and 5" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20emotions%20vs%20higher%20ratings%204%20and%205.png">
 
 Graph 13: Sentiment Analysis - Emotions vs High Ratings
 
@@ -474,16 +474,16 @@ Project Organization
     |       └── sentiment analysis - model evaluation by pre-trained bert model - visualization.png
     |       └── sentiment analysis - supervised ml model evaluation - visualization.png
     |       └── sentiment analysis - imbalanced classes before oversampling - visualization.png
-    |       └── sentiment analysis models.png
+    |       └── sentiment analysis - models.png
     |       └── sentiment analysis - BERT Model training - Fine Tuning and
     |       └── sentiment analysis - Data preprocess steps.png
     |       └── sentiment analysis - Emotions vs rating.png
     |       └── sentiment analysis - Supervised Machine Learning Process.png
     |       └── sentiment analysis - emotions vs content class dashboard.png
-    |       └── Sentiment analysis process.png
+    |       └── Sentiment analysis - process.png
     │       └── sentiment analysis - imbalanced classes before oversampling - visualization.png
-    |       └── sentiment analysis emotions vs higher ratings 4 and 5.png
-    |       └── sentiment analysis tasks.png
+    |       └── sentiment analysis - emotions vs higher ratings 4 and 5.png
+    |       └── sentiment analysis - tasks.png
     |       └── reviewType_model_compare_traditional.png
     |       └── reviewType_model_compare.png
     |       └── confusion_phobert.png

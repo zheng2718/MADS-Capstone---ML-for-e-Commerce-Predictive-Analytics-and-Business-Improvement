@@ -90,14 +90,14 @@ We set the training loop by asking the model to compute gradience and putting th
  
 The result of each training epoch will be saved in the reviewType_pho_bert_eval_df.csv in the ‘data/interim’ directory,
  
-<strong><br/>Model tuning comparison</strong><br/>
+<strong><br/>Model Tuning comparison  </strong><br/>
 We create reviewtype_chart1_tuning.py to compare the result of the best Phobert model with different hyperparameter and data process tuning, the other models have been trained from Colab environments and uploaded thier the Evaluation_df into ‘data/external’ directory; we are focusing on the F1 macro score and,F1 Average score and validation lost of each trained Epoch,  the result is shown in the ‘report/’ directory.
 
 ![reviewType_model_compare (2)](https://user-images.githubusercontent.com/100912986/185786647-6143751e-93fc-4076-bbcd-a79fd6d4c555.png)
 
 
  
-The best model (number #5)  hyper parameter tuning recorded as below:
+The best model (number #4)  hyper parameter tuning recorded as below:
  
 hidden_dropout_prob = 0.1
 

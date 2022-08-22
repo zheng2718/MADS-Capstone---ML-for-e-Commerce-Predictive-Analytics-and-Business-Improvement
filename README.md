@@ -93,8 +93,8 @@ The result of each training epoch will be saved in the reviewType_pho_bert_eval_
 <strong><br/>Model Tuning comparison  </strong><br/>
 We create reviewtype_chart1_tuning.py to compare the result of the best Phobert model with different hyperparameter and data process tuning, the other models have been trained from Colab environments and uploaded thier the Evaluation_df into ‘data/external’ directory; we are focusing on the F1 macro score and,F1 Average score and validation lost of each trained Epoch,  the result is shown in the ‘report/’ directory.
 
-![reviewType_model_compare (2)](https://user-images.githubusercontent.com/100912986/185786647-6143751e-93fc-4076-bbcd-a79fd6d4c555.png)
-
+<img width="457" alt="Screen Shot 2565-08-22 at 18 42 58" src="https://user-images.githubusercontent.com/100912986/185913470-f8add998-32aa-4128-b2dc-6e8899188753.png">
+<img width="438" alt="Screen Shot 2565-08-22 at 18 43 11" src="https://user-images.githubusercontent.com/100912986/185913485-e5d5a002-e4e2-4211-a255-bbb7ee6e88e1.png">
 
  
 The best model (number #4)  hyper parameter tuning recorded as below:
@@ -113,10 +113,11 @@ eps = 1e-8
 Even though our model can provide F1 score at 90% , however, we can see that the model started to overfit after epoch2, therefore , we run some experiments to tune the parameter, by 
 
 perform early stopping. increase hidden_dropout  (0.1,0.4)increase training data, increase batch_size (8,16,24)
-![image](https://user-images.githubusercontent.com/100912986/185909774-a04936ba-e148-4f66-8a43-28ff94241a75.png)
+
+<br/><img width="445" alt="Screen Shot 2565-08-22 at 18 39 12" src="https://user-images.githubusercontent.com/100912986/185912784-7ca4a8ec-d77b-43c8-8185-1285733e18a3.png"><br/>
 
 
-we can find that the model with Batch_size 24 with hidden_dropout =0.4 is able to run for many epoch and the accuracy at epoch number #20 is shown as below
+we can find that the model with Batch_size 24 with hidden_dropout =0.4 is able to run for many epoch and the accuracy at epoch number #20 is shown as below<br/>
 <img width="402" alt="Screen Shot 2565-08-22 at 18 10 49" src="https://user-images.githubusercontent.com/100912986/185909857-5bbe6dca-9956-411a-8437-1a96f3dbfb59.png">
 
  

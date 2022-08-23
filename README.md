@@ -85,7 +85,7 @@ which is used to convert the text into tokens corresponding to PhoBERT's lexicon
       model = model.to(device)
 
 
-We set the training loop by asking the model to compute gradience and putting the model in training mode, then unpack our input data. Then we delete the gradience in the previous iteration, Backpropagation, and update the weight using optimize.step() then, by each Epoch,we save the best model which has the lowest validation loss.
+We set the training loop by asking the model to compute gradience and putting the model in training mode, then unpack our input data. Then we delete the gradience in the previous iteration, Backpropagation, and update the weight using optimize.step() then, by each,we save the best model which has the lowest validation loss.
 
  
 The result of each training epoch will be saved in the reviewType_pho_bert_eval_df.csv in the ‘data/interim’ directory,

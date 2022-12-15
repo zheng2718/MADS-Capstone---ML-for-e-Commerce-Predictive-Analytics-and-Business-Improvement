@@ -34,15 +34,6 @@ We conducted Sentiment Analysis for Online Customer Reviews and created interact
 
 We created reviews label dataset, trained and evaluated 3 Hugging Face Pre-trained BERT models including trituenhantaoio/bert-base-vietnamese-uncased, NlpHUST/vibert4news-base-cased, and bert-base-uncased, as well as Supervised Machine Learning algorithms, produced model evaluation visualizations. Setup team GitHub with folder structures. Created sentiment analysis Deep Learning and Machine Learning pipeline. Run /realtime_dreamer/sentiment_analysis.sh.
 
-<img width="400" img height="300" alt="Sentiment Analysis Task" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20tasks.png">
-
-Graph 1: Sentiment Analysis Task
-
-<strong>  </strong><br/>
-
-<img width="800" img height="300" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
-
-
 <h2>3.	Recommendation system</h2>
 
 We used user id, product, and customer rating to train the Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…”. In our analysis, we determined that the company is not ready to implement a recommendation system at this time. We have decided to build out a recommendation system To show what an example of what an output looks like. For the example, we are showing the recommendations for User 52354.
@@ -64,7 +55,7 @@ We have decided to build out the recommendation system using collaborative filte
 
 
 <h2>4.	Machine Learning for Sales Predictive Modeling</h2>
-We used data of E-Commerce sales, customer, and product data to perform EDA and predictive modeling through feature engineering and selection, model development and evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning, and provided visualizations to avoid black box models. 
+We used data of e-Commerce sales, customer, and product data to perform EDA and predictive modeling through feature engineering and selection, model development and evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning, and provided visualizations to avoid black box models. 
 
 The final model used is a XGBoost Random Forest model with R2 score of 0.95 and RMSE of 88.5m - an improvement of 75.0% over the baseline model. This indicates that the model has high accuracy of predicting future revenue from past sales data, enabling the company to be more responsive and confident in its revenue forecasting. 
 

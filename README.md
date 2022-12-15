@@ -47,7 +47,6 @@ Graph 2: Sentiment Analysis Process
 
 <strong>(1) Data used to train the model</strong><br/>
 
-Yunhong He used clear positive and negative keyword search and eye scan to select customer reviews for emotion labeling. 
 
 <img width="800" img height="300"  alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess%20steps.png">
 
@@ -57,37 +56,6 @@ Graph 3: Sentiment Analysis - Supervised Machine Learning Process
 <strong>  </strong><br/>
 
 <img width="600" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20supervised%20ml%20model%20evaluation%20-%20visualization.png">
-
-
-
-
-<strong>  </strong><br/>
-
-<strong>(4) Other information</strong><br/>
-
-(A) The zip file of Sentiment_Analysis_BERT_Model_Evaluation.ipynb can preserve the model evaluation visualizations and is located at https://github.com/yunhonghe/realtime_dreamer/blob/main/notebooks/Sentiment_Analysis_BERT_Model_Evaluation.7z
-
-(B) The sentiment analysis pipeline is located at https://github.com/yunhonghe/realtime_dreamer. The https://github.com/yunhonghe/realtime_dreamer/blob/main/sentiment_analysis.sh is used to run the pipeline. 
-
-(C) Below are the links for the sentiment analysis BERT models.
-
-(a) The link to /models/sentiment_analysis_best_bert_model.model is https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
-
-(b) The link to /models/sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model is  https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing
-
-
-(D) Sample files:
-
-(a) Customer review label data in C:\Users\heyun\Capstone\realtime_dreamer\data\processed\sentiment_analysis_reviews_label.xlsx is the small sample of the file '/content/drive/MyDrive/Realtime Dreamer/train reviews.xlsx' used in notebooks\Sentiment_Analysis_BERT_Model_Evaluation.ipynb. Column "emotion" is labeled by Yunhong He using the keyword search method to select positive and negative customer reviews after an eye scan.
-
-(b) Customer reviews dataset at C:\Users\heyun\Capstone\realtime_dreamer\data\processed\Git_mockup_reviews_processed.xlsx is the small sample of the customer review file 'drive/MyDrive/Realtime Dreamer/Tefal Lazada Product Reviews in TTL202207_Updated_Good_Bad.xlsx' used in notebooks\Sentiment_Analysis_BERT_Model_Evaluation.ipynb. Column "Comment classified Type 1" is labeled by the Vietnamese team.
-
-
-(E) BERT model evaluation files:
-
-Sentiment analysis model evaluation files are generated in Sentiment_Analysis_BERT_Model_Evaluation.ipynb and Sentiment_Analysis_BERT_Model_Evaluation.zip, and are used to produce BERT model evaluation visualizations, located at https://github.com/yunhonghe/realtime_dreamer/tree/main/data/interim
-
-
 
 
 <h2>3.	Recommendation system</h2>

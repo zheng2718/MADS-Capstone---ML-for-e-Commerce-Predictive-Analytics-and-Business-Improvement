@@ -19,7 +19,6 @@ Our  goal is to build a NLP model to predict the review classes using the custom
 For this task, we adopted a model called PhoBERT, which is a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. The objective of using this model  is to compare the performance of  PhoBERT  NLP to other traditional algorithms.
 
 
-<strong>In conclusion</strong><br/>
 We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. For this reason, it is the best algorithm to predict the reviews classification tasks because of its superiority compared to other algorithms. While the data imbalance was an issue due to moderate, we overcame it by over-sampling the minority. The outcome was optimal based on the elements of the task and no data preprocessing. The PhoBERT model requires parameter tuning, and from the results, we were able to increase batch_size to 24 and  dropout to 0.4 to be the best to handle overfitting.
 
 
@@ -56,9 +55,6 @@ Yunhong He used clear positive and negative keyword search and eye scan to selec
 Graph 3: Sentiment Analysis - Supervised Machine Learning Process
 
 <strong>  </strong><br/>
-
-
-Below graph shows that The classification performance of Supervised ML classifiers is very poor in terms of less than 0.4 F1 macro score for all the models. F1 micro and weighted scores are also lower than those in BERT models.
 
 <img width="600" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20supervised%20ml%20model%20evaluation%20-%20visualization.png">
 

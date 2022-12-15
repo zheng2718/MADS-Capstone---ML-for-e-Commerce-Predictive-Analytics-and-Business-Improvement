@@ -19,11 +19,10 @@ Our  goal is to build a NLP model to predict the review classes using the custom
 
 For this task, we adopted a model called PhoBERT, which is a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. The objective of using this model  is to compare the performance of  PhoBERT  NLP to other traditional algorithms.
 
+We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. 
 
-We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. For this reason, it is the best algorithm to predict the reviews classification tasks because of its superiority compared to other algorithms. While the data imbalance was an issue due to moderate, we overcame it by over-sampling the minority. The outcome was optimal based on the elements of the task and no data preprocessing. The PhoBERT model requires parameter tuning, and from the results, we were able to increase batch_size to 24 and  dropout to 0.4 to be the best to handle overfitting.
+For this reason, it is the best algorithm to predict the reviews classification tasks because of its superiority compared to other algorithms. While the data imbalance was an issue due to moderate, we overcame it by over-sampling the minority. The outcome was optimal based on the elements of the task and no data preprocessing. The PhoBERT model requires parameter tuning, and from the results, we were able to increase batch_size to 24 and  dropout to 0.4 to be the best to handle overfitting.
 
-
-<strong>  </strong><br/>
 
 <strong>  </strong><br/>
 
@@ -47,10 +46,7 @@ After installing Surprise, run
 and the final output recommendation_for_user_52354.csv will be in the data/final folder. 
 
 
-One of the limitations comes from the fact that this company does not natively provide an ID for each user. To overcome this, we made labels for users based on unique names and addresses. Even with this workaround, there have been questions about data integrity because there was a user that made approximately 1100 purchases, for context, the next user only made 24 purchases. This could skew the results because of how frequently that particular user shows up.
-
-
-We have decided to build out the recommendation system using collaborative filtering to show how it could work within the data given. But before such a system is to be implemented within the organization, we recommend that they take these steps such as encouraging users to leave reviews to implement a more robust recommendation system.
+The results are that we have decided to build out the recommendation system using collaborative filtering to show how it could work within the data given. But before such a system is to be implemented within the organization, we recommend that they take these steps such as encouraging users to leave reviews to implement a more robust recommendation system.
 
 
 

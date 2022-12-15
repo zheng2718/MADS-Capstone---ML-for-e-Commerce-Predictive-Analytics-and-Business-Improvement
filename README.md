@@ -14,116 +14,9 @@ Capstone Video Link: https://drive.google.com/file/d/1hJkoycGnJdH8OE1k9IqpxXhdyV
 <img width="426" alt="Screen Shot 2565-08-22 at 12 29 41" src="https://user-images.githubusercontent.com/100912986/185845938-8a8ada6f-1325-4300-b306-c572414ed7f9.png">
 
 
-Our  goal is to build a NLP model to predict the review classes using the customer reviews (sample data: Git_mockup_reviews.xlsx). The data collection process was completed by the customer service team of the company, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, along with labeling the type of the review manually
-
-The pipeline script of this task created: reviewtype_script_.sh
- 
- 
-<br/><strong><br/>Google Colab set up  and installation</strong><br/>
-To use PhoBERT model, we need GPU resources. Google Colab offers free GPU. Since we will be training a large neural network, we will need to take full advantage of this.
-
-GPUs can be added by going to the menu and selecting: Edit -> Notebook Settings -> Add accelerator ( GPU )
-
-Then run the cell below to confirm that the GPU has been received.
- 
-    device = torch.device(“cuda:0” if torch.cuda.is_available() else “cpu”)
-
+Our  goal is to build a NLP model to predict the review classes using the customer reviews (sample data: Git_mockup_reviews.xlsx). The data collection process was completed by the customer service team of the company, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, along with labeling the type of the review manually.
 
 For this task, we adopted a model called PhoBERT, which is a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. The objective of using this model  is to compare the performance of  PhoBERT  NLP to other traditional algorithms.
-
-
-To run the Phobert require installation  transformer and pytorch, so we have to install:
-
-
-
-    !pip install transformer
-
-    !pip install torch
-    
-<br/><strong>Data loading and preparation:</strong><br/>
-
-It will load, clean, and up-sample data to handle the two minority classes imbalanced. This process will take raw Reviews data  (stored in /data/raw/Git_mockup_review.xlsx. )
-
-
-And output reviewType_pre_process.csv
- 
- 
-<br/><strong>Train_test_split the data </strong><br/>
-
-We split data to Train and Test set , with test size =0.2 and then we split the Train data again to train_df and Val_df for model training and model loss validation, the process will take input of reviewType_pre_process.csv  and output reviewType_df_upload.csv ready to transmit to the dataloader function.
- 
- 
-<br/><strong>Train the Phobert model</strong><br/>
-reviewtype__train_test_val_split.py in src/data/ will  import PhoBERT's word separator (Tokenization) ,’vinai/phobert-base’ as below 
-      
-      
-      from transformers import AutoModel, AutoTokenizer
-      from transformers import BertForSequenceClassification
-
-      phobert = AutoModel.from_pretrained(“vinai/phobert-base”).to(device)
-
-
-Then we select Phobert  Vietnamese NLP as Tokenizer
-
-
-      tokenizer = AutoTokenizer.from_pretrained(“vinai/phobert-base”)
-
-
- 
-which is used to convert the text into tokens corresponding to PhoBERT's lexicon. We load BertForSequenceClassification, which is a regular BERT model with a single linear layer added above for classification (Khanh, 2020). This process will be used to classify sentences. Once we provide the input data, the entire pre-trained BERT model and classifier will be trained with our specific task.
-
-
-
-      model = BertForSequenceClassification.from_pretrained(
-         'vinai/phobert-base', 
-         num_labels = len(label_dict),
-         output_attentions = False,
-         output_hidden_states = False,
-         hidden_dropout_prob= hidden_dropout_prob,
-         attention_probs_dropout_prob=attention_probs_dropout_prob,
-        )
-      model = model.to(device)
-
-
-We set the training loop by asking the model to compute gradience and putting the model in training mode, then unpack our input data. Then we delete the gradience in the previous iteration, Backpropagation, and update the weight using optimize.step() then, by each,we save the best model which has the lowest validation loss.
-
- 
-The result of each training epoch will be saved in the reviewType_pho_bert_eval_df.csv in the ‘data/interim’ directory,
- 
-<strong><br/>Model Tuning comparison  </strong><br/>
-We create reviewtype_chart1_tuning.py to compare the result of the best Phobert model with different hyperparameter and data process tuning, the other models have been trained from Colab environments and uploaded thier the Evaluation_df into ‘data/external’ directory; we are focusing on the F1 macro score and,F1 Average score and validation lost of each trained Epoch,  the result is shown in the ‘report/’ directory.
-
-<img width="457" alt="Screen Shot 2565-08-22 at 18 42 58" src="https://user-images.githubusercontent.com/100912986/185913470-f8add998-32aa-4128-b2dc-6e8899188753.png"><img width="438" alt="Screen Shot 2565-08-22 at 18 43 11" src="https://user-images.githubusercontent.com/100912986/185913485-e5d5a002-e4e2-4211-a255-bbb7ee6e88e1.png">
-
- 
-The best model (number #4)  hyper parameter tuning recorded as below:
- 
-hidden_dropout_prob = 0.1
-
-attention_probs_dropout_prob = 0.1<br/>
-pre_trained_model = 'vinai/phobert-base'<br/>
-model_type = pre_trained_model.split('/')[0]<br/>
-batch_size = 8<br/>
-epochs = 20<br/>
-Ir = 1e-5<br/>
-eps = 1e-8<br/>
-
-
- 
-<br/><strong>Comparing Phobert with other algorithms</strong><br/>
-We also compare the result of all Phobert models with other traditional ML algorithms such as Random forest, SVM, and XGM classifier that are trained by using GridserchCv to tune hyperparameters. The best score from each parameter selected is imported to the ‘data/external’.
-
-Again the best model is “Phobert- upsampling minority class, which able to provide F1 macro score at 0.90)
-
-![reviewType_model_compare_traditional (1)](https://user-images.githubusercontent.com/100912986/185786652-38bb2353-2fe8-4791-903b-f47697751be3.png)
-
-<strong><br/>Model Testing </strong><br/>
-
-we have run  several manual Vietnamese sentense testing ,for example , we input text to the model, and predict a class.
-
-Input_text='Bàn ủi hơi nước cầm tay tiện lợi Tefal - DT6130E0, hàng chính hãng bảo hành 2 năm'
-
-Predict review type :  Quality
 
 
 <strong>In conclusion</strong><br/>
@@ -141,13 +34,13 @@ We conducted Sentiment Analysis for Online Customer Reviews and created interact
 
 We created reviews label dataset, trained and evaluated 3 Hugging Face Pre-trained BERT models including trituenhantaoio/bert-base-vietnamese-uncased, NlpHUST/vibert4news-base-cased, and bert-base-uncased, as well as Supervised Machine Learning algorithms, produced model evaluation visualizations. Setup team GitHub with folder structures. Created sentiment analysis Deep Learning and Machine Learning pipeline. Run /realtime_dreamer/sentiment_analysis.sh.
 
-<img width="400" alt="Sentiment Analysis Task" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20tasks.png">
+<img width="400" img height="200" alt="Sentiment Analysis Task" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20tasks.png">
 
 Graph 1: Sentiment Analysis Task
 
 <strong>  </strong><br/>
 
-<img width="800" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
+<img width="800" img height="200" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
 
 Graph 2: Sentiment Analysis Process
 
@@ -157,7 +50,7 @@ Graph 2: Sentiment Analysis Process
 
 Yunhong He used clear positive and negative keyword search and eye scan to select customer reviews for emotion labeling. 
 
-<img width="800" alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess%20steps.png">
+<img width="800" img height="200"  alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess%20steps.png">
 
 
 Graph 3: Sentiment Analysis - Supervised Machine Learning Process
@@ -213,23 +106,12 @@ After installing Surprise, run
 ```recommendation_system.sh```
 and the final output recommendation_for_user_52354.csv will be in the data/final folder. 
 
-There were a couple of roadblocks encountered during the analysis and as it stands today, we cannot implement the recommendation system. We will talk about limitations we have encountered and how we overcame them, and the limitations that make it impossible to implement the recommendation system.
 
 One of the limitations comes from the fact that this company does not natively provide an ID for each user. To overcome this, we made labels for users based on unique names and addresses. Even with this workaround, there have been questions about data integrity because there was a user that made approximately 1100 purchases, for context, the next user only made 24 purchases. This could skew the results because of how frequently that particular user shows up.
 
-Another limitation that we encountered was that the dataset was limited to kitchenware appliances, so this meant that our recommendations were limited to kitchenware appliances. This is important because, without the full basket of items, this narrows the accuracy of the recommendation system. While we were doing the analysis, we encountered a limitation that made it impossible for us to continue. It was found that there were multiple items associated with MODEL/DESC number. We had tried to distinguish by trying to find a sub-category, but the sub-category did not provide clarification. This is important because it makes it impossible to do a recommendation if multiple items are tied to a certain MODEL/DESC number.
 
-We have decided to build out the recommendation system using collaborative filtering to show how it could work within the data given. But before such a system is to be implemented within the organization, we recommend that they take these steps before doing so:
+We have decided to build out the recommendation system using collaborative filtering to show how it could work within the data given. But before such a system is to be implemented within the organization, we recommend that they take these steps such as encouraging users to leave reviews to implement a more robust recommendation system.
 
-•	Give each user an ID
-
-•	Give each item a unique MODEL/DESC number
-
-•	When preparing a dataset, make sure to include the full basket of items on the website
-
-•	Encourage users to leave reviews
-
-With these recommendations implemented, our team believes that the company will be able to implement a recommendation system.
 
 
 <h2>4.	Machine Learning for Sales Predictive Modeling</h2>
@@ -241,13 +123,13 @@ Predictive modeling notebook: https://github.com/yunhonghe/realtime_dreamer/blob
 
 EDA notebook: https://github.com/yunhonghe/realtime_dreamer/blob/main/notebooks/Analytics-Shipping-Review.ipynb
 
-<img width="500" height="150" alt="Predictive modeling - Feature Engineering and Selection" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-featurecorrelation.jpg">
+<img width="500" height="200" alt="Predictive modeling - Feature Engineering and Selection" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-featurecorrelation.jpg">
 Feature Engineering and Selection
 
-<img width="400" height="150" alt="Predictive modeling - Model Development and Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-modelevaluation.jpg">
+<img width="400" height="200" alt="Predictive modeling - Model Development and Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-modelevaluation.jpg">
 Model Development and Evaluation
 
-<img width="500" height="150" alt="Predictive modeling - Hyperparameter Tuning" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-final-model-optuna-optimizationhistory.jpg">
+<img width="500" height="200" alt="Predictive modeling - Hyperparameter Tuning" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-final-model-optuna-optimizationhistory.jpg">
 Hyperparameter Tuning
 
 

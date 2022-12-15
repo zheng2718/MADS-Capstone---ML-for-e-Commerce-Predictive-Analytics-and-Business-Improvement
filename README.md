@@ -33,13 +33,13 @@ We conducted Sentiment Analysis for Online Customer Reviews and created interact
 
 We created reviews label dataset, trained and evaluated 3 Hugging Face Pre-trained BERT models including trituenhantaoio/bert-base-vietnamese-uncased, NlpHUST/vibert4news-base-cased, and bert-base-uncased, as well as Supervised Machine Learning algorithms, produced model evaluation visualizations. Setup team GitHub with folder structures. Created sentiment analysis Deep Learning and Machine Learning pipeline. Run /realtime_dreamer/sentiment_analysis.sh.
 
-<img width="400" img height="200" alt="Sentiment Analysis Task" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20tasks.png">
+<img width="400" img height="300" alt="Sentiment Analysis Task" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20tasks.png">
 
 Graph 1: Sentiment Analysis Task
 
 <strong>  </strong><br/>
 
-<img width="800" img height="200" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
+<img width="800" img height="300" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
 
 Graph 2: Sentiment Analysis Process
 
@@ -49,7 +49,7 @@ Graph 2: Sentiment Analysis Process
 
 Yunhong He used clear positive and negative keyword search and eye scan to select customer reviews for emotion labeling. 
 
-<img width="800" img height="200"  alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess%20steps.png">
+<img width="800" img height="300"  alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess%20steps.png">
 
 
 Graph 3: Sentiment Analysis - Supervised Machine Learning Process

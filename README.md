@@ -42,22 +42,6 @@ Graph 1: Sentiment Analysis Task
 
 <img width="800" img height="300" alt="Sentiment Analysis - Process" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Sentiment%20analysis%20-%20process.png">
 
-Graph 2: Sentiment Analysis Process
-
-<strong>  </strong><br/>
-
-<strong>(1) Data used to train the model</strong><br/>
-
-
-<img width="800" img height="300"  alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess%20steps.png">
-
-
-Graph 3: Sentiment Analysis - Supervised Machine Learning Process
-
-<strong>  </strong><br/>
-
-<img width="600" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20supervised%20ml%20model%20evaluation%20-%20visualization.png">
-
 
 <h2>3.	Recommendation system</h2>
 

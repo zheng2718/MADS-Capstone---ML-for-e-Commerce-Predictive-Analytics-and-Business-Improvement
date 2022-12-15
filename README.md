@@ -1,4 +1,5 @@
-<h1>realtime_dreamer</h1>
+University of Michigan | Master of Applied Data Science 
+Capstone Project - ML for e-Commerce Predictive Analytics and Business Improvement
 ==============================
 <img width="1391" alt="Screen Shot 2565-08-19 at 23 56 15" src="https://user-images.githubusercontent.com/100912986/185674568-bfac3364-6555-4d8c-88c0-79101a23269e.png">
 

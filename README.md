@@ -108,16 +108,6 @@ epochs = 20<br/>
 Ir = 1e-5<br/>
 eps = 1e-8<br/>
 
-<br/><strong>Handling overfitting </strong><br/>
-Even though our model can provide F1 score at 90% , however, we can see that the model started to overfit after epoch2, therefore , we run some experiments to tune the parameter, by 
-<br/>-perform early stopping: increase hidden_dropout (0.1,0.4)<br/>
-<br/>-increase training data, increase batch_size (8,16,24)<br/>
-
-<br/><img width="445" alt="Screen Shot 2565-08-22 at 18 39 12" src="https://user-images.githubusercontent.com/100912986/185912784-7ca4a8ec-d77b-43c8-8185-1285733e18a3.png"><br/>
-
-
-we can find that the model with Batch_size 24 with hidden_dropout =0.4 is able to run for many epoch and the accuracy at epoch number #20 is shown as below<br/>
-<img width="402" alt="Screen Shot 2565-08-22 at 18 10 49" src="https://user-images.githubusercontent.com/100912986/185909857-5bbe6dca-9956-411a-8437-1a96f3dbfb59.png">
 
  
 <br/><strong>Comparing Phobert with other algorithms</strong><br/>
@@ -147,9 +137,9 @@ We can conclude that we can use Phobert as a tokenizer and transform it to train
 
 <h2>2.	Sentiment Analysis For Online Customer Reviews</h2>
 
-Yunhong He conducted Sentiment Analysis for Online Customer Reviews and created interactive sentiment analysis dashboard visualizations for review emotions, review ratings and reviews content class. Some content of the online customer reviews does not reflect the ratings. For example, some with 5-rating reviews have negative comments and emotions such as positive, neutral, and negative. Sentiment analysis for Vietnamese reviews is needed for the company to better understand their customers’ needs in order to improve product and sales performance.
+We conducted Sentiment Analysis for Online Customer Reviews and created interactive sentiment analysis dashboard visualizations for review emotions, review ratings and reviews content class. Some content of the online customer reviews does not reflect the ratings. For example, some with 5-rating reviews have negative comments and emotions such as positive, neutral, and negative. Sentiment analysis for Vietnamese reviews is needed for the company to better understand their customers’ needs in order to improve product and sales performance.
 
-Yunhong He created reviews label dataset, trained and evaluated 3 Hugging Face Pre-trained BERT models including trituenhantaoio/bert-base-vietnamese-uncased, NlpHUST/vibert4news-base-cased, and bert-base-uncased, as well as Supervised Machine Learning algorithms, produced model evaluation visualizations. Setup team GitHub with folder structures. Created sentiment analysis Deep Learning and Machine Learning pipeline. Run /realtime_dreamer/sentiment_analysis.sh.
+We created reviews label dataset, trained and evaluated 3 Hugging Face Pre-trained BERT models including trituenhantaoio/bert-base-vietnamese-uncased, NlpHUST/vibert4news-base-cased, and bert-base-uncased, as well as Supervised Machine Learning algorithms, produced model evaluation visualizations. Setup team GitHub with folder structures. Created sentiment analysis Deep Learning and Machine Learning pipeline. Run /realtime_dreamer/sentiment_analysis.sh.
 
 <img width="400" alt="Sentiment Analysis Task" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20tasks.png">
 
@@ -169,64 +159,8 @@ Yunhong He used clear positive and negative keyword search and eye scan to selec
 
 <img width="800" alt="Sentiment Analysis Data Preprocessing" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Data%20preprocess%20steps.png">
 
-Graph 3: Sentiment Analysis Data Pre-processing
 
-There is imbalanced data in train reviews.xlsx. 8% of the labels are negative class while 87% of the labels are positive class.  As the task mainly focuses on finding the reviews with 4 or 5 ratings but have negative emotions, F1 macro score is important for model evaluation. Oversampling negative class by random.choices function can make the size of negative class as same as that of positive class.
-
-
-<img width="250" alt="Sentiment Analysis Imbalanced Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20imbalanced%20classes%20before%20oversampling%20-%20visualization.png">
-
-Graph 4: Imbalanced Emotion Classes
-
-<strong>  </strong><br/>
-
-<strong>(2) Model Selection and Evaluation</strong><br/>
-
-Hugging Face pre-trained BERT models and Supervised machine learning algorithms are trained and evaluated in the sentiment analysis of the reviews.
-
-<img width="900" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20models.png">
-
-Graph 5: Sentiment Analysis - Models
-
-<strong>  </strong><br/>
-
-pre-trained BERT model are evaluated based on F1 scores (macro, micro and weighted), train and validation losses.
-
-<img width="800" alt="Sentiment Analysis - Models" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20BERT%20Model%20training%20-%20Fine%20Tuning%20and%20Evaluation.png">
-
-Graph 6: Sentiment Analysis BERT Model Training, Fine Tuning and Evaluation
-
-Model performance mainly focus on the F1 macro score due to the imbalanced label for the negative class. The best BERT model is defined as the pre-trained BERT model with the highest F1 macro score at the best epoch among 10 epochs. 
-
-
-From below Model Evaluation Visualizations, we can see that trituenhantaoio pre-trained BERT model outperformed other pre-trained BERT models in terms of its stable and fast convergence of closing to zero for train loss, validation loss, and closing to 1 for F1 scores (macro, micro and weighted), and classification accuracy for positive, neutral and negative emotions across 10 epochs. Moreover, the train data created by clear positive or negative keyword search and eye scan to select the reviews for emotion labeling and oversamping the negative class can significantly improve the BERT model performance.
-
-
-<img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Pre-Trained BERT Model"     src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20pre-trained%20bert%20model%20-%20visualization.png">
-
-Graph 7: Sentiment Analysis Model Evaluation by Pre-trained BERT Model
-
-
-<img width="1300" alt="Screen Shot Sentiment Analysis Model Evaluation by Metrics" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20metrics%20-%20visualization.png">
-
-Graph 8: Sentiment Analysis Model Evaluation by Metrics
-
-
-<strong>  </strong><br/>
-
-
-<img width="800" alt="Sentiment Analysis Model Evaluation by Classification Accuracy of Individual Classes" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20model%20evaluation%20by%20individual%20class%20prediction%20accuracy%20-%20visualization.png">
-
-Graph 9: Sentiment Analysis Model Evaluation by Individual Class Prediction Accuracy
-
-<strong>  </strong><br/>
-
-
-Supervised machine learning algorithms are evaluated based on F1 scores (macro, micro, and weighted)
-
-<img width="800" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Supervised%20Machine%20Learning%20Process.png">
-
-Graph 10: Sentiment Analysis - Supervised Machine Learning Process
+Graph 3: Sentiment Analysis - Supervised Machine Learning Process
 
 <strong>  </strong><br/>
 
@@ -235,62 +169,8 @@ Below graph shows that The classification performance of Supervised ML classifie
 
 <img width="600" alt="Sentiment Analysis Supervised ML Classifier Model Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20supervised%20ml%20model%20evaluation%20-%20visualization.png">
 
-Graph 11: Sentiment Analysis Supervised ML Classifier Model Evaluation
-
-<strong>  </strong><br/>
-
-Based on the above model evaluation, Hugging Face pre-trained BERT model trituenhantaoio/bert-base-vietnamese-uncased is chosen to conduct sentiment analysis for emotion classification of online customer reviews due to its best performance in terms of its stable and fast convergence of closing to zero for train loss, validation loss, and closing to 1 for F1 scores (macro, micro and weighted), and classification accuracy for positive, neutral and negative emotions across 10 epochs.  The train data created by clear positive or negative keyword search and eye scan to select the reviews for emotion labeling can significantly improve the BERT model performance, and thus is used to train the BERT model.
-
-<strong>  </strong><br/>
-
-From below Graph 12: Sentiment Analysis - Emotions vs Ratings, we can see that the customer emotion in 39% of total reviews are actually neutral but gave the highest average ratings of 5. 7% of the toal reviews are negative but have average rating of 3.6 above median level.
-
-<img width="600" alt="Sentiment Analysis - Emotions" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20Emotions%20vs%20rating.png">
-
-Graph 12: Sentiment Analysis - Emotions vs Ratings
-
-Above interactive graph is in Tab "Emotions Dashboard" at below link: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
-
-<strong>    </strong><br/>
-
-As shown in graph 13: Sentiment Analysis - Emotions vs High Ratings, among the reviews with high rating of 4 and 5, 4% of them are actually negative, 41% are neutral.  This indicates that 45% of the online customers overstated the ratings to 4 and 5 while they actually have neutral or negative emotions.
-
-<img width="600" alt="Sentiment Analysis - Emotions vs high ratings of 4 and 5" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20emotions%20vs%20higher%20ratings%204%20and%205.png">
-
-Graph 13: Sentiment Analysis - Emotions vs High Ratings
-
-Above interactive graph is in Tab "Emotions Dashboard" at below link: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
 
 
-
-<strong>  </strong><br/>
-
-As shown in the below Graph 14 Sentiment Analysis Dashboard, positive reviews mainly come from Product (24%) and Quality (21%). Customers are quite happy with Products with 95% of positive emotion and average rating of 4.9.  50% of Sales reviews, 18% of Logistic reviews, 13% of Service reviews are negative, Their average of rating for negative emotion was 3.6,  2.9 and 3.5,  which indicates that customers showed their dissatisfaction mainly in Sales, and then Logistic  and Service. Service reviews has lowest average rating in negative class. Additionally, 60% of Quality related reviews indicates neutral emotion.
-
-
-<img width="1300" alt="Sentiment Analysis - Emotions Dashboard" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/sentiment%20analysis%20-%20emotions%20vs%20content%20class%20dashboard.png">
-
-Graph 14: Sentiment Analysis Dashboard
-
-Above interactive sentiment analysis visualization dashboard is in Tab "Sentiment Analysis Dashboard" at below link: https://public.tableau.com/app/profile/agnes.he/viz/SentimentAnalysisforOnlineCustomerReviews/SentimentAnalysisforOnlineCustomerReviewsDashBoard?publish=yes
-
-<strong>  </strong><br/>
-
-<strong>(3) Summary</strong><br/>
-
-Hugging Face pre-trained BERT model trituenhantaoio outperformed other pre-trained BERT models in terms of its stable and fast convergence of closing to zero for train loss, validation loss, and closing to 1 for F1 scores (macro, micro and weighted), and classification accuracy for positive, neutral and negative emotions across 10 epochs. Therefore model generated by trituenhantaoio at one of the 10 epochs with the highest F1 score macro is chosen as sentiment_analysis_best_bert_model.model.  The train data created by clear positive or negative keyword search and eye scan to select the reviews for emotion labeling and oversamping the negative class can significantly improve the BERT model performance, and thus this method is used to train the BERT model in order to gain best performance of emotion classification for the company to better understand the needs of their customers in order to improve their logistic, customer services and sales performance.
-
-<strong>  </strong><br/>
-
-<strong>Contribution To The Team Project</strong><br/>
-
-1. Performed sentiment analysis for online customer reviews. Set up a sentiment analysis pipeline.
-
-2. Created over 23 reusable functions for data import, data preprocessing, oversampling minority class, data split into train and validation, data encoding, BERT model training and evaluation,  generation of datasets for model evaluation metrics, generation of various visualizations for BERT model evaluation. About 20 of these functions are reused by both task 1 and task 2 in the team.
-
-3. Created strategy and coding method to handle imbalanced classes in both task 1 and task 2 by oversampling minority classes using random.choices function, and using stratify parameter in train_test_split() function.
-
-4. Setup Realtime Dreamer team GitHub with folder structures.
 
 <strong>  </strong><br/>
 
@@ -323,7 +203,7 @@ Sentiment analysis model evaluation files are generated in Sentiment_Analysis_BE
 
 <h2>3.	Recommendation system</h2>
 
-Kensuke Suzuki used user id, product, and customer rating to train the Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…”. In our analysis, we determined that the company is not ready to implement a recommendation system at this time. We have decided to build out a recommendation system To show what an example of what an output looks like. For the example, we are showing the recommendations for User 52354.
+We used user id, product, and customer rating to train the Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…”. In our analysis, we determined that the company is not ready to implement a recommendation system at this time. We have decided to build out a recommendation system To show what an example of what an output looks like. For the example, we are showing the recommendations for User 52354.
 
 To run the SVD algorithm for the recommender system, you will be required to install a python library called surprise: 
 
@@ -353,8 +233,7 @@ With these recommendations implemented, our team believes that the company will 
 
 
 <h2>4.	Machine Learning for Sales Predictive Modeling</h2>
-
-Zheng Wei Lim used data of E-Commerce sales, customer, and product data to perform EDA and predictive modeling through feature engineering and selection, model development and evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning, and provided visualizations to avoid black box models. 
+We used data of E-Commerce sales, customer, and product data to perform EDA and predictive modeling through feature engineering and selection, model development and evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning, and provided visualizations to avoid black box models. 
 
 The final model used is a XGBoost Random Forest model with R2 score of 0.95 and RMSE of 88.5m - an improvement of 75.0% over the baseline model. This indicates that the model has high accuracy of predicting future revenue from past sales data, enabling the company to be more responsive and confident in its revenue forecasting. 
 

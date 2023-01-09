@@ -33,9 +33,9 @@ We created reviews label dataset, trained and evaluated 3 Hugging Face Pre-train
 
 <h2>3.	Recommendation system</h2>
 
-We used user id, product, and customer rating to train the Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…”. In our analysis, we determined that the company is not ready to implement a recommendation system at this time. We have decided to build out a recommendation system To show what an example of what an output looks like. For the example, we are showing the recommendations for User 52354.
+We used user id, product, and customer rating to train the Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…”. We have decided to build out a recommendation system to show what an example of what an output looks like.
 
-The results are that we have decided to build out the recommendation system using collaborative filtering to show how it could work within the data given. But before such a system is to be implemented within the organization, we recommend that they take these steps such as encouraging users to leave reviews to implement a more robust recommendation system.
+The results are that we have decided to build it out using collaborative filtering to show how it could work within the data given. But before such a system is to be implemented within the organization, we recommend that they take these steps such as encouraging users to leave reviews to implement a more robust recommendation system.
 
 
 

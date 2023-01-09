@@ -21,8 +21,6 @@ For this task, we adopted a model called PhoBERT, which is a BERT base program (
 
 We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. 
 
-For this reason, it is the best algorithm to predict the reviews classification tasks because of its superiority compared to other algorithms. While the data imbalance was an issue due to moderate, we overcame it by over-sampling the minority. The outcome was optimal based on the elements of the task and no data preprocessing. The PhoBERT model requires parameter tuning, and from the results, we were able to increase batch_size to 24 and  dropout to 0.4 to be the best to handle overfitting.
-
 
 <strong>  </strong><br/>
 
@@ -36,15 +34,6 @@ We created reviews label dataset, trained and evaluated 3 Hugging Face Pre-train
 <h2>3.	Recommendation system</h2>
 
 We used user id, product, and customer rating to train the Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…”. In our analysis, we determined that the company is not ready to implement a recommendation system at this time. We have decided to build out a recommendation system To show what an example of what an output looks like. For the example, we are showing the recommendations for User 52354.
-
-To run the SVD algorithm for the recommender system, you will be required to install a python library called surprise: 
-
-```pip install surprise```
-
-After installing Surprise, run 
-```recommendation_system.sh```
-and the final output recommendation_for_user_52354.csv will be in the data/final folder. 
-
 
 The results are that we have decided to build out the recommendation system using collaborative filtering to show how it could work within the data given. But before such a system is to be implemented within the organization, we recommend that they take these steps such as encouraging users to leave reviews to implement a more robust recommendation system.
 

@@ -5,56 +5,29 @@ Capstone Project - ML for e-Commerce Predictive Analytics and Business Improveme
 
 This project uses real Ecommerce data to perform NLP for Vietnamese language and machine learning tasks in order to settle a real-world business challenge of a company in Vietnam. We split our project into four tasks: NLP, sentiment analysis, recommendation system, and machine learning for sales predictive modeling. 
 
-For the full report, please visit our blog: https://madsrealtimedreamer.wordpress.com/
-
-Capstone Video Link: https://drive.google.com/file/d/1hJkoycGnJdH8OE1k9IqpxXhdyVOSLkBK/view?usp=sharing
-
-<h2>1.	Customer Reviews Type classification</h2>
-
-
-<img width="426" alt="Screen Shot 2565-08-22 at 12 29 41" src="https://user-images.githubusercontent.com/100912986/185845938-8a8ada6f-1325-4300-b306-c572414ed7f9.png">
-
-
-Our goal is to build a NLP model to predict the review classes using the customer reviews (sample data: Git_mockup_reviews.xlsx). The data collection process was completed by the customer service team of the company, who manually collected this data from the E-commerce platform. They recorded the review sentences (in Vietnamese) and the true rating score, along with labeling the type of the review manually.
-
-For this task, we adopted a model called PhoBERT, which is a BERT base program (Bidirectional Encoder Representations from Transformers) released in late 2018. The objective of using this model  is to compare the performance of  PhoBERT  NLP to other traditional algorithms.
-
-We can conclude that we can use Phobert as a tokenizer and transform it to train the review data. Unlike the previous monolinguals and multilingual approaches, Phobert is superior in attaining new state-of-the-art performances on four downstream Vietnamese NLP tasks of Dependency parsing, Named-entity recognition, Part-of-speech tagging, and Natural language inference. 
-
-
-<strong>  </strong><br/>
-
-
-<h2>2.	Sentiment Analysis For Online Customer Reviews</h2>
-
-We conducted Sentiment Analysis for Online Customer Reviews and created interactive sentiment analysis dashboard visualizations for review emotions, review ratings and reviews content class. Some content of the online customer reviews does not reflect the ratings. For example, some with 5-rating reviews have negative comments and emotions such as positive, neutral, and negative. Sentiment analysis for Vietnamese reviews is needed for the company to better understand their customers’ needs in order to improve product and sales performance.
-
-We created reviews label dataset, trained and evaluated 3 Hugging Face Pre-trained BERT models including trituenhantaoio/bert-base-vietnamese-uncased, NlpHUST/vibert4news-base-cased, and bert-base-uncased, as well as Supervised Machine Learning algorithms, produced model evaluation visualizations. Setup team GitHub with folder structures. Created sentiment analysis Deep Learning and Machine Learning pipeline. Run /realtime_dreamer/sentiment_analysis.sh.
-
-<h2>3.	Recommendation system</h2>
-
-We used the customer and product data to train the Memory-Based Collaborative Filtering model which will then recommend items to the user. “Users who are similar to you also liked…”. We have decided to build out a recommendation system to show what an example of what an output looks like. Therefore, we have decided to build it out using collaborative filtering to show how it could work within the data given. But before such a system is to be implemented within the organization, we recommend that they take these steps such as encouraging users to leave reviews to implement a more robust recommendation system.
-
-
-
-<h2>4.	Machine Learning for Sales Predictive Modeling</h2>
+<h2>Machine Learning for Sales Predictive Modeling</h2>
 We used data of e-Commerce sales, customer, and product data to perform EDA and predictive modeling through feature engineering and selection, model development and evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning, and provided visualizations to avoid black box models. 
 
-The final model used is a XGBoost Random Forest model with R2 score of 0.95 and RMSE of 88.5m - an improvement of 75.0% over the baseline model. This indicates that the model has high accuracy of predicting future revenue from past sales data, enabling the company to be more responsive and confident in its revenue forecasting. 
+Exploratory data analysis (EDA) is conducted after the data is processed through an extract-transform-load (ETL) pipeline. The analysis revealed several area of weaknesses. As an example, one unexpected relationship is that there is little correlation between the ratings and factors such as shipping days. Further visualizations have been developed for the company, such as one showing that certain regions have more negative ratings, which indicates localized shipping issues to feed into on-the-ground investigations. 
 
-Predictive modeling notebook: https://github.com/yunhonghe/realtime_dreamer/blob/main/notebooks/Model-Shipping-ProductPerformance-ReviewEmotion.ipynb
-
-EDA notebook: https://github.com/yunhonghe/realtime_dreamer/blob/main/notebooks/Analytics-Shipping-Review.ipynb
+Next, a ML model is built to allow the business to predict future behaviors of how products are likely to perform based on historical sales metrics. To develop accurate and reliable models, features are prepared, structured and selected that best describes the structure in the data. Additional features are engineered based on the E-commerce sales funnel.
 
 <img width="500" height="200" alt="Predictive modeling - Feature Engineering and Selection" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-featurecorrelation.jpg">
 Feature Engineering and Selection
 
+Several models are developed using supervised learning algorithms. Random forest is used as a baseline, along with more sophisticated models including regression and XGBoost random forest, which is an optimized distributed gradient boosting library.
+
 <img width="400" height="200" alt="Predictive modeling - Model Development and Evaluation" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-modelevaluation.jpg">
-Model Development and Evaluation
+
+Hyperparameter tuning is also performed to enhance the models using Optuna. One hundred trials of the model are conducted on a search space for the optimal hyperparameters, allowing us to minimize the RMSE. 
+
+The final model used is a XGBoost Random Forest model with R2 score of 0.95 and RMSE of 88.5m - an improvement of 75.0% over the baseline model. This indicates that the model has high accuracy of predicting future revenue from past sales data, enabling the company to be more responsive and confident in its revenue forecasting. 
 
 <img width="500" height="200" alt="Predictive modeling - Hyperparameter Tuning" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-final-model-optuna-optimizationhistory.jpg">
-Hyperparameter Tuning
 
+Predictive modeling notebook: https://github.com/zheng2718/MADS-Capstone---ML-for-e-Commerce-Predictive-Analytics-and-Business-Improvement/blob/main/notebooks/Model-Shipping-ProductPerformance-ReviewEmotion.ipynb
+
+EDA notebook: https://github.com/zheng2718/MADS-Capstone---ML-for-e-Commerce-Predictive-Analytics-and-Business-Improvement/blob/main/notebooks/Analytics-Shipping-Review.ipynb
 
 --------------------
 Project Organization

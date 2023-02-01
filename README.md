@@ -13,7 +13,6 @@ Exploratory data analysis (EDA) is conducted after the data is processed through
 Next, a ML model is built to allow the business to predict future behaviors of how products are likely to perform based on historical sales metrics. To develop accurate and reliable models, features are prepared, structured and selected that best describes the structure in the data. Additional features are engineered based on the E-commerce sales funnel.
 
 <img width="500" height="200" alt="Predictive modeling - Feature Engineering and Selection" src="https://github.com/yunhonghe/realtime_dreamer/blob/main/reports/figures/Predictive-modeling-viz-featurecorrelation.jpg">
-Feature Engineering and Selection
 
 Several models are developed using supervised learning algorithms. Random forest is used as a baseline, along with more sophisticated models including regression and XGBoost random forest, which is an optimized distributed gradient boosting library.
 

@@ -65,18 +65,6 @@ Project Organization
     ├── README.md               <- The top-level README for developers using this project.
     ├── data
     │   ├── external            <- Data from third party sources.
-    │   │   └── df__phobert_all.sav
-    │   │   └── df__phobert_grouping.sav
-    │   │   └── df_phobert_remove.sav
-    │   │   └── df__phobert_all_upsamples.sav
-    │   │   └── df_predict_all.sav
-    │   │   └── df_predict_upsampling.sav
-    │   │   └── df_predict_grouping.sav
-    │   │   └── df_predict_remove.sav
-    │   │   └── phobert1_eval_df_.csv
-    │   │   └── phobert2_eval_df_.csv
-    │   │   └── phobert3_eval_df_.csv
-    │   │   └── phobert3_dropout_eval_df_.csv
     |   └── final               <- File with final data of the project
     │   │   └── reviewtype__accuracy_per_class_df.csv
     │   │   └── reviewtype_phobert_model.pt
@@ -84,94 +72,26 @@ Project Organization
     │   │ 
     │   │
     │   ├── interim             <- Intermediate data that has been transformed. Files with BERT model evaluation metrics.
-    |   |   └── sentiment_analysis_reivew_emotion_predition.xlsx
-    |   |   └── sentiment_analysis_trituenhantaoio_train_data_from_Yunhong He_Epoch1_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_Epoch1_train_data_from_Yunhong He_eval_df.csv
-    |   |   └── model_info.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_train_data_from_YunhongHe_Epoch10_accuracy_per_class_BeforeOversample.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_before_oversample_df.csv
-    |   |   └── sentiment_analysis_trituenhantaoio_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
-    |   |   └── sentiment_analysis_NlpHUST_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_NlpHUST_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_VnEmoLex_validated_df.csv
-    |   |   └── sentiment_analysis_NlpHUST_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_NlpHUST_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
-    |   |   └── sentiment_analysis_NlpHUST_NLP_Epoch10_train_data_provided_by_Suwasit_eval_VnEmoLex_validated_df.csv
-    |   |   └── sentiment_analysis_NlpHUST_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
-    |   |   └── sentiment_analysis_bert-base-uncased_train_data_provided_by_Yunhong He_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_bert-base-uncased_train_data_provided_by_Suwasit_NLP_Epoch10_accuracy_per_class_df.csv
-    |   |   └── sentiment_analysis_bert-base-uncased_NLP_Epoch10_train_data_provided_by_Yunhong He_eval_df.csv
-    |   |   └── sentiment_analysis_bert-base-uncased_NLP_Epoch10_train_data_provided_by_Suwasit_eval_df.csv
-    |   |   └── reviewType_pho_bert_eval_df.csv
-    |   |   
-    |   |   
     |   |   
     │   ├── processed           <- The final, canonical data sets for modeling.
-    │   │   └── Git_mockup_reviews_processed.xlsx
-    │   │   └── sentiment_analysis_reviews_label.xlsx
-    │   │   └── sentiment_analysis_reviews_label_processed.csv
-    |   |   └── sentiment_analysis_reviews_label_split.csv
-    |   |   └── reviewType_pre_process.csv
-    |   |   └── reviewType_df_upload.csv
-    |   |   └── reviews_with_user_id.csv
     |   |
     │   └── raw                 <- The original, immutable data dump.
-    │       └── Git_mockup_reviews.xlsx
-    │       └── Anon-Data-productperformance17months.csv 
-    │       └── Anon-Data-Review-Emotion-Prediction.xlsx 
-    │       └── Anon-Data-cleaned-shipping.csv
-    | 
     |
     ├── docs                    <- A default Sphinx project; see sphinx-doc.org for details
     │
     ├── models                  <- Trained and serialized models, model predictions, or model summaries 
     |   └── sentiment_analysis_best_bert_model.model  <- link for this model: 
-    │   │   https://drive.google.com/file/d/1ndzGpSsbzQ5mYRXkPMmzzg6bJmLLlD3q/view?usp=sharing
+    │   │   
     │   └── sentiment_analysis_trituenhantaoio_train_data_provided_by_Yunhong He_NLP_Epoch10.model  
-    │   │    <- link: https://drive.google.com/file/d/1ffLZd2jr5CGxGweuBq2bcM6lzIca66JB/view?usp=sharing
+    │   │    
     │   └── predictive-final-model.sav <- final XGBoost Random Forest model for sales prediction    
     |
-    ├── notebooks               <- Jupyter notebooks. A naming convention is a number (for ordering),
-    │   |                          the creator's name, and a short `-` delimited description, e.g.
-    │   |                          `1.0-jqp-initial-data-exploration.
-    |   └── Sentiment_Analysis_Supervised_Machine_Learning_colab.ipynb   
-    |   |   <- Complete Reviews label dataset is run in the notebook which can be run in Google Colab.
-    |   └── Sentiment_Analysis_Supervised_Machine_Learning_Model_Evaluation_local.ipynb 
-    |   |   <- Complete Reviews label dataset is run in this notebook.
-    |   └── Sentiment_Analysis_BERT_Model_Evaluation.ipynb 
-    |   |   <- Complete Reviews label dataset is run in this notebook.
-    |   └── Sentiment_Analysis_BERT_Model_Evaluation.zip  
-    |   |   <- Using zip file of the notebook to preserve the visualizations in the notebook.
-    |   └── Model-Shipping-ProductPerformance-ReviewEmotion.ipynb  
-    |   |   <- Predictive modeling on all merged data for sales forecasting
-    |   └── Analytics-Shipping-Review.ipynb  <- EDA and visualization on shipping and review data
+    ├── notebooks              
     │
     ├── references              <- Data dictionaries, manuals, and all other explanatory materials.
     │
     ├── reports                 <- Generated analysis as HTML, PDF, LaTeX, etc.
     |   └── Sentiment Analysis.docx  <- Sentiment Analysis report
-    │   │
-    │   └── figures             <- Generated graphics and figures to be used in reporting
-    |       └── sentiment analysis - model evaluation by individual class prediction accuracy - visualization.png
-    |       └── sentiment analysis - model evaluation by metrics - visualization.png
-    |       └── sentiment analysis - model evaluation by pre-trained bert model - visualization.png
-    |       └── sentiment analysis - supervised ml model evaluation - visualization.png
-    |       └── sentiment analysis - imbalanced classes before oversampling - visualization.png
-    |       └── sentiment analysis - models.png
-    |       └── sentiment analysis - BERT Model training - Fine Tuning and
-    |       └── sentiment analysis - Data preprocess steps.png
-    |       └── sentiment analysis - Emotions vs rating.png
-    |       └── sentiment analysis - Supervised Machine Learning Process.png
-    |       └── sentiment analysis - emotions vs content class dashboard.png
-    |       └── Sentiment analysis - process.png
-    │       └── sentiment analysis - imbalanced classes before oversampling - visualization.png
-    |       └── sentiment analysis - emotions vs higher ratings 4 and 5.png
-    |       └── sentiment analysis - tasks.png
-    |       └── reviewType_model_compare_traditional.png
-    |       └── reviewType_model_compare.png
-    |       └── confusion_phobert.png
     |
     ├── requirements.txt        <- The requirements file for reproducing the analysis environment, e.g.
     │                              generated with `pip freeze > requirements.txt`
@@ -184,12 +104,6 @@ Project Organization
     │   ├── __init__.py         <- Makes src a Python module
     │   │
     │   ├── data                <- Scripts to download or generate data
-    │   │   └── sentiment_analysis_data_utility_functions.py
-    |   |   └── sentiment_analysis_predict_emotion.py
-    |   |   └── sentiment_analysis_prepare_review_label.py
-    |   |   └── sentiment_analysis_utility_functions.py
-    |   |   └── reviewtype__prepare_review_label.py
-    |   |   └── reviewtype__train_test_val_split.py
     │   │
     │   ├── features            <- Scripts to turn raw data into features for modeling
     │   │   └── build_features.py
@@ -204,9 +118,6 @@ Project Organization
     │   │   └── recommendation_system.py
     │   │
     │   └── visualization       <- Scripts to create exploratory and results-oriented visualizations
-    │       └── reviewtype_chart1_tuning.py
-    |       └── reviewtype_chart2_compare_traditional.py
-    │
     └── tox.ini                 <- tox file with settings for running tox; see tox.readthedocs.io
 
 

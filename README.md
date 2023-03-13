@@ -5,6 +5,8 @@ Capstone Project - ML for e-Commerce Predictive Analytics and Business Improveme
 
 This project uses real Ecommerce data to perform NLP for Vietnamese language and machine learning tasks in order to settle a real-world business challenge of a company in Vietnam. We split our project into four tasks: NLP, sentiment analysis, recommendation system, and machine learning for sales predictive modeling. 
 
+Business Report: https://madsrealtimedreamer.wordpress.com/2022/08/18/task-4-predictive-modeling/
+
 <h2>Machine Learning for Sales Predictive Modeling</h2>
 We used data of e-Commerce sales, customer, and product data to perform EDA and predictive modeling through feature engineering and selection, model development and evaluation of multiple supervised ML algorithms, unsupervised optimizations, hyperparameter tuning, and provided visualizations to avoid black box models. 
 
